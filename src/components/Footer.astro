@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import LogoMonogram from './LogoMonogram.astro';
+
+const games = (await getCollection('games')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-hairline">
+  <div class="mx-auto max-w-6xl px-6 py-16">
+    <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <LogoMonogram size={40} />
+        <p class="type-caption mt-4 max-w-[28ch] text-muted">
+          iOS games made by one person in Los Angeles, on the night shift.
+        </p>
+      </div>
+
+      {
+        games.map((game) => (
+          <div>
+            <h2 class="type-label text-text">{game.data.title}</h2>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a class="type-caption text-muted hover:text-text" href={`/games/${game.id}`}>
+                  Game page
+                </a>
+              </li>
+              <li>
+                <a class="type-caption text-muted hover:text-text" href={`/games/${game.id}/support`}>
+                  Support
+                </a>
+              </li>
+              <li>
+                <a class="type-caption text-muted hover:text-text" href={`/games/${game.id}/privacy`}>
+                  Privacy
+                </a>
+              </li>
+            </ul>
+          </div>
+        ))
+      }
+
+      <div>
+        <h2 class="type-label text-text">Studio</h2>
+        <ul class="mt-4 space-y-2">
+          <li><a class="type-caption text-muted hover:text-text" href="/about">About</a></li>
+          <li><a class="type-caption text-muted hover:text-text" href="/press">Press</a></li>
+          <li><a class="type-caption text-muted hover:text-text" href="/notes">Notes</a></li>
+          <li><a class="type-caption text-muted hover:text-text" href="/privacy">Site privacy</a></li>
+          <li>
+            <a class="type-caption text-muted hover:text-text" href="mailto:hello@nattskift.games">
+              hello@nattskift.games
+            </a>
+          </li>
+          <li>
+            <a
+              class="type-caption text-muted hover:text-text"
+              href="https://bsky.app/profile/nattskift.games"
+              rel="me noopener"
+            >
+              Bluesky
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="type-micro mt-16 text-muted">
+      © {year} Nattskift Games. One person, Los Angeles.
+    </p>
+  </div>
+</footer>

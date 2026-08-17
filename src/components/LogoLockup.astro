@@ -1,0 +1,69 @@
+---
+/**
+ * Primary lockup: a square split exactly in half. NATTSKIFT sits so the seam
+ * passes through the vertical middle of the letters — white above the cut on
+ * ink, ink knocked out below the cut on royal. One word being sliced.
+ *
+ * The seam-collision check on K and F: at the default baseline the K junction
+ * and the F crossbar both sat within a couple of px of the seam, so the type
+ * is nudged down 1.5% of cap height (see --nudge below). Verified at 8x zoom.
+ */
+interface Props {
+  /** Rendered size in px (square). */
+  size?: number;
+  class?: string;
+}
+const { size = 44, class: className } = Astro.props;
+
+// Geometry in a 512-unit frame.
+const SEAM = 256;
+const WORD_SIZE = 62; // font-size for NATTSKIFT
+const CAP = WORD_SIZE * 0.72; // Archivo cap height ≈ 0.72em
+const NUDGE = CAP * 0.015; // 1.5% of cap height, avoids K/F junction collision
+// Baseline so the cap-height midpoint lands on the seam, then nudged down.
+const BASELINE = SEAM + CAP / 2 + NUDGE;
+const uid = 'nsk' + Math.floor(Math.random() * 1e6).toString(36);
+---
+
+<svg
+  width={size}
+  height={size}
+  viewBox="0 0 512 512"
+  role="img"
+  aria-label="Nattskift Games"
+  class={className}
+>
+  <clipPath id={`${uid}-top`}><rect x="0" y="0" width="512" height={SEAM}></rect></clipPath>
+  <clipPath id={`${uid}-bottom`}><rect x="0" y={SEAM} width="512" height={512 - SEAM}></rect></clipPath>
+
+  <rect x="0" y="0" width="512" height={SEAM} fill="var(--color-ink, #0B0E12)"></rect>
+  <rect x="0" y={SEAM} width="512" height={512 - SEAM} fill="#6B3FA0"></rect>
+
+  {/* Two registered copies of the word, clipped at the seam. */}
+  <text
+    x="256"
+    y={BASELINE}
+    text-anchor="middle"
+    clip-path={`url(#${uid}-top)`}
+    fill="#FFFFFF"
+    style={`font-family: var(--font-display, Archivo, sans-serif); font-weight: 600; font-size: ${WORD_SIZE}px;`}
+  >NATTSKIFT</text>
+  <text
+    x="256"
+    y={BASELINE}
+    text-anchor="middle"
+    clip-path={`url(#${uid}-bottom)`}
+    fill="#0B0E12"
+    style={`font-family: var(--font-display, Archivo, sans-serif); font-weight: 600; font-size: ${WORD_SIZE}px;`}
+  >NATTSKIFT</text>
+
+  {/* Trailing letter-spacing on the last glyph shifts the optical center;
+      x compensates by half a tracking unit. */}
+  <text
+    x={256 + (0.4 * 22) / 2}
+    y="400"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    style="font-family: var(--font-display, Archivo, sans-serif); font-weight: 500; font-size: 22px; letter-spacing: 0.4em;"
+  >GAMES</text>
+</svg>

@@ -1,0 +1,88 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Seo from '../components/Seo.astro';
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* Progressive enhancement flag: all motion CSS is gated on html.js. */}
+    <script is:inline>document.documentElement.classList.add('js');</script>
+    <link
+      rel="preload"
+      href="/fonts/archivo-latin-wdth-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/ibm-plex-sans-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <Seo title={title} description={description} />
+    <slot name="head" />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+
+    {/* Scroll reveal + FAQ collapse. Both are enhancements: without JS the
+        page is fully readable — sections visible, FAQ answers expanded. */}
+    <script is:inline>
+      (function () {
+        if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+          var revealed = document.querySelectorAll('[data-reveal]');
+          if ('IntersectionObserver' in window && revealed.length) {
+            var io = new IntersectionObserver(
+              function (entries) {
+                entries.forEach(function (entry) {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.add('is-revealed');
+                    io.unobserve(entry.target);
+                  }
+                });
+              },
+              { rootMargin: '0px 0px -10% 0px' }
+            );
+            revealed.forEach(function (el) {
+              io.observe(el);
+            });
+          }
+        } else {
+          document.querySelectorAll('[data-reveal]').forEach(function (el) {
+            el.classList.add('is-revealed');
+          });
+        }
+
+        document.querySelectorAll('[data-faq-trigger]').forEach(function (btn) {
+          var panel = document.getElementById(btn.getAttribute('aria-controls'));
+          if (!panel) return;
+          btn.setAttribute('aria-expanded', 'false');
+          panel.hidden = true;
+          btn.addEventListener('click', function () {
+            var open = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', String(!open));
+            panel.hidden = open;
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

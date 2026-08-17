@@ -1,0 +1,358 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   Design tokens.
+   The default Tailwind palette is wiped on purpose: the only colors that
+   exist on this site are the ones below. --royal fails contrast on ink
+   (2.6:1) and is therefore fill-only; all purple text uses --royal-light.
+--------------------------------------------------------------------------- */
+@theme {
+  --color-*: initial;
+  --color-ink: #0b0e12;
+  --color-surface: #16131f;
+  --color-raised: #201b2e;
+  --color-royal: #6b3fa0; /* FILL ONLY — never text, never border */
+  --color-royal-light: #9e82d4;
+  --color-sodium: #ffb74a; /* light source, <3% of any screen */
+  --color-danger: #e5484d; /* destructive fills only */
+  --color-danger-text: #ff7b7e;
+  --color-text: #eceff3;
+  --color-muted: #9aa4b2;
+  --color-white: #ffffff;
+  --color-button-label: #f7f5f0; /* 6.8:1 on royal */
+  --color-hairline: rgb(255 255 255 / 0.06);
+
+  --font-*: initial;
+  --font-display: "Archivo", "Archivo Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", "IBM Plex Sans Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", "Courier New", monospace;
+
+  --radius-*: initial;
+  --radius-control: 4px;
+  --radius-card: 12px;
+  --radius-full: 9999px; /* tags only */
+
+  --ease-*: initial;
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* ---------------------------------------------------------------------------
+   Self-hosted fonts. Latin subsets, woff2, no runtime requests to anyone.
+   Archivo ships as one variable file carrying both the weight axis
+   (500/600 in use) and the width axis (Expanded 600 for the hero).
+--------------------------------------------------------------------------- */
+@font-face {
+  font-family: "Archivo";
+  src: url("/fonts/archivo-latin-wdth-normal.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/ibm-plex-sans-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Metric-matched fallbacks so font swap causes no layout shift. */
+@font-face {
+  font-family: "Archivo Fallback";
+  src: local("Arial");
+  size-adjust: 104%;
+  ascent-override: 85%;
+  descent-override: 20.5%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "IBM Plex Sans Fallback";
+  src: local("Arial");
+  size-adjust: 100.5%;
+  ascent-override: 102%;
+  descent-override: 27%;
+  line-gap-override: 0%;
+}
+
+/* ---------------------------------------------------------------------------
+   Base
+--------------------------------------------------------------------------- */
+@layer base {
+  html {
+    background-color: var(--color-ink);
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Static film grain, 4% — pointer-events none, never animated. */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 256px 256px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    hanging-punctuation: first;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::selection {
+    background-color: var(--color-royal);
+    color: var(--color-button-label);
+  }
+
+  /* Focus is never removed; it is made visible and consistent. */
+  :focus-visible {
+    outline: 2px solid var(--color-royal-light);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Type scale — 16px base, 1.25 ratio.
+   Negative tracking on display sizes only: -0.02em at 39px+, -0.03em at 61px.
+--------------------------------------------------------------------------- */
+@utility type-hero {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-stretch: 125%; /* Archivo Expanded — homepage hero only */
+  font-size: 39px;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  @media (width >= 48rem) {
+    font-size: 61px;
+    letter-spacing: -0.03em;
+  }
+}
+@utility type-page-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 1.12;
+  text-wrap: balance;
+  @media (width >= 48rem) {
+    font-size: 39px;
+    letter-spacing: -0.02em;
+  }
+}
+@utility type-section {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.2;
+  text-wrap: balance;
+  @media (width >= 48rem) {
+    font-size: 31px;
+  }
+}
+@utility type-subsection {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  text-wrap: balance;
+  @media (width >= 48rem) {
+    font-size: 25px;
+  }
+}
+@utility type-lead {
+  font-size: 20px;
+  line-height: 1.5;
+}
+@utility type-caption {
+  font-size: 13px;
+  line-height: 1.5;
+}
+@utility type-micro {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.5;
+}
+/* Small all-caps labels — the only place positive tracking is allowed. */
+@utility type-label {
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Body copy measure. Paragraphs never run full-bleed. */
+@utility measure {
+  max-width: 68ch;
+}
+
+/* Section rhythm. Cramped is the tell. */
+@utility section-pad {
+  padding-block: clamp(80px, 12vh, 160px);
+}
+
+/* ---------------------------------------------------------------------------
+   Components
+--------------------------------------------------------------------------- */
+@layer components {
+  .btn-primary {
+    display: inline-block;
+    background-color: var(--color-royal);
+    color: var(--color-button-label);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    padding: 16px 24px;
+    border-radius: var(--radius-control);
+  }
+  .btn-primary:hover {
+    background-color: color-mix(in oklab, var(--color-royal), white 10%);
+  }
+
+  .link-quiet {
+    color: var(--color-royal-light);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in oklab, var(--color-royal-light), transparent 60%);
+    text-underline-offset: 3px;
+  }
+  .link-quiet:hover {
+    text-decoration-color: var(--color-royal-light);
+  }
+
+  /* Depth = hairline border + surface step. No shadows, ever. */
+  .card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-card);
+  }
+  a.card:hover,
+  .card-hover:hover {
+    background-color: var(--color-raised);
+    border-color: rgb(255 255 255 / 0.12);
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+    border: 1px solid var(--color-hairline);
+    border-radius: var(--radius-full);
+    padding: 4px 12px;
+  }
+
+  .skip-link {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 100;
+    background-color: var(--color-royal);
+    color: var(--color-button-label);
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: var(--radius-control);
+    transform: translateY(calc(-100% - 16px));
+  }
+  .skip-link:focus-visible {
+    transform: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Motion. Ease-out only. Everything here is double-gated: the html.js class
+   (set by a two-line inline script) and prefers-reduced-motion. No JS or
+   reduced motion means a completely static page — content visible, nothing
+   waiting on an observer.
+--------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  html.js [data-reveal] {
+    opacity: 0;
+    translate: 0 12px;
+    transition:
+      opacity 500ms var(--ease-out),
+      translate 500ms var(--ease-out);
+    transition-delay: calc(var(--reveal-index, 0) * 70ms);
+  }
+  html.js [data-reveal].is-revealed {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  .btn-primary,
+  .link-quiet,
+  .card,
+  .card-hover,
+  .skip-link {
+    transition-property: background-color, border-color, color, text-decoration-color, transform;
+    transition-duration: 240ms;
+    transition-timing-function: var(--ease-out);
+  }
+
+  /* Cross-document page transitions: fade out through black, fade in. */
+  @view-transition {
+    navigation: auto;
+  }
+  ::view-transition-old(root) {
+    animation: nsk-fade-out 220ms var(--ease-out) both;
+  }
+  ::view-transition-new(root) {
+    animation: nsk-fade-in 260ms var(--ease-out) 180ms both;
+  }
+}
+
+@keyframes nsk-fade-out {
+  to { opacity: 0; }
+}
+@keyframes nsk-fade-in {
+  from { opacity: 0; }
+}

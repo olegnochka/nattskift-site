@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Nattskift Games monogram">
+  <rect x="0" y="0" width="512" height="256" fill="#0B0E12"/>
+  <rect x="0" y="256" width="512" height="256" fill="#6B3FA0"/>
+  <!-- Hand-drawn geometric N (path, not text, so it renders anywhere:
+       favicons, avatars, OG images) centered on the ink half. -->
+  <path fill="#FFFFFF" d="M186 58 L232 58 L292 166 L292 58 L326 58 L326 198 L280 198 L220 90 L220 198 L186 198 Z"/>
+</svg>
