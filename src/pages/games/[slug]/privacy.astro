@@ -14,7 +14,11 @@ const { game } = Astro.props;
 const g = game.data;
 ---
 
-<Base title={g.seo.privacyTitle} description={g.seo.privacyDescription}>
+<Base
+  title={g.seo.privacyTitle}
+  description={g.seo.privacyDescription}
+  ogImage={`/og/${game.id}-privacy.png`}
+>
   <section class="section-pad">
     <div class="mx-auto max-w-6xl px-6">
       <h1 class="type-page-title">{g.title} privacy policy</h1>

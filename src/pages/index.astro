@@ -31,6 +31,24 @@ const promises = [
 <Base
   title="Nattskift Games - iOS games made on the night shift"
   description="Nattskift Games is one person in Los Angeles making iOS games that are finished when they ship, free to start, and honest about what they cost. No ads, no timers."
+  ogImage="/og/default.png"
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Nattskift Games',
+    url: 'https://nattskift.games',
+    logo: 'https://nattskift.games/icon-512.png',
+    description:
+      'One-person game studio in Los Angeles making iOS games with no ads, no energy timers, and no dark patterns.',
+    foundingDate: '2024',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Los Angeles',
+      addressRegion: 'CA',
+      addressCountry: 'US',
+    },
+    sameAs: ['https://bsky.app/profile/nattskift.games'],
+  }}
 >
   {/* 1 — Hero. One flat royal block as the only mass of color. */}
   <section class="section-pad">

@@ -16,7 +16,11 @@ const g = game.data;
 const mailto = `mailto:hello@nattskift.games?subject=${encodeURIComponent(`${g.title} support`)}`;
 ---
 
-<Base title={g.seo.supportTitle} description={g.seo.supportDescription}>
+<Base
+  title={g.seo.supportTitle}
+  description={g.seo.supportDescription}
+  ogImage={`/og/${game.id}-support.png`}
+>
   <section class="section-pad">
     <div class="mx-auto max-w-6xl px-6">
       <h1 class="type-page-title">{g.title} support</h1>

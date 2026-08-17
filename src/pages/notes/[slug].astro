@@ -14,7 +14,12 @@ const { note } = Astro.props;
 const { Content } = await render(note);
 ---
 
-<Base title={`${note.data.title} - Nattskift Games`} description={note.data.description}>
+<Base
+  title={`${note.data.title} - Nattskift Games`}
+  description={note.data.description}
+  ogImage="/og/notes.png"
+  ogType="article"
+>
   <article class="section-pad">
     <div class="mx-auto max-w-6xl px-6">
       <h1 class="type-page-title">{note.data.title}</h1>

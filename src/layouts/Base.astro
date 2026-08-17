@@ -7,8 +7,11 @@ import Seo from '../components/Seo.astro';
 interface Props {
   title: string;
   description: string;
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  jsonLd?: Record<string, unknown>;
 }
-const { title, description } = Astro.props;
+const { title, description, ogImage, ogType, jsonLd } = Astro.props;
 ---
 
 <!doctype html>
@@ -32,7 +35,13 @@ const { title, description } = Astro.props;
       type="font/woff2"
       crossorigin
     />
-    <Seo title={title} description={description} />
+    <Seo
+      title={title}
+      description={description}
+      ogImage={ogImage}
+      ogType={ogType}
+      jsonLd={jsonLd}
+    />
     <slot name="head" />
   </head>
   <body>

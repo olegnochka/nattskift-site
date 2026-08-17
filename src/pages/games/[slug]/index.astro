@@ -29,7 +29,33 @@ const factRows: Array<[string, string]> = [
 
 ---
 
-<Base title={g.seo.title} description={g.seo.description}>
+<Base
+  title={g.seo.title}
+  description={g.seo.description}
+  ogImage={`/og/${game.id}.png`}
+  jsonLd={{
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: g.title,
+    operatingSystem: 'iOS',
+    applicationCategory: 'GameApplication',
+    description: g.seo.description,
+    url: `https://nattskift.games/games/${game.id}`,
+    image: `https://nattskift.games/og/${game.id}.png`,
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    author: {
+      '@type': 'Organization',
+      name: 'Nattskift Games',
+      url: 'https://nattskift.games',
+    },
+    datePublished: g.facts.releaseDate,
+    softwareVersion: g.latestUpdate.version,
+  }}
+>
   <meta slot="head" name="apple-itunes-app" content={`app-id=${g.appStoreId}`} />
 
   {/* 1 — Hero: full-bleed key art, then the essentials. */}
