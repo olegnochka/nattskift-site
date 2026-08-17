@@ -16,6 +16,8 @@ interface Props {
 const { game } = Astro.props;
 const g = game.data;
 
+const site = Astro.site!.origin;
+
 const factRows: Array<[string, string]> = [
   ['Platform', g.facts.platform],
   ['Minimum iOS', g.facts.minimumOS],
@@ -40,8 +42,8 @@ const factRows: Array<[string, string]> = [
     operatingSystem: 'iOS',
     applicationCategory: 'GameApplication',
     description: g.seo.description,
-    url: `https://nattskift.games/games/${game.id}`,
-    image: `https://nattskift.games/og/${game.id}.png`,
+    url: `${site}/games/${game.id}`,
+    image: `${site}/og/${game.id}.png`,
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -50,7 +52,7 @@ const factRows: Array<[string, string]> = [
     author: {
       '@type': 'Organization',
       name: 'Nattskift Games',
-      url: 'https://nattskift.games',
+      url: site,
     },
     datePublished: g.facts.releaseDate,
     softwareVersion: g.latestUpdate.version,

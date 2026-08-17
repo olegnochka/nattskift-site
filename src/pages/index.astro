@@ -11,6 +11,7 @@ const notes = (await getCollection('notes')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
 const latestNote = notes[0];
+const site = Astro.site!.origin;
 
 const promises = [
   {
@@ -36,8 +37,8 @@ const promises = [
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Nattskift Games',
-    url: 'https://nattskift.games',
-    logo: 'https://nattskift.games/icon-512.png',
+    url: site,
+    logo: `${site}/icon-512.png`,
     description:
       'One-person game studio in Los Angeles making iOS games with no ads, no energy timers, and no dark patterns.',
     foundingDate: '2024',
