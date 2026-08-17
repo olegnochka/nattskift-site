@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0B0E12"/>
+  <!-- two phones: the fake game full of junk, the real one clean -->
+  <rect x="180" y="120" width="180" height="360" rx="24" fill="#16131F" stroke="#201B2E" stroke-width="3"/>
+  <rect x="200" y="150" width="140" height="40" rx="6" fill="#E5484D"/>
+  <rect x="200" y="200" width="140" height="24" rx="6" fill="#201B2E"/>
+  <rect x="200" y="234" width="140" height="24" rx="6" fill="#201B2E"/>
+  <rect x="200" y="410" width="140" height="40" rx="6" fill="#E5484D"/>
+  <circle cx="330" cy="140" r="14" fill="#FFB74A"/>
+  <rect x="440" y="120" width="180" height="360" rx="24" fill="#16131F" stroke="#201B2E" stroke-width="3"/>
+  <rect x="460" y="150" width="140" height="300" rx="8" fill="#0B0E12"/>
+  <polygon points="530,270 510,300 550,300" fill="#FFB74A"/>
+</svg>

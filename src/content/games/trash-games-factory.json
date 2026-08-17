@@ -1,0 +1,154 @@
+{
+  "title": "Trash Games Factory",
+  "order": 2,
+  "hook": "Ship garbage. Get rich. Feel nothing.",
+  "pitch": "You run a mobile game studio with no ideas and no shame. You clone hits, rename them, ship them broken, and watch the line go up. Hire cynics, buy awards, settle lawsuits quietly. It plays as satire right up until it starts feeling like a documentary, which happens fast.",
+  "tags": {
+    "genre": "Satirical idle",
+    "platform": "iOS",
+    "price": "Free"
+  },
+  "appStoreId": "0000000000",
+  "keyArt": {
+    "src": "./art/trash-games-factory-key.svg",
+    "alt": "A factory floor at 3 a.m.: a conveyor belt of identical purple game boxes with one-star stickers, a revenue chart climbing on the wall."
+  },
+  "trailer": {
+    "poster": "./art/trash-games-factory-key.svg",
+    "posterAlt": "Trailer poster: the shovelware conveyor from the key art.",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/PLACEHOLDER"
+  },
+  "pillars": [
+    {
+      "title": "Ship faster than taste",
+      "body": "The loop is simple: clone, rename, ship, repeat. Quality is a slider, and the game is honest about which direction the money is in.",
+      "image": "./art/tgf-pillar-ship.svg",
+      "alt": "A conveyor belt of four identical game boxes heading toward a big red button."
+    },
+    {
+      "title": "The line goes up",
+      "body": "Revenue climbs no matter what you ship. A second, quieter line tracks what it costs, and the game never confuses the two for you.",
+      "image": "./art/tgf-pillar-numbers.svg",
+      "alt": "A chart with a solid revenue line rising while a faint dotted line falls."
+    },
+    {
+      "title": "The joke stays outside the app",
+      "body": "Your fake games are full of popups, timers, and gacha. The real one you are holding has none. That gap is the whole point.",
+      "image": "./art/tgf-pillar-mirror.svg",
+      "alt": "Two phones side by side: one crowded with red banner ads, one clean with a single play button."
+    }
+  ],
+  "screenshots": [
+    { "src": "./art/tgf-shot-1.svg", "alt": "The studio floor earning $41,208 a day, four desks, and one oversized red SHIP IT button." },
+    { "src": "./art/tgf-shot-2.svg", "alt": "The catalog: three cloned games averaging 1.1 stars, each earning six figures. A caption notes the correlation." },
+    { "src": "./art/tgf-shot-3.svg", "alt": "Quarterly numbers: revenue up 480 percent, employee morale listed as 'see revenue', and an option to acquire a smaller studio." },
+    { "src": "./art/tgf-shot-4.svg", "alt": "The design screen: a popup-frequency slider at maximum, a fun slider near zero, and a note that these sliders don't exist out here." },
+    { "src": "./art/tgf-shot-5.svg", "alt": "The hiring screen: a burned-out AAA veteran, a growth hacker, and an idealist who keeps asking if the game is good." },
+    { "src": "./art/tgf-shot-6.svg", "alt": "A trophy shelf holding 'Most Downloaded Game Nobody Finished' and 'Fastest Refund Record, three years running'." }
+  ],
+  "deal": {
+    "free": "The whole game. Every mechanic, every ending, every terrible fake game your factory ships.",
+    "paid": "One optional $2.99 purchase: the Executive Desk Toy. It turns your in-game stapler gold. It does nothing else, and the store page says so.",
+    "costs": "$2.99, once, if you feel like tipping. The price is on the button in dollars.",
+    "never": [
+      "No real ads. The fake ones inside the satire stay inside the satire.",
+      "No energy timers, even though the game is about the people who invented them.",
+      "No loot boxes, no pity timers, no 'limited' offers on a loop."
+    ]
+  },
+  "facts": {
+    "platform": "iPhone",
+    "minimumOS": "iOS 16.0",
+    "size": "96 MB",
+    "languages": "English",
+    "releaseDate": "2025-03-15",
+    "price": "Free / $2.99 optional desk toy",
+    "engine": "Swift + SpriteKit",
+    "developer": "Nattskift Games (one person)"
+  },
+  "latestUpdate": {
+    "version": "2.1.0",
+    "date": "2026-08-02",
+    "changes": [
+      "Added the Legal Department wing, which exists to make problems disappear.",
+      "The fake app store now writes fake five-star reviews with fake typos.",
+      "Fixed the gold stapler rendering as merely brass on older devices."
+    ]
+  },
+  "support": {
+    "responseTime": "Replies usually within two days. One person answers these, and that person also ships the updates.",
+    "faq": [
+      {
+        "q": "I bought the Executive Desk Toy and my stapler is still gray.",
+        "a": "Open Settings and tap Restore Purchases. If the stapler stays gray after that, email with your Apple receipt — the gold arrives manually, with an apology."
+      },
+      {
+        "q": "How do I restore purchases on a new device?",
+        "a": "Install the game, sign in with the same Apple account, then Settings, Restore Purchases. There is no studio account and no password to remember; Apple handles all of it."
+      },
+      {
+        "q": "Does my factory survive a new phone?",
+        "a": "Yes, through your own iCloud. Enable iCloud for Trash Games Factory on both devices and your empire, such as it is, follows you. The studio never sees your save."
+      },
+      {
+        "q": "My save disappeared.",
+        "a": "Check that iCloud is on for the app in iOS Settings under your name. If it was ever synced, it usually comes back on next launch. If not, email what happened and when, and you will get a straight answer about recoverability."
+      },
+      {
+        "q": "How do I report a bug?",
+        "a": "Email hello@nattskift.games with the subject 'TGF bug'. What you did, what you expected, what happened. If a fake game inside the game is broken in a way that looks intentional, it might be — ask anyway."
+      }
+    ]
+  },
+  "privacy": {
+    "updated": "2026-06-01",
+    "summary": [
+      {
+        "what": "Purchase receipt",
+        "why": "To keep your stapler gold across installs",
+        "whoSees": "Apple processes it; the studio sees an anonymous receipt",
+        "howToDelete": "Managed by Apple with your Apple account"
+      },
+      {
+        "what": "Save data",
+        "why": "So the factory survives a new phone",
+        "whoSees": "Only you, in your own iCloud",
+        "howToDelete": "Delete the app's iCloud data in iOS Settings"
+      },
+      {
+        "what": "Crash reports",
+        "why": "To fix crashes",
+        "whoSees": "Apple's opt-in crash sharing; no third-party SDK",
+        "howToDelete": "Controlled by your iOS analytics settings"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What this game collects",
+        "body": "A game that satirizes data-hungry mobile studios would look pretty silly harvesting your data. So it doesn't. No accounts, no analytics SDK, no ad SDK, no studio server. The fictional executives inside the game would call this a missed opportunity."
+      },
+      {
+        "heading": "Purchases",
+        "body": "The single optional purchase is processed by Apple. The studio receives an anonymized receipt to honor restores. Payment details never reach the studio."
+      },
+      {
+        "heading": "Crash data",
+        "body": "If you share analytics with developers in iOS settings, Apple forwards anonymized crash logs — stack traces, not personal data. They are read by the one person who can fix them."
+      },
+      {
+        "heading": "Your rights and how to reach a human",
+        "body": "There is very little to request or delete, but you are welcome to ask what exists. Email hello@nattskift.games with the subject 'Data request'. The reply comes from the developer, not a department."
+      }
+    ]
+  },
+  "press": {
+    "blurb": "Trash Games Factory is a satirical idle game for iPhone where you run a shovelware studio: clone hits, ship them broken, watch the line go up. The satire stays inside the app — the real game has no ads and no timers. Made by one person in Los Angeles.",
+    "facts": [
+      { "label": "Developer", "value": "Nattskift Games, Los Angeles" },
+      { "label": "Release", "value": "March 15, 2025" },
+      { "label": "Platform", "value": "iPhone, iOS 16+" },
+      { "label": "Price", "value": "Free, one optional $2.99 cosmetic" },
+      { "label": "Engine", "value": "Swift + SpriteKit" }
+    ]
+  }
+}

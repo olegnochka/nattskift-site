@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <!-- Placeholder key art: night ridge, one campfire. Flat fills only. -->
+  <rect width="1600" height="900" fill="#0B0E12"/>
+  <!-- stars -->
+  <g fill="#ECEFF3">
+    <circle cx="140" cy="120" r="2"/><circle cx="380" cy="80" r="1.5"/>
+    <circle cx="620" cy="150" r="2"/><circle cx="900" cy="70" r="1.5"/>
+    <circle cx="1130" cy="130" r="2"/><circle cx="1380" cy="90" r="1.5"/>
+    <circle cx="1500" cy="200" r="2"/><circle cx="240" cy="240" r="1.5"/>
+    <circle cx="760" cy="210" r="1.5"/><circle cx="1260" cy="250" r="1.5"/>
+  </g>
+  <!-- moon -->
+  <circle cx="1280" cy="170" r="56" fill="#9E82D4"/>
+  <circle cx="1302" cy="152" r="52" fill="#0B0E12"/>
+  <!-- far ridge -->
+  <polygon fill="#201B2E" points="0,540 220,420 420,500 640,380 860,480 1100,360 1330,470 1600,400 1600,900 0,900"/>
+  <!-- near ridge -->
+  <polygon fill="#16131F" points="0,650 260,560 480,630 760,540 1040,640 1320,560 1600,630 1600,900 0,900"/>
+  <!-- pine silhouettes -->
+  <g fill="#0B0E12">
+    <polygon points="180,660 210,570 240,660"/>
+    <polygon points="230,672 265,565 300,672"/>
+    <polygon points="1330,650 1362,555 1394,650"/>
+    <polygon points="1390,665 1420,580 1450,665"/>
+  </g>
+  <!-- foreground ground -->
+  <polygon fill="#0B0E12" points="0,780 400,740 800,770 1200,730 1600,760 1600,900 0,900"/>
+  <!-- fire glow, flat cone -->
+  <polygon fill="#FFB74A" opacity="0.12" points="800,758 700,900 900,900"/>
+  <!-- campfire -->
+  <polygon fill="#FFB74A" points="800,732 788,758 812,758"/>
+  <rect x="782" y="758" width="36" height="5" rx="2" fill="#201B2E"/>
+</svg>

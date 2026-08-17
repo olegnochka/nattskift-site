@@ -1,18 +1,145 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import LogoLockup from '../components/LogoLockup.astro';
+import GameCard from '../components/GameCard.astro';
+
+const games = (await getCollection('games')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const notes = (await getCollection('notes')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const latestNote = notes[0];
+
+const promises = [
+  {
+    title: 'No ads',
+    body: 'Not one, not ever, not even rewarded video.',
+  },
+  {
+    title: 'No energy timers',
+    body: 'The game never stops you in order to sell you time.',
+  },
+  {
+    title: 'No dark patterns',
+    body: 'Every price is shown in real money before you commit.',
+  },
+];
 ---
 
 <Base
   title="Nattskift Games - iOS games made on the night shift"
-  description="Nattskift Games is one person in Los Angeles making iOS games that are finished when they ship, free to start, and honest about what they cost."
+  description="Nattskift Games is one person in Los Angeles making iOS games that are finished when they ship, free to start, and honest about what they cost. No ads, no timers."
 >
+  {/* 1 — Hero. One flat royal block as the only mass of color. */}
   <section class="section-pad">
+    <div class="mx-auto grid max-w-6xl items-center gap-16 px-6 lg:grid-cols-[1fr_300px]">
+      <div data-reveal>
+        <LogoLockup size={96} />
+        <h1 class="type-hero mt-10">Made on the night shift.</h1>
+        <p class="type-lead measure mt-6 text-muted">
+          One person in Los Angeles building iOS games that are finished when
+          they ship, free to start, and honest about what they cost.
+        </p>
+        <div class="mt-10 flex flex-wrap items-center gap-6">
+          <a href="/games" class="btn-primary">See the games</a>
+          <a href="/about#how-the-money-works" class="link-quiet">
+            How this studio makes money
+          </a>
+        </div>
+      </div>
+      {/* The royal mass. One window lit — somebody's still working. */}
+      <div
+        class="hidden aspect-[3/4] bg-royal lg:block"
+        aria-hidden="true"
+        data-reveal
+        style="--reveal-index: 1"
+      >
+        <div class="relative h-full w-full">
+          <div class="absolute right-10 top-12 h-3 w-3 bg-sodium"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* 2 — Slate. */}
+  <section class="border-t border-hairline section-pad">
     <div class="mx-auto max-w-6xl px-6">
-      <h1 class="type-hero">Made on the night shift.</h1>
-      <p class="type-lead measure mt-6 text-muted">
-        Homepage lands in the next phase. This page exists so the scaffold
-        builds end to end.
+      <h2 class="type-label text-muted" data-reveal>The games</h2>
+      <div class="mt-10 grid gap-8 md:grid-cols-2">
+        {
+          games.map((game, i) => (
+            <div data-reveal style={`--reveal-index: ${i + 1}`}>
+              <GameCard game={game} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  {/* 3 — Promise strip. */}
+  <section class="border-t border-hairline section-pad" aria-labelledby="promises">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 id="promises" class="sr-only">What these games never do</h2>
+      <div class="grid gap-12 md:grid-cols-3 md:gap-8">
+        {
+          promises.map((promise, i) => (
+            <div data-reveal style={`--reveal-index: ${i}`}>
+              <h3 class="type-subsection text-text">{promise.title}</h3>
+              <p class="mt-3 max-w-[36ch] text-muted">{promise.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  {/* 4 — Who made this. */}
+  <section class="border-t border-hairline section-pad">
+    <div class="mx-auto max-w-6xl px-6" data-reveal>
+      <h2 class="type-label text-muted">Who made this</h2>
+      <p class="type-lead measure mt-6">
+        Every game here is designed, built, and shipped by one person in Los
+        Angeles. There is no team page because there is no team.
+      </p>
+      <p class="mt-6">
+        <a href="/about" class="link-quiet">More about the studio</a>
       </p>
     </div>
   </section>
+
+  {/* 5 — Latest note. Renders nothing while the devlog is empty. */}
+  {
+    latestNote && (
+      <section class="border-t border-hairline section-pad">
+        <div class="mx-auto max-w-6xl px-6" data-reveal>
+          <h2 class="type-label text-muted">Latest note</h2>
+          <article class="mt-6">
+            <h3 class="type-subsection">
+              <a href={`/notes/${latestNote.id}`} class="text-text">
+                {latestNote.data.title}
+              </a>
+            </h3>
+            <p class="type-caption mt-2 text-muted">
+              <time datetime={latestNote.data.date.toISOString().slice(0, 10)}>
+                {latestNote.data.date.toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </time>
+            </p>
+            <p class="measure mt-4 text-muted">{latestNote.data.description}</p>
+            <p class="mt-4">
+              <a href={`/notes/${latestNote.id}`} class="link-quiet">
+                Read the note
+              </a>
+            </p>
+          </article>
+        </div>
+      </section>
+    )
+  }
 </Base>

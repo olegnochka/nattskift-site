@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0B0E12"/>
+  <!-- a full health/warmth bar with no padlock and no gem icon -->
+  <rect x="160" y="250" width="480" height="36" rx="8" fill="#16131F" stroke="#201B2E" stroke-width="2"/>
+  <rect x="166" y="256" width="330" height="24" rx="5" fill="#FFB74A"/>
+  <!-- struck-through price gem, flat -->
+  <g transform="translate(400 400)">
+    <polygon points="0,-36 32,-8 0,40 -32,-8" fill="#201B2E"/>
+    <line x1="-48" y1="44" x2="48" y2="-44" stroke="#E5484D" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

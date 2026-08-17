@@ -9,7 +9,8 @@ import { glob } from 'astro/loaders';
  */
 const games = defineCollection({
   loader: glob({ pattern: '*.json', base: './src/content/games' }),
-  schema: z.object({
+  schema: ({ image }) =>
+    z.object({
     title: z.string(),
     /** Sort order on /games and the homepage slate. */
     order: z.number(),
@@ -24,11 +25,11 @@ const games = defineCollection({
     }),
     /** Apple App Store numeric id. Placeholder until the app is live. */
     appStoreId: z.string(),
-    keyArt: z.object({ src: z.string(), alt: z.string() }),
+    keyArt: z.object({ src: image(), alt: z.string() }),
     trailer: z
       .object({
         /** Poster shown until click; nothing third-party loads before that. */
-        poster: z.string(),
+        poster: image(),
         posterAlt: z.string(),
         /** youtube-nocookie embed URL. */
         embedUrl: z.string(),
@@ -39,13 +40,13 @@ const games = defineCollection({
         z.object({
           title: z.string(),
           body: z.string(),
-          image: z.string(),
+          image: image(),
           alt: z.string(),
         }),
       )
       .length(3),
     screenshots: z
-      .array(z.object({ src: z.string(), alt: z.string() }))
+      .array(z.object({ src: image(), alt: z.string() }))
       .min(6)
       .max(8),
     /** The explicit monetization statement. Rendered on royal fill. */

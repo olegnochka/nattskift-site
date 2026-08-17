@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <rect width="390" height="844" fill="#0B0E12"/>
+  <text x="24" y="60" font-family="sans-serif" font-size="20" fill="#ECEFF3">Design a hit</text>
+  <rect x="24" y="100" width="342" height="120" rx="12" fill="#16131F"/>
+  <text x="44" y="140" font-family="sans-serif" font-size="14" fill="#ECEFF3">Popup frequency</text>
+  <rect x="44" y="160" width="280" height="10" rx="5" fill="#201B2E"/>
+  <rect x="44" y="160" width="252" height="10" rx="5" fill="#E5484D"/>
+  <circle cx="296" cy="165" r="12" fill="#ECEFF3"/>
+  <rect x="24" y="240" width="342" height="120" rx="12" fill="#16131F"/>
+  <text x="44" y="280" font-family="sans-serif" font-size="14" fill="#ECEFF3">Fun</text>
+  <rect x="44" y="300" width="280" height="10" rx="5" fill="#201B2E"/>
+  <rect x="44" y="300" width="42" height="10" rx="5" fill="#9E82D4"/>
+  <circle cx="86" cy="305" r="12" fill="#ECEFF3"/>
+  <rect x="24" y="400" width="342" height="88" rx="12" fill="#16131F"/>
+  <text x="44" y="436" font-family="sans-serif" font-size="13" fill="#9AA4B2">Note from the dev of THIS game:</text>
+  <text x="44" y="460" font-family="sans-serif" font-size="13" fill="#ECEFF3">these sliders don't exist out here.</text>
+</svg>

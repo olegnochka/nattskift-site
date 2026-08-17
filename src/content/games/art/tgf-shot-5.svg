@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <rect width="390" height="844" fill="#0B0E12"/>
+  <text x="24" y="60" font-family="sans-serif" font-size="20" fill="#ECEFF3">Hiring</text>
+  <g>
+    <rect x="24" y="100" width="342" height="96" rx="12" fill="#16131F"/>
+    <circle cx="64" cy="148" r="24" fill="#201B2E"/>
+    <text x="108" y="140" font-family="sans-serif" font-size="15" fill="#ECEFF3">Burned-out AAA veteran</text>
+    <text x="108" y="164" font-family="sans-serif" font-size="12" fill="#9AA4B2">+40% output, -1 soul</text>
+  </g>
+  <g>
+    <rect x="24" y="212" width="342" height="96" rx="12" fill="#16131F"/>
+    <circle cx="64" cy="260" r="24" fill="#201B2E"/>
+    <text x="108" y="252" font-family="sans-serif" font-size="15" fill="#ECEFF3">Growth hacker</text>
+    <text x="108" y="276" font-family="sans-serif" font-size="12" fill="#9AA4B2">Installs +200%, reviews unreadable</text>
+  </g>
+  <g>
+    <rect x="24" y="324" width="342" height="96" rx="12" fill="#16131F"/>
+    <circle cx="64" cy="372" r="24" fill="#201B2E"/>
+    <text x="108" y="364" font-family="sans-serif" font-size="15" fill="#ECEFF3">Idealist, fresh out of school</text>
+    <text x="108" y="388" font-family="sans-serif" font-size="12" fill="#9AA4B2">Keeps saying "but is it good?"</text>
+  </g>
+</svg>

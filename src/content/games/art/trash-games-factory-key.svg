@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <!-- Placeholder key art: the shovelware line, running all night. Flat fills. -->
+  <rect width="1600" height="900" fill="#0B0E12"/>
+  <!-- back wall panel -->
+  <rect x="0" y="0" width="1600" height="620" fill="#16131F"/>
+  <!-- window: night outside -->
+  <rect x="1180" y="90" width="300" height="200" rx="8" fill="#0B0E12"/>
+  <circle cx="1400" cy="150" r="24" fill="#9E82D4"/>
+  <circle cx="1410" cy="142" r="22" fill="#0B0E12"/>
+  <!-- wall clock at 3am -->
+  <circle cx="260" cy="170" r="54" fill="#201B2E"/>
+  <circle cx="260" cy="170" r="4" fill="#ECEFF3"/>
+  <rect x="258" y="130" width="4" height="42" rx="2" fill="#ECEFF3" transform="rotate(90 260 170)"/>
+  <rect x="258" y="136" width="4" height="36" rx="2" fill="#9AA4B2" transform="rotate(180 260 172)"/>
+  <!-- KPI board -->
+  <rect x="600" y="110" width="420" height="220" rx="8" fill="#201B2E"/>
+  <polyline points="640,290 730,260 820,270 910,190 1000,150" fill="none" stroke="#FFB74A" stroke-width="6"/>
+  <!-- warning lamp -->
+  <rect x="60" y="330" width="18" height="60" fill="#201B2E"/>
+  <circle cx="69" cy="322" r="14" fill="#FFB74A"/>
+  <!-- conveyor -->
+  <rect x="0" y="620" width="1600" height="70" fill="#201B2E"/>
+  <g fill="#0B0E12">
+    <circle cx="120" cy="655" r="18"/><circle cx="360" cy="655" r="18"/>
+    <circle cx="600" cy="655" r="18"/><circle cx="840" cy="655" r="18"/>
+    <circle cx="1080" cy="655" r="18"/><circle cx="1320" cy="655" r="18"/>
+    <circle cx="1560" cy="655" r="18"/>
+  </g>
+  <!-- identical game boxes, one tipped over -->
+  <g>
+    <rect x="180" y="500" width="120" height="120" rx="6" fill="#6B3FA0"/>
+    <rect x="440" y="500" width="120" height="120" rx="6" fill="#6B3FA0"/>
+    <rect x="700" y="500" width="120" height="120" rx="6" fill="#6B3FA0"/>
+    <rect x="960" y="500" width="120" height="120" rx="6" fill="#6B3FA0"/>
+    <rect x="1240" y="524" width="120" height="120" rx="6" fill="#6B3FA0" transform="rotate(14 1300 584)"/>
+  </g>
+  <!-- one-star stickers -->
+  <g fill="#ECEFF3">
+    <polygon points="240,540 246,556 263,556 249,566 254,582 240,572 226,582 231,566 217,556 234,556"/>
+    <polygon points="500,540 506,556 523,556 509,566 514,582 500,572 486,582 491,566 477,556 494,556"/>
+    <polygon points="760,540 766,556 783,556 769,566 774,582 760,572 746,582 751,566 737,556 754,556"/>
+    <polygon points="1020,540 1026,556 1043,556 1029,566 1034,582 1020,572 1006,582 1011,566 997,556 1014,556"/>
+  </g>
+  <!-- floor -->
+  <rect x="0" y="690" width="1600" height="210" fill="#0B0E12"/>
+</svg>

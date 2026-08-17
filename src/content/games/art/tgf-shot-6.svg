@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <rect width="390" height="844" fill="#0B0E12"/>
+  <text x="24" y="60" font-family="sans-serif" font-size="20" fill="#ECEFF3">Trophy shelf</text>
+  <rect x="24" y="200" width="342" height="10" rx="4" fill="#201B2E"/>
+  <rect x="24" y="400" width="342" height="10" rx="4" fill="#201B2E"/>
+  <g>
+    <rect x="60" y="120" width="60" height="80" rx="6" fill="#FFB74A"/>
+    <rect x="180" y="140" width="50" height="60" rx="6" fill="#201B2E"/>
+    <rect x="280" y="130" width="56" height="70" rx="6" fill="#201B2E"/>
+  </g>
+  <text x="48" y="250" font-family="sans-serif" font-size="12" fill="#9AA4B2">"Most Downloaded Game Nobody Finished"</text>
+  <g>
+    <rect x="90" y="330" width="54" height="70" rx="6" fill="#201B2E"/>
+    <rect x="220" y="340" width="60" height="60" rx="6" fill="#201B2E"/>
+  </g>
+  <text x="48" y="450" font-family="sans-serif" font-size="12" fill="#9AA4B2">"Fastest Refund Record, three years running"</text>
+</svg>

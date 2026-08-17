@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <rect width="390" height="844" fill="#0B0E12"/>
+  <text x="24" y="60" font-family="sans-serif" font-size="20" fill="#ECEFF3">Your catalog</text>
+  <g>
+    <rect x="24" y="100" width="342" height="88" rx="12" fill="#16131F"/>
+    <rect x="40" y="116" width="56" height="56" rx="8" fill="#6B3FA0"/>
+    <text x="112" y="140" font-family="sans-serif" font-size="15" fill="#ECEFF3">Merge Dragon Farm 3</text>
+    <text x="112" y="164" font-family="sans-serif" font-size="12" fill="#9AA4B2">1.1 stars - $180k</text>
+  </g>
+  <g>
+    <rect x="24" y="204" width="342" height="88" rx="12" fill="#16131F"/>
+    <rect x="40" y="220" width="56" height="56" rx="8" fill="#6B3FA0"/>
+    <text x="112" y="244" font-family="sans-serif" font-size="15" fill="#ECEFF3">Idle Idle Clicker Idle</text>
+    <text x="112" y="268" font-family="sans-serif" font-size="12" fill="#9AA4B2">1.4 stars - $310k</text>
+  </g>
+  <g>
+    <rect x="24" y="308" width="342" height="88" rx="12" fill="#16131F"/>
+    <rect x="40" y="324" width="56" height="56" rx="8" fill="#6B3FA0"/>
+    <text x="112" y="348" font-family="sans-serif" font-size="15" fill="#ECEFF3">Ball Sort Except Worse</text>
+    <text x="112" y="372" font-family="sans-serif" font-size="12" fill="#9AA4B2">0.9 stars - $520k</text>
+  </g>
+  <text x="24" y="450" font-family="sans-serif" font-size="12" fill="#9AA4B2">Lower stars, higher revenue. Curious.</text>
+</svg>

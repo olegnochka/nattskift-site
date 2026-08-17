@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <rect width="390" height="844" fill="#0B0E12"/>
+  <!-- HUD: night counter + warmth -->
+  <rect x="20" y="24" width="130" height="34" rx="8" fill="#16131F"/>
+  <text x="36" y="46" font-family="sans-serif" font-size="15" fill="#ECEFF3">NIGHT 7</text>
+  <rect x="240" y="24" width="130" height="34" rx="8" fill="#16131F"/>
+  <rect x="248" y="34" width="80" height="14" rx="4" fill="#FFB74A"/>
+  <!-- scene: ridge + fire -->
+  <g fill="#ECEFF3"><circle cx="70" cy="140" r="1.6"/><circle cx="200" cy="110" r="1.6"/><circle cx="320" cy="160" r="1.6"/></g>
+  <polygon fill="#201B2E" points="0,420 120,340 230,400 330,330 390,380 390,600 0,600"/>
+  <polygon fill="#16131F" points="0,520 140,460 260,510 390,470 390,640 0,640"/>
+  <polygon fill="#FFB74A" opacity="0.12" points="195,560 130,700 260,700"/>
+  <polygon fill="#FFB74A" points="195,540 183,566 207,566"/>
+  <!-- hotbar -->
+  <g fill="#16131F" stroke="#201B2E" stroke-width="2">
+    <rect x="30" y="740" width="70" height="70" rx="10"/>
+    <rect x="115" y="740" width="70" height="70" rx="10"/>
+    <rect x="200" y="740" width="70" height="70" rx="10"/>
+    <rect x="285" y="740" width="70" height="70" rx="10"/>
+  </g>
+  <polygon points="60,758 75,758 80,772 55,772" fill="#ECEFF3"/>
+  <rect x="143" y="756" width="12" height="40" rx="3" fill="#9AA4B2"/>
+</svg>

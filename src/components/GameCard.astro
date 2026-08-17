@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  game: CollectionEntry<'games'>;
+}
+const { game } = Astro.props;
+const { title, hook, tags, keyArt } = game.data;
+---
+
+<a href={`/games/${game.id}`} class="card group block overflow-hidden">
+  <Image
+    src={keyArt.src}
+    alt={keyArt.alt}
+    widths={[640, 960, 1280]}
+    sizes="(min-width: 768px) 50vw, 100vw"
+    class="aspect-video w-full object-cover"
+  />
+  <div class="p-6 md:p-8">
+    <h3 class="type-subsection text-text">{title}</h3>
+    <p class="mt-2 text-muted">{hook}</p>
+    <ul class="mt-6 flex flex-wrap gap-2" aria-label="Genre, platform, and price">
+      <li class="tag">{tags.genre}</li>
+      <li class="tag">{tags.platform}</li>
+      <li class="tag">{tags.price}</li>
+    </ul>
+  </div>
+</a>

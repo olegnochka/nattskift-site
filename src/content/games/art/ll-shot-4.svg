@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <rect width="390" height="844" fill="#0B0E12"/>
+  <!-- dawn: sun over the ridge, stats card -->
+  <circle cx="195" cy="300" r="44" fill="#FFB74A"/>
+  <polygon fill="#201B2E" points="0,360 130,290 260,350 390,280 390,844 0,844"/>
+  <polygon fill="#16131F" points="0,470 160,410 300,460 390,420 390,844 0,844"/>
+  <rect x="40" y="560" width="310" height="180" rx="12" fill="#16131F"/>
+  <text x="64" y="602" font-family="sans-serif" font-size="18" fill="#ECEFF3">You made it to day 8</text>
+  <text x="64" y="636" font-family="sans-serif" font-size="13" fill="#9AA4B2">Warmth held: 6 h 12 m</text>
+  <text x="64" y="662" font-family="sans-serif" font-size="13" fill="#9AA4B2">Wood burned: 14</text>
+  <text x="64" y="688" font-family="sans-serif" font-size="13" fill="#9AA4B2">Wolves heard, not seen: 3</text>
+</svg>

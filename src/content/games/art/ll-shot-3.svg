@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844">
+  <rect width="390" height="844" fill="#0B0E12"/>
+  <text x="24" y="60" font-family="sans-serif" font-size="20" fill="#ECEFF3">Ridge map</text>
+  <!-- contour shapes -->
+  <g fill="none" stroke="#201B2E" stroke-width="2">
+    <ellipse cx="200" cy="380" rx="150" ry="110"/>
+    <ellipse cx="200" cy="380" rx="110" ry="78"/>
+    <ellipse cx="200" cy="380" rx="70" ry="46"/>
+    <ellipse cx="90" cy="620" rx="90" ry="60"/>
+    <ellipse cx="90" cy="620" rx="55" ry="34"/>
+  </g>
+  <!-- river -->
+  <path d="M320 120 C 300 260 360 420 300 560 C 270 640 320 720 300 820" fill="none" stroke="#16131F" stroke-width="14"/>
+  <!-- camp marker -->
+  <circle cx="200" cy="380" r="9" fill="#FFB74A"/>
+  <!-- unexplored fog edge -->
+  <rect x="0" y="700" width="390" height="144" fill="#16131F" opacity="0.8"/>
+</svg>

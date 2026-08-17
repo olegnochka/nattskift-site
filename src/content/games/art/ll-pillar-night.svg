@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0B0E12"/>
+  <!-- day arc: sun path dipping under the horizon -->
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#201B2E" stroke-width="3"/>
+  <path d="M80 380 A 320 320 0 0 1 720 380" fill="none" stroke="#16131F" stroke-width="4"/>
+  <circle cx="640" cy="212" r="26" fill="#FFB74A"/>
+  <!-- night below the line -->
+  <g fill="#ECEFF3"><circle cx="160" cy="470" r="2"/><circle cx="330" cy="510" r="1.5"/><circle cx="560" cy="480" r="2"/><circle cx="680" cy="530" r="1.5"/></g>
+  <circle cx="240" cy="500" r="20" fill="#9E82D4"/>
+  <circle cx="249" cy="493" r="18" fill="#0B0E12"/>
+</svg>

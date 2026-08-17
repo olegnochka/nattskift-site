@@ -1,0 +1,155 @@
+{
+  "title": "Last Light",
+  "order": 1,
+  "hook": "Survive one more night.",
+  "pitch": "You wake on a cold ridge with a dead phone, a knife, and four hours of daylight. You gather, you build, you get the fire going before the light goes. The nights get longer. The wolves get closer. Every dawn you reach is one more than the ridge expected you to get.",
+  "tags": {
+    "genre": "Survival",
+    "platform": "iOS",
+    "price": "Free to start"
+  },
+  "appStoreId": "0000000000",
+  "keyArt": {
+    "src": "./art/last-light-key.svg",
+    "alt": "A night ridge under a crescent moon, layered mountain silhouettes, and a single small campfire burning in the foreground."
+  },
+  "trailer": {
+    "poster": "./art/last-light-key.svg",
+    "posterAlt": "Trailer poster: the night ridge and campfire from the key art.",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/PLACEHOLDER"
+  },
+  "pillars": [
+    {
+      "title": "The night is the clock",
+      "body": "Daylight is for gathering and building. Dark is for holding on. There is no pause between the two, and winter makes the dark half longer.",
+      "image": "./art/ll-pillar-night.svg",
+      "alt": "A sun arc dipping below a horizon line into a starfield with a crescent moon."
+    },
+    {
+      "title": "Craft with intent",
+      "body": "Six slots, not sixty. Everything you carry is something you chose over something else, and the fire does not care what you meant to bring.",
+      "image": "./art/ll-pillar-craft.svg",
+      "alt": "A small six-slot inventory grid holding an axe and a flint spark, with one slot empty."
+    },
+    {
+      "title": "Survival, played straight",
+      "body": "Your warmth bar refills by wood and shelter, not by watching an ad. Nothing in the game can be fixed with money, which is how survival works.",
+      "image": "./art/ll-pillar-honest.svg",
+      "alt": "A full warmth meter above a gem icon crossed out with a red line."
+    }
+  ],
+  "screenshots": [
+    { "src": "./art/ll-shot-1.svg", "alt": "Night seven. The HUD shows a warmth meter while a campfire holds back the dark below a mountain ridge." },
+    { "src": "./art/ll-shot-2.svg", "alt": "The crafting screen: an eight-slot inventory and a fire kit recipe asking for birch bark, flint, and dry grass." },
+    { "src": "./art/ll-shot-3.svg", "alt": "A hand-drawn contour map with a river, a camp marker, and unexplored fog at the south edge." },
+    { "src": "./art/ll-shot-4.svg", "alt": "Dawn stats card: you made it to day 8, warmth held six hours, three wolves heard but not seen." },
+    { "src": "./art/ll-shot-5.svg", "alt": "The shelter screen: a built lean-to with the next wall upgrade sketched as a dashed outline." },
+    { "src": "./art/ll-shot-6.svg", "alt": "Pairs of eyes at the treeline beyond the firelight, and a choice: feed the fire, or save the wood." }
+  ],
+  "deal": {
+    "free": "The first seven nights. Full mechanics, full difficulty, no feature cut down to sell it back to you.",
+    "paid": "One purchase unlocks every night after the seventh. That is the entire business model.",
+    "costs": "$6.99, once, shown in real money on the button before you tap it.",
+    "never": [
+      "No ads, not even the 'rewarded' kind.",
+      "No energy, stamina, or lives.",
+      "No consumables, currency packs, or season passes.",
+      "No notifications begging you to come back."
+    ]
+  },
+  "facts": {
+    "platform": "iPhone",
+    "minimumOS": "iOS 17.0",
+    "size": "182 MB",
+    "languages": "English (Norwegian planned)",
+    "releaseDate": "2025-11-06",
+    "price": "Free / $6.99 full unlock",
+    "engine": "Swift + SpriteKit",
+    "developer": "Nattskift Games (one person)"
+  },
+  "latestUpdate": {
+    "version": "1.3.2",
+    "date": "2026-07-28",
+    "changes": [
+      "Fixed a rare save corruption when quitting during the dawn transition.",
+      "Wolves now respect firelight radius honestly instead of cheating at the edge.",
+      "Cut 21 MB from the download by re-compressing audio nobody could tell apart."
+    ]
+  },
+  "support": {
+    "responseTime": "Replies usually within two days. One person answers these, between builds, so weekends can slip.",
+    "faq": [
+      {
+        "q": "I bought the full unlock but the game still stops at night seven.",
+        "a": "Open Settings from the title screen and tap Restore Purchases. The unlock is tied to your Apple account, not the device, so it needs one restore on a fresh install. If that fails, email with the receipt from Apple and it gets fixed manually."
+      },
+      {
+        "q": "How do I restore my purchase on a new phone?",
+        "a": "Install the game, sign in with the same Apple account, then Settings, Restore Purchases. No account with the studio exists, on purpose, so Apple is the only login you need."
+      },
+      {
+        "q": "Where is my save, and can I move it to a new device?",
+        "a": "Saves sync through your own iCloud. Turn on iCloud for Last Light in iOS Settings on both devices, open the game on the new one, and the ridge comes back. The studio never sees your save file."
+      },
+      {
+        "q": "I lost my save.",
+        "a": "First check iOS Settings, your name, iCloud, and confirm Last Light is toggled on. If the save existed before, it is almost always recoverable from iCloud. Email what happened, roughly when, and which iOS version, and expect an honest answer about whether it can come back."
+      },
+      {
+        "q": "How do I report a bug?",
+        "a": "Email hello@nattskift.games with the subject 'Last Light bug'. Say what you did, what you expected, and what happened instead. A screenshot or screen recording doubles the odds of a fast fix."
+      }
+    ]
+  },
+  "privacy": {
+    "updated": "2026-06-01",
+    "summary": [
+      {
+        "what": "Purchase receipt",
+        "why": "To unlock the full game and restore it later",
+        "whoSees": "Apple processes it; the studio sees an anonymous receipt",
+        "howToDelete": "Managed by Apple with your Apple account"
+      },
+      {
+        "what": "Save data",
+        "why": "So your run survives a new phone",
+        "whoSees": "Only you, in your own iCloud",
+        "howToDelete": "Delete the app's iCloud data in iOS Settings"
+      },
+      {
+        "what": "Crash reports",
+        "why": "To fix crashes",
+        "whoSees": "Apple's opt-in crash sharing; no third-party SDK",
+        "howToDelete": "Controlled by your iOS analytics settings"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What this game collects",
+        "body": "Almost nothing, and that is a design decision, not an accident. Last Light has no accounts, no analytics SDK, no advertising SDK, and no server run by the studio. The game runs on your phone and saves to your own iCloud, which the studio cannot read."
+      },
+      {
+        "heading": "Purchases",
+        "body": "The one in-app purchase is processed entirely by Apple. The studio receives an anonymized receipt used to unlock the game and to honor restores. The studio never sees your payment details, name, or address."
+      },
+      {
+        "heading": "Crash data",
+        "body": "If you have opted in to sharing analytics with developers in iOS settings, Apple forwards anonymized crash logs. They contain stack traces, not personal data, and they are read by one person, usually at night."
+      },
+      {
+        "heading": "Your rights and how to reach a human",
+        "body": "There is very little data to request or delete, but you can always ask what exists. Email hello@nattskift.games with the subject 'Data request' and you will hear back from the person who wrote both the game and this policy."
+      }
+    ]
+  },
+  "press": {
+    "blurb": "Last Light is a wilderness survival game for iPhone about the hours between dusk and dawn. Gather and build by daylight, hold the fire through the dark, and pay once if you want more than seven nights. No ads, no timers, made by one person in Los Angeles.",
+    "facts": [
+      { "label": "Developer", "value": "Nattskift Games, Los Angeles" },
+      { "label": "Release", "value": "November 6, 2025" },
+      { "label": "Platform", "value": "iPhone, iOS 17+" },
+      { "label": "Price", "value": "Free to start, $6.99 full unlock" },
+      { "label": "Engine", "value": "Swift + SpriteKit" }
+    ]
+  }
+}
