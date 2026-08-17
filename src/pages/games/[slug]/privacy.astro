@@ -1,0 +1,74 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const games = await getCollection('games');
+  return games.map((game) => ({ params: { slug: game.id }, props: { game } }));
+}
+
+interface Props {
+  game: CollectionEntry<'games'>;
+}
+const { game } = Astro.props;
+const g = game.data;
+---
+
+<Base title={g.seo.privacyTitle} description={g.seo.privacyDescription}>
+  <section class="section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h1 class="type-page-title">{g.title} privacy policy</h1>
+      <p class="type-micro mt-4 text-muted">
+        Last updated <time datetime={g.privacy.updated}>{g.privacy.updated}</time>
+      </p>
+
+      {/* Plain-language summary first. The full policy follows. */}
+      <h2 class="type-section mt-16">The short version</h2>
+      <div class="mt-8 overflow-x-auto">
+        <table class="w-full min-w-[640px] text-left">
+          <thead>
+            <tr class="border-b border-hairline">
+              <th scope="col" class="type-label py-3 pr-6 font-medium text-muted">What</th>
+              <th scope="col" class="type-label py-3 pr-6 font-medium text-muted">Why</th>
+              <th scope="col" class="type-label py-3 pr-6 font-medium text-muted">Who sees it</th>
+              <th scope="col" class="type-label py-3 font-medium text-muted">How to delete it</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              g.privacy.summary.map((row) => (
+                <tr class="border-b border-hairline align-top">
+                  <th scope="row" class="py-4 pr-6 font-medium text-text">{row.what}</th>
+                  <td class="py-4 pr-6 text-muted">{row.why}</td>
+                  <td class="py-4 pr-6 text-muted">{row.whoSees}</td>
+                  <td class="py-4 text-muted">{row.howToDelete}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-hairline section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="type-section">The full policy</h2>
+      <div class="mt-10 space-y-12">
+        {
+          g.privacy.sections.map((section) => (
+            <div>
+              <h3 class="type-subsection">{section.heading}</h3>
+              <p class="measure mt-4 text-muted">{section.body}</p>
+            </div>
+          ))
+        }
+      </div>
+      <p class="measure mt-16 border-t border-hairline pt-8 text-muted">
+        Data requests:
+        <a class="link-quiet" href={`mailto:hello@nattskift.games?subject=${encodeURIComponent('Data request - ' + g.title)}`}>
+          hello@nattskift.games</a>. You will hear back from the developer, not a form letter.
+      </p>
+    </div>
+  </section>
+</Base>

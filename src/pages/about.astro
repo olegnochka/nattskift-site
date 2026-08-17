@@ -1,0 +1,101 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="About - Nattskift Games"
+  description="Nattskift means night shift. One person in Los Angeles designs, builds, and ships every game here - and keeps a short public list of things the studio will never do."
+>
+  <section class="section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h1 class="type-page-title">About the studio</h1>
+      <div class="measure mt-10 space-y-5">
+        <p class="type-lead">
+          Nattskift means night shift. The studio is one person in Los
+          Angeles, working the hours after everything else is done - which
+          turns out to be a decent way to describe the whole approach.
+        </p>
+        <p class="text-muted">
+          The day job is ordinary software. The games happen after it: Swift,
+          SpriteKit, an iPhone on a cable, and whatever is left of the
+          evening. That schedule sets the constraints, and the constraints
+          set the design. Small scope. Systems over content. Nothing in a
+          game that one person can't maintain at eleven at night.
+        </p>
+        <p class="text-muted">
+          Two titles so far. A survival game about keeping a fire lit, and a
+          satire about the kind of studio this one refuses to become. They
+          look unrelated. They are not.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-hairline section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="type-section">Values, stated plainly</h2>
+      <ul class="mt-10 max-w-3xl space-y-6">
+        <li>
+          <p class="font-medium text-text">Finished when it ships.</p>
+          <p class="measure mt-1 text-muted">
+            A release is a release, not an open beta with a marketing budget.
+          </p>
+        </li>
+        <li>
+          <p class="font-medium text-text">The player is the customer.</p>
+          <p class="measure mt-1 text-muted">
+            Not the advertiser, not the acquisition funnel, not a spreadsheet
+            of whales.
+          </p>
+        </li>
+        <li>
+          <p class="font-medium text-text">Small on purpose.</p>
+          <p class="measure mt-1 text-muted">
+            One person means every decision has a name attached. All of them
+            are the same name, which keeps the excuses short.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how-the-money-works" class="border-t border-hairline section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="type-section">How the money works</h2>
+      <div class="measure mt-8 space-y-4 text-muted">
+        <p>
+          Every game is free to start, so you can find out whether you like
+          it without paying for the privilege. If you want more, there is one
+          purchase, priced in real money, described in plain words before you
+          tap. That's the model. There is no second, quieter model behind it.
+        </p>
+        <p>
+          The trade-off, named out loud: this earns less than ads and timers
+          would. The night shift doesn't run on that money anyway, so it can
+          afford to be picky about where the money comes from.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-hairline section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="type-section">Things this studio will never do</h2>
+      <ul class="mt-10 max-w-3xl space-y-3">
+        {
+          [
+            'Sell ads, including "rewarded" ones.',
+            'Add energy systems, lives, or timers that pause the game until you pay.',
+            'Price anything in a made-up currency.',
+            'Run limited-time offers on a loop and call them limited.',
+            'Sell or share player data. There is none worth selling, by design.',
+            'Ship a game to hit a date it isn\'t ready for.',
+            'Say "we" in a press release.',
+          ].map((line) => (
+            <li class="border-l-2 border-hairline pl-4 text-muted">{line}</li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</Base>

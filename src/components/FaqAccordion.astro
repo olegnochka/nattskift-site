@@ -1,0 +1,56 @@
+---
+/**
+ * FAQ accordion. Real <button> elements with aria-expanded, keyboard
+ * operable. Server-rendered fully expanded; the Base-layout script
+ * collapses items only when JavaScript is available, so a no-JS reader
+ * sees every answer.
+ */
+interface Props {
+  items: Array<{ q: string; a: string }>;
+  idPrefix: string;
+}
+const { items, idPrefix } = Astro.props;
+---
+
+<div class="divide-y divide-hairline border-y border-hairline">
+  {
+    items.map((item, i) => (
+      <div>
+        <h3>
+          <button
+            type="button"
+            aria-expanded="true"
+            aria-controls={`${idPrefix}-panel-${i}`}
+            data-faq-trigger
+            class="flex w-full items-center justify-between gap-6 py-5 text-left font-medium text-text"
+          >
+            <span>{item.q}</span>
+            <svg
+              width="14"
+              height="9"
+              viewBox="0 0 14 9"
+              aria-hidden="true"
+              class="faq-chevron shrink-0 text-royal-light"
+            >
+              <path d="M1 1l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </h3>
+        <div id={`${idPrefix}-panel-${i}`} class="pb-6">
+          <p class="measure text-muted">{item.a}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  button[aria-expanded='false'] .faq-chevron {
+    rotate: 180deg;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .faq-chevron {
+      transition: rotate 240ms cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+</style>

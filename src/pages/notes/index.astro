@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const notes = (await getCollection('notes')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<Base
+  title="Notes - Nattskift Games"
+  description="The Nattskift Games devlog: short notes from the night shift about building Last Light and Trash Games Factory - what worked, what didn't, and what it cost."
+>
+  <section class="section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h1 class="type-page-title">Notes</h1>
+      <p class="type-lead measure mt-6 text-muted">
+        Short notes from the night shift. What got built, what got cut, and
+        why.
+      </p>
+
+      {
+        notes.length === 0 ? (
+          <p class="measure mt-16 border-t border-hairline pt-10 text-muted">
+            Nothing here yet. The first note ships when there is something
+            worth saying, which is also the studio's release policy.
+          </p>
+        ) : (
+          <ul class="mt-16 divide-y divide-hairline border-t border-hairline">
+            {notes.map((note) => (
+              <li class="py-8">
+                <h2 class="type-subsection">
+                  <a href={`/notes/${note.id}`} class="text-text hover:text-royal-light">
+                    {note.data.title}
+                  </a>
+                </h2>
+                <p class="type-caption mt-2 text-muted">
+                  <time datetime={note.data.date.toISOString().slice(0, 10)}>
+                    {note.data.date.toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </time>
+                </p>
+                <p class="measure mt-3 text-muted">{note.data.description}</p>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+  </section>
+</Base>

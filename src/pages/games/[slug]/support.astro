@@ -1,0 +1,64 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import FaqAccordion from '../../../components/FaqAccordion.astro';
+
+export async function getStaticPaths() {
+  const games = await getCollection('games');
+  return games.map((game) => ({ params: { slug: game.id }, props: { game } }));
+}
+
+interface Props {
+  game: CollectionEntry<'games'>;
+}
+const { game } = Astro.props;
+const g = game.data;
+const mailto = `mailto:hello@nattskift.games?subject=${encodeURIComponent(`${g.title} support`)}`;
+---
+
+<Base title={g.seo.supportTitle} description={g.seo.supportDescription}>
+  <section class="section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h1 class="type-page-title">{g.title} support</h1>
+      <p class="type-lead measure mt-6 text-muted">
+        The fastest way to get help is email. It goes straight to the person
+        who made the game.
+      </p>
+      <p class="mt-8">
+        <a href={mailto} class="btn-primary">Email support</a>
+      </p>
+      <p class="type-caption mt-4 text-muted">{g.support.responseTime}</p>
+    </div>
+  </section>
+
+  <section class="border-t border-hairline section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="type-section">Common questions</h2>
+      <div class="mt-10 max-w-3xl">
+        <FaqAccordion items={g.support.faq} idPrefix={`${game.id}-faq`} />
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t border-hairline section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 class="type-section">How to write a bug report that gets fixed</h2>
+      <div class="measure mt-8 space-y-4 text-muted">
+        <p>
+          Three things make a bug fixable: what you did, what you expected,
+          and what happened instead. Write those three lines and you are
+          ahead of most professional QA.
+        </p>
+        <p>
+          Add your device model and iOS version — Settings, General, About —
+          and a screenshot or screen recording if the bug is visible. A
+          recording of a crash is worth five paragraphs describing one.
+        </p>
+        <p>
+          One report per email, please. Two bugs in one email means the
+          second one gets lost, and it deserves better.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>

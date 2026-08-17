@@ -1,0 +1,59 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const notes = await getCollection('notes');
+  return notes.map((note) => ({ params: { slug: note.id }, props: { note } }));
+}
+
+interface Props {
+  note: CollectionEntry<'notes'>;
+}
+const { note } = Astro.props;
+const { Content } = await render(note);
+---
+
+<Base title={`${note.data.title} - Nattskift Games`} description={note.data.description}>
+  <article class="section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h1 class="type-page-title">{note.data.title}</h1>
+      <p class="type-caption mt-3 text-muted">
+        <time datetime={note.data.date.toISOString().slice(0, 10)}>
+          {note.data.date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })}
+        </time>
+      </p>
+      <div class="note-body measure mt-12">
+        <Content />
+      </div>
+      <p class="mt-16">
+        <a href="/notes" class="link-quiet">All notes</a>
+      </p>
+    </div>
+  </article>
+</Base>
+
+<style>
+  .note-body :global(p) {
+    margin-block: 1em;
+    color: var(--color-muted);
+  }
+  .note-body :global(h2),
+  .note-body :global(h3) {
+    margin-top: 2em;
+    color: var(--color-text);
+  }
+  .note-body :global(a) {
+    color: var(--color-royal-light);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .note-body :global(code) {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+  }
+</style>
