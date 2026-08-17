@@ -14,6 +14,15 @@ const games = defineCollection({
     title: z.string(),
     /** Sort order on /games and the homepage slate. */
     order: z.number(),
+    /** Page metadata: title under 60 chars, description 150–160 chars. */
+    seo: z.object({
+      title: z.string().max(60),
+      description: z.string(),
+      supportTitle: z.string().max(60),
+      supportDescription: z.string(),
+      privacyTitle: z.string().max(60),
+      privacyDescription: z.string(),
+    }),
     /** One line. Shows under the title everywhere. */
     hook: z.string(),
     /** 40–60 words, second person, present tense. */

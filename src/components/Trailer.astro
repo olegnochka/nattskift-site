@@ -1,0 +1,62 @@
+---
+/**
+ * Click-to-play trailer. Nothing third-party loads until the click.
+ * Without JavaScript the poster is a plain link to the embed page.
+ */
+import { Image } from 'astro:assets';
+
+interface Props {
+  poster: ImageMetadata;
+  posterAlt: string;
+  embedUrl: string;
+  title: string;
+}
+const { poster, posterAlt, embedUrl, title } = Astro.props;
+---
+
+<div
+  class="card relative aspect-video overflow-hidden"
+  data-trailer
+  data-embed={embedUrl}
+  data-title={`${title} trailer`}
+>
+  <a href={embedUrl} data-trailer-link class="group block h-full w-full" rel="noopener">
+    <Image
+      src={poster}
+      alt={posterAlt}
+      widths={[768, 1152, 1536]}
+      sizes="(min-width: 1152px) 1152px, 100vw"
+      class="h-full w-full object-cover"
+    />
+    <span
+      class="absolute inset-0 flex items-center justify-center"
+      aria-hidden="true"
+    >
+      <span
+        class="flex h-16 w-16 items-center justify-center rounded-full bg-royal"
+      >
+        <svg width="20" height="24" viewBox="0 0 20 24" fill="#F7F5F0">
+          <polygon points="2,1 19,12 2,23"></polygon>
+        </svg>
+      </span>
+    </span>
+    <span class="sr-only">Play the {title} trailer</span>
+  </a>
+</div>
+
+<script>
+  for (const el of document.querySelectorAll<HTMLElement>('[data-trailer]')) {
+    const link = el.querySelector('[data-trailer-link]');
+    if (!link) continue;
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const iframe = document.createElement('iframe');
+      const embed = el.dataset.embed ?? '';
+      iframe.src = embed + (embed.includes('?') ? '&' : '?') + 'autoplay=1';
+      iframe.title = el.dataset.title ?? 'Trailer';
+      iframe.allow = 'autoplay; fullscreen; encrypted-media; picture-in-picture';
+      iframe.className = 'absolute inset-0 h-full w-full';
+      el.replaceChildren(iframe);
+    });
+  }
+</script>

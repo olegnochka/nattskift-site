@@ -1,6 +1,14 @@
 {
   "title": "Last Light",
   "order": 1,
+  "seo": {
+    "title": "Last Light - wilderness survival for iOS - Nattskift Games",
+    "description": "Last Light is a wilderness survival game for iPhone. Gather by day, hold the fire through the night. Free for seven nights, one purchase after, no ads ever.",
+    "supportTitle": "Last Light Support - Nattskift Games",
+    "supportDescription": "Support for Last Light on iOS: restoring your purchase, moving saves to a new phone, recovering lost progress, and how to report a bug that actually gets fixed.",
+    "privacyTitle": "Last Light Privacy Policy - Nattskift Games",
+    "privacyDescription": "The Last Light privacy policy in plain language: no accounts, no analytics SDK, no ad SDK. Saves stay in your own iCloud. What little exists, and how to ask about it."
+  },
   "hook": "Survive one more night.",
   "pitch": "You wake on a cold ridge with a dead phone, a knife, and four hours of daylight. You gather, you build, you get the fire going before the light goes. The nights get longer. The wolves get closer. Every dawn you reach is one more than the ridge expected you to get.",
   "tags": {

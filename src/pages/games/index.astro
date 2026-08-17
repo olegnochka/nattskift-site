@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import GameCard from '../../components/GameCard.astro';
+
+const games = (await getCollection('games')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<Base
+  title="Games - Nattskift Games"
+  description="Two iOS games from a one-person studio in Los Angeles: Last Light, a wilderness survival game, and Trash Games Factory, a satirical idle game. No ads."
+>
+  <section class="section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h1 class="type-page-title" data-reveal>The games</h1>
+      <p class="type-lead measure mt-6 text-muted" data-reveal style="--reveal-index: 1">
+        Two titles, both iOS, both built by one person. Free to try, priced in
+        real money, finished before they shipped.
+      </p>
+      <div class="mt-16 grid gap-8 md:grid-cols-2">
+        {
+          games.map((game, i) => (
+            <div data-reveal style={`--reveal-index: ${i + 2}`}>
+              <GameCard game={game} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>

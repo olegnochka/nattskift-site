@@ -1,6 +1,14 @@
 {
   "title": "Trash Games Factory",
   "order": 2,
+  "seo": {
+    "title": "Trash Games Factory - satirical idle for iOS - Nattskift",
+    "description": "Trash Games Factory is a satirical idle game for iPhone. Run a shovelware studio, clone hits, ship them broken, watch the line go up. Free, and free of real ads.",
+    "supportTitle": "Trash Games Factory Support - Nattskift Games",
+    "supportDescription": "Support for Trash Games Factory on iOS: restoring the desk toy purchase, moving your factory to a new phone, recovering saves, and reporting bugs to the developer.",
+    "privacyTitle": "Trash Games Factory Privacy - Nattskift Games",
+    "privacyDescription": "The Trash Games Factory privacy policy in plain language: a satire of data-hungry studios collects no data itself. No accounts, no ad SDK, saves in your own iCloud."
+  },
   "hook": "Ship garbage. Get rich. Feel nothing.",
   "pitch": "You run a mobile game studio with no ideas and no shame. You clone hits, rename them, ship them broken, and watch the line go up. Hire cynics, buy awards, settle lawsuits quietly. It plays as satire right up until it starts feeling like a documentary, which happens fast.",
   "tags": {
