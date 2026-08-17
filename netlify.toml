@@ -1,0 +1,9 @@
+# Netlify build settings — kept in the repo so the dashboard needs no manual
+# configuration. Astro outputs static HTML to dist/; 404.html is picked up
+# automatically as the not-found page.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"

@@ -39,13 +39,22 @@ Devlog notes are markdown files in `src/content/notes/` with `title`,
 `date`, and `description` frontmatter. While that folder is empty the
 homepage's latest-note section and the notes index render an honest nothing.
 
-## Deploy to Cloudflare Pages
+## Deploy (Netlify)
 
-1. Push the repo to GitHub/GitLab.
-2. Cloudflare dashboard → Workers & Pages → Create → Pages → connect the repo.
-3. Build command: `npm run build` — output directory: `dist`. No env vars,
-   no functions, no framework preset needed beyond Astro's default.
-4. Set the custom domain, then update `site` in `astro.config.mjs` and the
+The repo carries a `netlify.toml`, so Netlify needs no manual build
+configuration:
+
+1. app.netlify.com → Add new project → Import an existing project →
+   GitHub → pick `olegnochka/nattskift-site`.
+2. Netlify reads `netlify.toml` (build `npm run build`, publish `dist`,
+   Node 22). Just click Deploy.
+3. Every push to `main` deploys automatically; `404.html` is served for
+   unknown routes out of the box.
+4. Custom domain (registered at Squarespace): Netlify → Domain management →
+   Add custom domain, then in Squarespace's DNS settings add the records
+   Netlify shows (an `A` record for the apex and a `CNAME` for `www`).
+   HTTPS is provisioned automatically once DNS resolves.
+5. After the domain is live, update `site` in `astro.config.mjs` and the
    sitemap line in `public/robots.txt` if the domain differs from
    `nattskift.games`.
 
