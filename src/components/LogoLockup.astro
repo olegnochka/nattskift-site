@@ -4,9 +4,10 @@
  * passes through the vertical middle of the letters — white above the cut on
  * ink, ink knocked out below the cut on royal. One word being sliced.
  *
- * The seam-collision check on K and F: at the default baseline the K junction
- * and the F crossbar both sat within a couple of px of the seam, so the type
- * is nudged down 1.5% of cap height (see --nudge below). Verified at 8x zoom.
+ * Seam-collision guard for K and F: in Archivo the K junction and F crossbar
+ * sit near half cap height, right where the seam lands, so the type is
+ * nudged down 1.5% of cap height (NUDGE below). Check it once at high zoom
+ * on a real display and tune NUDGE (0.01–0.02) if a junction still touches.
  */
 interface Props {
   /** Rendered size in px (square). */
