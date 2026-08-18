@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nattskift.games/sitemap-index.xml
+Sitemap: https://nattskiftgames.com/sitemap-index.xml
