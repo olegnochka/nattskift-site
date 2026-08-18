@@ -1,0 +1,9 @@
+# Netlify domain aliases serve content instead of redirecting; force every
+# alternate domain to 301 to the primary so one URL exists per page.
+https://nattskift.games/* https://nattskiftgames.com/:splat 301!
+https://www.nattskift.games/* https://nattskiftgames.com/:splat 301!
+https://nattskiftgames.store/* https://nattskiftgames.com/:splat 301!
+https://www.nattskiftgames.store/* https://nattskiftgames.com/:splat 301!
+https://nattskiftgames.studio/* https://nattskiftgames.com/:splat 301!
+https://www.nattskiftgames.studio/* https://nattskiftgames.com/:splat 301!
+https://nattskift.netlify.app/* https://nattskiftgames.com/:splat 301!
