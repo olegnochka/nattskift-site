@@ -83,7 +83,7 @@ render OG-image text.
 | App Store ids (`0000000000`) | `appStoreId` in each `src/content/games/*.json` (feeds the badge link and the Smart App Banner meta) |
 | Trailer embed URLs (`.../embed/PLACEHOLDER`) | `trailer.embedUrl` in each game JSON |
 | All art (key art, pillars, screenshots) | hand-built placeholder SVGs in `src/content/games/art/` — swap for real captures, same filenames or update the JSON |
-| Domain (currently `nattskift.netlify.app`) | `astro.config.mjs` (`site`) and `public/robots.txt` — JSON-LD derives from `site` automatically |
+| Domain | live at `nattskift.games` (canonical); `nattskiftgames.com` / `.store` / `.studio` and `nattskift.netlify.app` redirect to it via Netlify domain aliases |
 | Bluesky handle | `src/components/Footer.astro` and homepage JSON-LD `sameAs` |
 | Contact addresses (`hello@` / `press@`) | grep for `nattskift.games` mailtos once the real domain and mailboxes exist |
 | Release dates, sizes, versions in the facts tables | each game JSON — currently plausible fiction |
