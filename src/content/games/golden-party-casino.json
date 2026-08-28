@@ -1,0 +1,160 @@
+{
+  "title": "Golden Party Casino: Slots",
+  "order": 3,
+  "seo": {
+    "title": "Golden Party Casino - social slots for iOS",
+    "description": "Golden Party Casino: Slots is a free-to-play social casino for iPhone. Six themed slot machines, a daily wheel, missions and card albums. Virtual coins only, 18+.",
+    "supportTitle": "Golden Party Casino Support - Nattskift Games",
+    "supportDescription": "Support for Golden Party Casino: Slots on iOS: restoring coin purchases, recovering your account with Apple or Google sign-in, finding your player ID, and reporting bugs.",
+    "privacyTitle": "Golden Party Casino Privacy - Nattskift Games",
+    "privacyDescription": "The Golden Party Casino privacy policy in plain language: what the game stores on its server, what sign-in shares, what purchases reveal, and how to delete all of it in-app."
+  },
+  "hook": "Six machines. One golden party.",
+  "pitch": "You walk into a casino that never closes and never takes a dime you didn't choose to spend. Six machines with their own math and moods, a wheel that pays daily, missions that reset at midnight, and card albums worth chasing. Coins are the whole economy - and they are never real money.",
+  "tags": {
+    "genre": "Social casino",
+    "platform": "iOS",
+    "price": "Free to play"
+  },
+  "appStoreId": "0000000000",
+  "keyArt": {
+    "src": "./art/gpc-key.jpg",
+    "alt": "A jeweled golden crown floating in a dark purple casino hall lit by blurred chandeliers and golden sparkles."
+  },
+  "trailer": null,
+  "pillars": [
+    {
+      "title": "Six machines, six moods",
+      "body": "A confetti classic, an Egyptian high-roller, cascading dragons, candy wilds, a vintage one-armed bandit with pickable paylines, and a cyberpunk heist where wilds go viral. Each has its own verified math.",
+      "image": "./art/gpc-pillar-machines.jpg",
+      "alt": "Two miniature golden slot machines side by side with colorful reels."
+    },
+    {
+      "title": "Something every day",
+      "body": "A free bonus wheel every 24 hours that pays more the longer your streak runs, three fresh missions a day, a gift every four hours, and card albums that end in a permanent golden frame.",
+      "image": "./art/gpc-pillar-daily.jpg",
+      "alt": "A colorful prize wheel with a red and gold jeweled base."
+    },
+    {
+      "title": "Coins, never cash",
+      "body": "Coins are virtual, full stop. They cannot be withdrawn, redeemed, or turned into anything outside the game. You can buy more if you want to - you never have to, and the game never pays out.",
+      "image": "./art/gpc-pillar-fair.jpg",
+      "alt": "A single golden coin embossed with a star."
+    }
+  ],
+  "screenshots": [
+    { "src": "./art/gpc-shot-1.jpg", "alt": "The lobby: six machine cards under the Golden Party Casino title, with Party Slots unlocked and framed in gold." },
+    { "src": "./art/gpc-shot-2.jpg", "alt": "Party Slots mid-session: an ornate golden frame around five reels, a WILD symbol on the center reel." },
+    { "src": "./art/gpc-shot-3.jpg", "alt": "The Daily Wheel stage: a jeweled prize wheel under golden letters, ready for its free spin." },
+    { "src": "./art/gpc-shot-4.jpg", "alt": "Daily missions: three tasks with progress bars, one ready to claim, and a bonus for completing all three." },
+    { "src": "./art/gpc-shot-5.jpg", "alt": "A NEW CARD popup: a golden star card dropped mid-spin, ready to be added to the Party Slots album." },
+    { "src": "./art/gpc-shot-6.jpg", "alt": "My Albums: all six machines listed with card-collection progress bars, one card already found." }
+  ],
+  "deal": {
+    "free": "Everything. All six machines, the wheel, missions, albums, and a 2,000,000-coin welcome balance. Nothing is level-locked behind a purchase.",
+    "paid": "Optional coin packs, for players who run dry and don't want to wait for the free wheel, gift, and mission coins to refill them.",
+    "costs": "Coin packs from $1.99 to $99.99, always shown in real money before you tap.",
+    "never": [
+      "No ads, banner, video, or 'rewarded'.",
+      "No real-money winnings - coins can never be cashed out, ever.",
+      "No energy, lives, or timers that sell you your own game back.",
+      "Not for anyone under 18."
+    ]
+  },
+  "facts": {
+    "platform": "iPhone",
+    "minimumOS": "iOS 17.0",
+    "size": "About 60 MB",
+    "languages": "English",
+    "releaseDate": "Coming 2026",
+    "price": "Free / optional coin packs",
+    "engine": "Swift + SpriteKit",
+    "developer": "Nattskift Games, published by Pacific Front Desk"
+  },
+  "latestUpdate": {
+    "version": "1.0 (build 4)",
+    "date": "2026-08-26",
+    "changes": [
+      "Daily missions and card albums arrive, riding on the existing server calls so nothing got slower.",
+      "New hand-tuned reel frame art for the four original machines - nothing cropped, nothing squashed.",
+      "Complete a machine's card album and its lobby card wears a golden frame forever."
+    ]
+  },
+  "support": {
+    "responseTime": "Replies usually within two days at goldenpartycasino@pacificfrontdesk.com. Include the player ID from Settings - the in-app Contact Us button fills it in for you.",
+    "faq": [
+      {
+        "q": "I bought coins and they didn't arrive.",
+        "a": "Force-quit and reopen the game - the balance is server-side and re-syncs on launch. If they are still missing, tap Restore Purchases in Settings, and if that fails, use Contact Us so your player ID comes attached, plus the receipt from Apple. Missing coins get granted manually."
+      },
+      {
+        "q": "How do I keep my progress if I change phones?",
+        "a": "Sign in with Apple or Google in the game. Your balance, level, and albums live on the server tied to that sign-in, so signing in on the new phone brings everything back. A guest account without sign-in lives only on the device it was created on."
+      },
+      {
+        "q": "Where do I find my player ID?",
+        "a": "Settings, on the player card at the top. Tap the ID to copy it. The Contact Us button puts it in the email subject automatically, which is the fastest path to help."
+      },
+      {
+        "q": "Can I win real money?",
+        "a": "No. Golden Party Casino is a social casino: coins are virtual, have no cash value, and cannot be withdrawn, redeemed, or transferred. That is not fine print - it is the design."
+      },
+      {
+        "q": "How do I delete my account?",
+        "a": "Settings, Delete Account. It permanently erases your server data - balance, level, albums, everything. There is no grace period and nothing for you to email us about afterward, because nothing is left."
+      }
+    ]
+  },
+  "privacy": {
+    "updated": "2026-08-26",
+    "summary": [
+      {
+        "what": "Game progress",
+        "why": "So your coins, level, and albums survive reinstalls and new phones",
+        "whoSees": "Stored on the game server (Microsoft Azure PlayFab)",
+        "howToDelete": "Settings, Delete Account erases it permanently"
+      },
+      {
+        "what": "Sign-in identity",
+        "why": "To link your progress to you, optionally",
+        "whoSees": "Apple or Google confirms who you are; the game stores an anonymous ID",
+        "howToDelete": "Deleted with your account in Settings"
+      },
+      {
+        "what": "Purchase receipts",
+        "why": "To credit coin packs and honor restores",
+        "whoSees": "Apple processes payment; the server sees an anonymized receipt",
+        "howToDelete": "Managed by Apple with your Apple account"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What this game collects",
+        "body": "Your game state - coin balance, level, missions, and card albums - lives on a game server so it can survive a new phone. There is no advertising SDK and no third-party analytics SDK in the app; the only analytics are the game's own server-side events about spins and purchases, used to tune the game."
+      },
+      {
+        "heading": "Signing in",
+        "body": "Sign in with Apple or Google is optional and exists so your progress can follow you. The game receives a confirmation of who signed in and stores an anonymous player ID against it. It never sees your password and never posts anything on your behalf."
+      },
+      {
+        "heading": "Purchases",
+        "body": "Coin packs are processed entirely by Apple. The game server receives an anonymized receipt to credit the coins and honor restores. The studio never sees your payment details."
+      },
+      {
+        "heading": "Deleting everything, and reaching a human",
+        "body": "Settings, Delete Account permanently erases your server data in one step, no email required. For anything else, write to goldenpartycasino@pacificfrontdesk.com and the person who built the game will answer."
+      }
+    ]
+  },
+  "press": {
+    "blurb": "Golden Party Casino: Slots is a free-to-play social casino for iPhone: six themed slot machines with individually tuned math, a daily bonus wheel with streak multipliers, daily missions, and collectible card albums. Coins are virtual only - no real-money gambling, no ads, rated 18+. Built in Swift and SpriteKit by Nattskift Games, published by Pacific Front Desk.",
+    "facts": [
+      { "label": "Developer", "value": "Nattskift Games, Los Angeles" },
+      { "label": "Publisher", "value": "Pacific Front Desk" },
+      { "label": "Release", "value": "Coming 2026" },
+      { "label": "Platform", "value": "iPhone, iOS 17+" },
+      { "label": "Price", "value": "Free, optional coin packs" },
+      { "label": "Engine", "value": "Swift + SpriteKit" }
+    ]
+  }
+}
