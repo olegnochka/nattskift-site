@@ -35,6 +35,8 @@ const games = defineCollection({
     /** Apple App Store numeric id. Placeholder until the app is live. */
     appStoreId: z.string(),
     keyArt: z.object({ src: image(), alt: z.string() }),
+    /** Optional full-page ambient background (decorative, heavily darkened). */
+    pageBackground: image().optional(),
     trailer: z
       .object({
         /** Poster shown until click; nothing third-party loads before that. */

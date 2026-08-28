@@ -60,6 +60,19 @@ const factRows: Array<[string, string]> = [
 >
   <meta slot="head" name="apple-itunes-app" content={`app-id=${g.appStoreId}`} />
 
+  {g.pageBackground && (
+    <div class="pointer-events-none fixed inset-0 -z-10" aria-hidden="true">
+      <Image
+        src={g.pageBackground}
+        alt=""
+        widths={[1280, 1920]}
+        sizes="100vw"
+        class="h-full w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/55"></div>
+    </div>
+  )}
+
   {/* 1 — Hero: full-bleed key art, then the essentials. */}
   <section>
     <Image

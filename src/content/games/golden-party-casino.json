@@ -21,6 +21,7 @@
     "src": "./art/gpc-key.png",
     "alt": "A jeweled golden crown with a ruby heart at its center."
   },
+  "pageBackground": "./art/gpc-bg.jpg",
   "trailer": null,
   "pillars": [
     {
