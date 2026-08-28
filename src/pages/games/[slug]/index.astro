@@ -94,9 +94,42 @@ const factRows: Array<[string, string]> = [
       <h1 class="type-page-title" data-reveal>{g.title}</h1>
       <p class="type-lead mt-3 text-muted" data-reveal style="--reveal-index: 1">{g.hook}</p>
       <div class="mt-8 flex flex-wrap items-center gap-4" data-reveal style="--reveal-index: 2">
-        <AppStoreBadge appStoreId={g.appStoreId} title={g.title} />
+        {g.comingSoon ? (
+          <span class="tag">Coming soon to the App Store</span>
+        ) : (
+          <AppStoreBadge appStoreId={g.appStoreId} title={g.title} />
+        )}
         <span class="tag">{g.tags.price}</span>
       </div>
+      {g.comingSoon && (
+        <form
+          name="launch-notify"
+          method="POST"
+          action="/notify-thanks/"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="mt-6 flex max-w-md flex-wrap items-center gap-3"
+          data-reveal
+          style="--reveal-index: 3"
+        >
+          <input type="hidden" name="form-name" value="launch-notify" />
+          <input type="hidden" name="game" value={g.title} />
+          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+          <label for="notify-email" class="type-micro w-full text-muted">
+            Get one email when it launches - nothing else, ever.
+          </label>
+          <input
+            id="notify-email"
+            type="email"
+            name="email"
+            required
+            placeholder="you@example.com"
+            autocomplete="email"
+            class="min-w-0 flex-1 rounded-control border border-hairline bg-surface px-4 py-3 text-text placeholder:text-muted focus:outline-none focus:ring-1 focus:ring-text"
+          />
+          <button type="submit" class="btn-primary">Notify me</button>
+        </form>
+      )}
     </div>
   </section>
 

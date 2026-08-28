@@ -34,6 +34,8 @@ const games = defineCollection({
     }),
     /** Apple App Store numeric id. Placeholder until the app is live. */
     appStoreId: z.string(),
+    /** Pre-release: replaces the App Store badge with a notify-me email form. */
+    comingSoon: z.boolean().default(false),
     keyArt: z.object({ src: image(), alt: z.string() }),
     /** Optional full-page ambient background (decorative, heavily darkened). */
     pageBackground: image().optional(),

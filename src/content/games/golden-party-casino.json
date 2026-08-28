@@ -17,6 +17,7 @@
     "price": "Free to play"
   },
   "appStoreId": "0000000000",
+  "comingSoon": true,
   "keyArt": {
     "src": "./art/gpc-key.png",
     "alt": "A golden slot machine hitting the jackpot: three crowns on the reels and a burst of coins, cards, chips and confetti."
