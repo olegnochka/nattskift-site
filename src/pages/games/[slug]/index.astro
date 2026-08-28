@@ -60,6 +60,12 @@ const factRows: Array<[string, string]> = [
 >
   <meta slot="head" name="apple-itunes-app" content={`app-id=${g.appStoreId}`} />
 
+  {/* body paints its background AFTER negative-z children, which would hide
+      the ambient layer - so on game pages the body goes transparent and the
+      identically-colored html background takes over. */}
+  <style is:global>
+    body { background-color: transparent; }
+  </style>
   {g.pageBackground && (
     <div class="pointer-events-none fixed inset-0 -z-10" aria-hidden="true">
       <Image
