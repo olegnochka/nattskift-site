@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import LogoLockup from '../components/LogoLockup.astro';
 import GameCard from '../components/GameCard.astro';
+import InProgressCard from '../components/InProgressCard.astro';
 
 const games = (await getCollection('games')).sort(
   (a, b) => a.data.order - b.data.order,
@@ -94,6 +95,11 @@ const promises = [
             </div>
           ))
         }
+        {games.length % 2 !== 0 && (
+          <div data-reveal style={`--reveal-index: ${games.length + 1}`}>
+            <InProgressCard />
+          </div>
+        )}
       </div>
     </div>
   </section>

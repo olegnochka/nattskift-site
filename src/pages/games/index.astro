@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import GameCard from '../../components/GameCard.astro';
+import InProgressCard from '../../components/InProgressCard.astro';
 
 const games = (await getCollection('games')).sort(
   (a, b) => a.data.order - b.data.order,
@@ -10,15 +11,15 @@ const games = (await getCollection('games')).sort(
 
 <Base
   title="Games - Nattskift Games"
-  description="Two iOS games from a one-person studio in Los Angeles: Last Light, a wilderness survival game, and Trash Games Factory, a satirical idle game. No ads."
+  description="Three iOS games from a one-person studio in Los Angeles: Golden Party Casino, a social slots game, Last Light, a wilderness survival game, and Trash Games Factory, a satirical idle game."
   ogImage="/og/games.png"
 >
   <section class="section-pad">
     <div class="mx-auto max-w-6xl px-6">
       <h1 class="type-page-title" data-reveal>The games</h1>
       <p class="type-lead measure mt-6 text-muted" data-reveal style="--reveal-index: 1">
-        Two titles, both iOS, both built by one person. Free to try, priced in
-        real money, finished before they shipped.
+        Three titles, all iOS, all built by one person. Free to try, priced in
+        real money, finished before they ship.
       </p>
       <div class="mt-16 grid gap-8 md:grid-cols-2">
         {
@@ -28,6 +29,11 @@ const games = (await getCollection('games')).sort(
             </div>
           ))
         }
+        {games.length % 2 !== 0 && (
+          <div data-reveal style={`--reveal-index: ${games.length + 2}`}>
+            <InProgressCard />
+          </div>
+        )}
       </div>
     </div>
   </section>
