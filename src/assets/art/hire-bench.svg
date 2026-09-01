@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- The night shift, for hire: a workbench at 1 a.m., two blueprints pinned
+       above it — a game and an MVP. Flat fills, house palette only. -->
+  <rect width="800" height="600" fill="#0B0E12"/>
+
+  <!-- window: night outside, one other window still lit across the street -->
+  <rect x="560" y="60" width="180" height="150" rx="8" fill="#16131F"/>
+  <circle cx="690" cy="105" r="20" fill="#9E82D4"/>
+  <circle cx="698" cy="98" r="18" fill="#16131F"/>
+  <rect x="590" y="160" width="12" height="12" fill="#FFB74A"/>
+
+  <!-- pinned blueprints -->
+  <g>
+    <rect x="70" y="70" width="190" height="140" rx="8" fill="#16131F" stroke="#201B2E" stroke-width="2"/>
+    <circle cx="165" cy="82" r="4" fill="#9AA4B2"/>
+    <!-- game blueprint: dashed controller -->
+    <g fill="none" stroke="#9E82D4" stroke-width="3" stroke-dasharray="8 6">
+      <rect x="105" y="115" width="120" height="60" rx="28"/>
+    </g>
+    <g stroke="#9E82D4" stroke-width="4" stroke-linecap="round">
+      <line x1="130" y1="145" x2="150" y2="145"/>
+      <line x1="140" y1="135" x2="140" y2="155"/>
+    </g>
+    <circle cx="196" cy="138" r="4" fill="#9E82D4"/>
+    <circle cx="210" cy="150" r="4" fill="#9E82D4"/>
+  </g>
+  <g>
+    <rect x="300" y="70" width="190" height="140" rx="8" fill="#16131F" stroke="#201B2E" stroke-width="2"/>
+    <circle cx="395" cy="82" r="4" fill="#9AA4B2"/>
+    <!-- MVP blueprint: dashed rocket -->
+    <g fill="none" stroke="#9E82D4" stroke-width="3" stroke-dasharray="8 6">
+      <path d="M395 105 C 415 125 420 155 410 180 L 380 180 C 370 155 375 125 395 105 Z"/>
+    </g>
+    <path d="M380 180 L 368 196 L 384 190 Z" fill="#9E82D4"/>
+    <path d="M410 180 L 422 196 L 406 190 Z" fill="#9E82D4"/>
+    <circle cx="395" cy="145" r="8" fill="none" stroke="#9E82D4" stroke-width="3"/>
+  </g>
+
+  <!-- desk -->
+  <rect x="40" y="420" width="720" height="18" rx="6" fill="#201B2E"/>
+  <rect x="90" y="438" width="16" height="120" fill="#16131F"/>
+  <rect x="694" y="438" width="16" height="120" fill="#16131F"/>
+
+  <!-- lamp: sodium cone over the keyboard -->
+  <rect x="618" y="300" width="10" height="120" fill="#201B2E"/>
+  <path d="M623 290 L 583 316 L 663 316 Z" fill="#FFB74A"/>
+  <polygon points="623,316 500,420 746,420" fill="#FFB74A" opacity="0.10"/>
+
+  <!-- laptop -->
+  <g>
+    <rect x="300" y="290" width="220" height="132" rx="8" fill="#201B2E"/>
+    <rect x="312" y="302" width="196" height="108" rx="4" fill="#0B0E12"/>
+    <!-- code lines -->
+    <g stroke-linecap="round">
+      <line x1="326" y1="322" x2="392" y2="322" stroke="#9E82D4" stroke-width="6"/>
+      <line x1="326" y1="340" x2="470" y2="340" stroke="#9AA4B2" stroke-width="6"/>
+      <line x1="344" y1="358" x2="440" y2="358" stroke="#9AA4B2" stroke-width="6"/>
+      <line x1="344" y1="376" x2="418" y2="376" stroke="#FFB74A" stroke-width="6"/>
+      <line x1="326" y1="394" x2="380" y2="394" stroke="#9E82D4" stroke-width="6"/>
+    </g>
+    <rect x="286" y="414" width="248" height="10" rx="5" fill="#16131F"/>
+  </g>
+
+  <!-- coffee -->
+  <g>
+    <rect x="580" y="384" width="44" height="36" rx="6" fill="#16131F"/>
+    <path d="M624 392 h10 a8 8 0 0 1 0 18 h-10" fill="none" stroke="#16131F" stroke-width="6"/>
+  </g>
+
+  <!-- phone on the desk, screen dark - it can wait until morning -->
+  <rect x="180" y="396" width="52" height="24" rx="6" fill="#16131F"/>
+</svg>

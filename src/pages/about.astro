@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
+import hireBench from '../assets/art/hire-bench.svg';
 ---
 
 <Base
@@ -80,7 +82,8 @@ import Base from '../layouts/Base.astro';
   </section>
 
   <section id="hire" class="border-t border-hairline section-pad">
-    <div class="mx-auto max-w-6xl px-6">
+    <div class="mx-auto grid max-w-6xl items-start gap-12 px-6 lg:grid-cols-[1fr_400px]">
+      <div>
       <h2 class="type-section">Hire the night shift</h2>
       <div class="measure mt-8 space-y-4 text-muted">
         <p>
@@ -118,6 +121,14 @@ import Base from '../layouts/Base.astro';
           honestly stands.
         </p>
       </div>
+      </div>
+      <Image
+        src={hireBench}
+        alt="A workbench at night: a laptop glowing with code under a desk lamp, and two blueprints pinned to the wall — one a game controller, one a rocket."
+        widths={[400, 800]}
+        sizes="(min-width: 1024px) 400px, 100vw"
+        class="card w-full lg:mt-16"
+      />
     </div>
   </section>
 
