@@ -6,6 +6,15 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["astro", "dev", "--port", "4321"],
       "port": 4321
+    },
+    {
+      "name": "pfd-dev",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "cd /d C:\\Users\\tyrae\\Desktop\\pfd-site && npx astro dev --port 4331"
+      ],
+      "port": 4331
     }
   ]
 }
