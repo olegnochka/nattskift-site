@@ -3,16 +3,22 @@ import Base from '../layouts/Base.astro';
 
 const summary = [
   {
-    what: 'Nothing, by the site itself',
-    why: 'There is no analytics script, no cookie, no form',
+    what: 'Nothing, as you browse',
+    why: 'There is no analytics script, no cookie, no tracker',
     whoSees: 'Nobody',
     howToDelete: 'Nothing to delete',
   },
   {
     what: 'Standard server logs',
     why: 'The hosting provider serves the pages',
-    whoSees: 'Cloudflare, transiently, as with any host',
+    whoSees: 'Netlify, transiently, as with any host',
     howToDelete: 'Expires automatically per their retention policy',
+  },
+  {
+    what: 'Your email, if you ask for a launch note',
+    why: "The notify-me field on an unreleased game's page",
+    whoSees: 'Netlify stores the submission; the founder reads it',
+    howToDelete: 'Email and ask, any time before or after launch',
   },
   {
     what: 'Email you choose to send',
@@ -25,14 +31,14 @@ const summary = [
 
 <Base
   title="Site Privacy - Nattskift Games"
-  description="The nattskift.games site privacy policy: no cookies, no analytics, no forms, no third-party scripts. Fonts are self-hosted. What little exists is listed here."
+  description="The site privacy policy in plain language: no cookies, no analytics, no trackers, self-hosted fonts. One optional launch-notify email field, explained honestly."
   ogImage="/og/privacy.png"
 >
   <section class="section-pad">
     <div class="mx-auto max-w-6xl px-6">
       <h1 class="type-page-title">Site privacy</h1>
       <p class="type-micro mt-4 text-muted">
-        Last updated <time datetime="2026-06-01">2026-06-01</time>
+        Last updated <time datetime="2026-08-31">2026-08-31</time>
       </p>
 
       <h2 class="type-section mt-16">The short version</h2>
@@ -70,11 +76,21 @@ const summary = [
         <p>
           This site is static files. It sets no cookies, runs no analytics,
           loads no third-party scripts, and hosts its own fonts. There is no
-          account system and no form, so there is nothing for the site to
-          collect and nothing for you to opt out of.
+          account system, and browsing collects nothing. The one thing the
+          site can collect is described below, and it only happens if you
+          type it in yourself.
         </p>
         <p>
-          The pages are served by Cloudflare Pages, which — like any host —
+          Unreleased games have a notify-me field. If you enter your email
+          there, Netlify (the company that hosts this site) stores the
+          submission, and it is used to send exactly one email when that
+          game launches. No newsletter grows out of it, and the address is
+          not shared or used for anything else. To be taken off the list
+          before launch — or to have the address deleted after — email the
+          studio and it gets removed by hand.
+        </p>
+        <p>
+          The pages are served by Netlify, which — like any host —
           processes IP addresses in transient server logs to deliver the
           site and absorb abuse. The studio does not access or export those
           logs.
