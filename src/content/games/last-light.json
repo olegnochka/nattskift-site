@@ -14,9 +14,10 @@
   "tags": {
     "genre": "Survival",
     "platform": "iOS",
-    "price": "Free to start"
+    "price": "Free to play"
   },
   "appStoreId": "0000000000",
+  "comingSoon": true,
   "keyArt": {
     "src": "./art/last-light-key.svg",
     "alt": "A night ridge under a crescent moon, layered mountain silhouettes, and a single small campfire burning in the foreground."

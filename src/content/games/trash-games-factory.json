@@ -14,9 +14,10 @@
   "tags": {
     "genre": "Satirical idle",
     "platform": "iOS",
-    "price": "Free"
+    "price": "Free to play"
   },
   "appStoreId": "0000000000",
+  "comingSoon": true,
   "keyArt": {
     "src": "./art/trash-games-factory-key.svg",
     "alt": "A factory floor at 3 a.m.: a conveyor belt of identical purple game boxes with one-star stickers, a revenue chart climbing on the wall."
