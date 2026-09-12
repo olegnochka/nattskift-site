@@ -55,7 +55,7 @@ const factRows: Array<[string, string]> = [
       url: site,
     },
     datePublished: g.facts.releaseDate,
-    softwareVersion: g.latestUpdate.version,
+    softwareVersion: g.latestUpdate?.version,
   }}
 >
   <meta slot="head" name="apple-itunes-app" content={`app-id=${g.appStoreId}`} />
@@ -251,20 +251,22 @@ const factRows: Array<[string, string]> = [
     </div>
   </section>
 
-  {/* 8 — Latest update. */}
-  <section class="border-t border-hairline section-pad">
-    <div class="mx-auto max-w-6xl px-6" data-reveal>
-      <h2 class="type-label text-muted">Latest update</h2>
-      <p class="type-micro mt-6 text-muted">
-        v{g.latestUpdate.version} — <time datetime={g.latestUpdate.date}>{g.latestUpdate.date}</time>
-      </p>
-      <ul class="mt-4 max-w-2xl space-y-2">
-        {g.latestUpdate.changes.map((change) => (
-          <li class="border-l-2 border-hairline pl-4 text-muted">{change}</li>
-        ))}
-      </ul>
-    </div>
-  </section>
+  {/* 8 — Latest update. Skipped when a game has no published changelog. */}
+  {g.latestUpdate && (
+    <section class="border-t border-hairline section-pad">
+      <div class="mx-auto max-w-6xl px-6" data-reveal>
+        <h2 class="type-label text-muted">Latest update</h2>
+        <p class="type-micro mt-6 text-muted">
+          v{g.latestUpdate.version} — <time datetime={g.latestUpdate.date}>{g.latestUpdate.date}</time>
+        </p>
+        <ul class="mt-4 max-w-2xl space-y-2">
+          {g.latestUpdate.changes.map((change) => (
+            <li class="border-l-2 border-hairline pl-4 text-muted">{change}</li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
 
   {/* 9 — Footer strip for this title. */}
   <section class="border-t border-hairline">

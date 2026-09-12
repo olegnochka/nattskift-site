@@ -1,0 +1,184 @@
+{
+  "title": "Hunch",
+  "order": 4,
+  "seo": {
+    "title": "Hunch - daily logic puzzle for iOS - Nattskift Games",
+    "description": "Hunch is a daily deduction puzzle for iPhone with no words in it. One hidden pattern of five pieces, six guesses, one try a day. Free, no ads, no subscription.",
+    "supportTitle": "Hunch Support - Nattskift Games",
+    "supportDescription": "Support for Hunch on iOS: lost streaks, restoring the full-game purchase, empty Game Center leaderboards, colour-blind mode, and playing the puzzle archive.",
+    "privacyTitle": "Hunch Privacy Policy - Nattskift Games",
+    "privacyDescription": "The Hunch privacy policy in plain language: the game collects nothing. No accounts, no analytics, no advertising. Everything it knows stays on your own device."
+  },
+  "hook": "One puzzle a day. One try.",
+  "pitch": "Every day one hidden pattern of five pieces, the same one for everyone. Each piece has a shape and a colour, and you get six guesses to find all ten. The board tells you what was right, never where. Find the structure underneath and the rest falls out.",
+  "tags": {
+    "genre": "Daily logic puzzle",
+    "platform": "iOS",
+    "price": "Free to play"
+  },
+  "appStoreId": "6809274736",
+  "comingSoon": true,
+  "keyArt": {
+    "src": "./art/hunch-key.jpg",
+    "alt": "Four cut-crystal glyphs on brushed steel: a red circle, a yellow diamond, a blue cross and a green triangle."
+  },
+  "trailer": null,
+  "pillars": [
+    {
+      "title": "Every cell is two things",
+      "body": "A shape and a colour, and both have to be right, in the right place. Five shapes, five colours, twenty-five ways to fill a single cell.",
+      "image": "./art/hn-pillar-vocabulary.svg",
+      "alt": "A five-by-five grid: each of the five shapes drawn once in each of the five colours."
+    },
+    {
+      "title": "The board proves, it never points",
+      "body": "Each guess tells you which shapes were right and which colours were right - never which piece, never how close. Whatever the board has proved comes back on the next row on its own.",
+      "image": "./art/hn-pillar-feedback.svg",
+      "alt": "Four cells showing the four answers: a full blue circle, an empty diamond outline, a green drop of colour, and an open cell."
+    },
+    {
+      "title": "Every answer is a pattern",
+      "body": "The answer is never random. A repeat, an alternation, a progression, a block, a mirror - working out which one it is tonight is the moment the puzzle turns.",
+      "image": "./art/hn-pillar-patterns.svg",
+      "alt": "Four rows of five glyphs, each row a different structure: all the same, alternating, stepping through, and mirrored around the middle."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./art/hn-shot-1.jpg",
+      "alt": "The board on day 252: two guessed rows of glyphs above four empty ones, with the shape and colour pickers below."
+    },
+    {
+      "src": "./art/hn-shot-2.jpg",
+      "alt": "The how-to-play screen explaining that every cell is a shape and a colour, and what the board returns after each guess."
+    },
+    {
+      "src": "./art/hn-shot-3.jpg",
+      "alt": "Settings: the colour-blind fill toggle, and the six boards - Cream Enamel unlocked, five more with the full game."
+    }
+  ],
+  "deal": {
+    "free": "One puzzle a day, every day, the same one everyone else is solving. Six guesses, one attempt, streaks and Game Center leaderboards.",
+    "paid": "One purchase unlocks the archive - every puzzle back to the first - and all six boards.",
+    "costs": "One purchase, once, shown in real money on the button before you buy it. No subscription, and nothing that expires.",
+    "never": [
+      "No adverts, anywhere, ever.",
+      "No subscription - it stays bought.",
+      "No hints to buy, no timers, nothing that runs out.",
+      "No account, and no connection needed to play."
+    ]
+  },
+  "facts": {
+    "platform": "iPhone",
+    "minimumOS": "TBA",
+    "size": "TBA",
+    "languages": "English interface; no words in the puzzle",
+    "releaseDate": "Coming soon",
+    "price": "Free / one-time full-game unlock",
+    "engine": "Swift",
+    "developer": "Nattskift Games (one person)"
+  },
+  "support": {
+    "responseTime": "Replies usually take a day or two, not an hour - one person answers these. Write to hunch@pacificfrontdesk.com and include your device, your iOS version, and the puzzle number shown as DAY next to HUNCH at the top of the board.",
+    "faq": [
+      {
+        "q": "I lost my streak.",
+        "a": "Streaks are kept on your device. Deleting the app, resetting the phone, or moving to a new one without a backup clears it, and it cannot be restored - there is no account and no server holding a copy. Signing in to Game Center keeps your longest streak on the leaderboard even when the local one resets."
+      },
+      {
+        "q": "I paid, but the archive is still locked.",
+        "a": "Open the store from the bag icon at the top of the board and tap Restore purchase. The unlock is tied to your Apple account, so sign in with the same one you bought it with."
+      },
+      {
+        "q": "I want a refund.",
+        "a": "Refunds are handled by Apple, not by the studio. Go to reportaproblem.apple.com and sign in with your Apple account."
+      },
+      {
+        "q": "The leaderboard is empty or missing.",
+        "a": "Leaderboards need Game Center. Open the Settings app, tap Game Center, and check that you are signed in. Scores can take a minute to appear. The puzzle itself works fully offline and never needs a connection."
+      },
+      {
+        "q": "I cannot tell two colours apart.",
+        "a": "Open Settings in the app and turn on Patterns as well as colour. Every colour then gets its own fill, so the board can be read without relying on hue."
+      },
+      {
+        "q": "Can I play an earlier puzzle?",
+        "a": "Yes, with the full game - it unlocks every puzzle back to the first. Archive puzzles are recorded separately and never affect your streak."
+      },
+      {
+        "q": "How do I report a bug?",
+        "a": "Email hunch@pacificfrontdesk.com with the subject 'Hunch bug'. Say what you did, what you expected, and what happened instead, and include the DAY number from the top of the board. A screenshot or screen recording doubles the odds of a fast fix."
+      }
+    ]
+  },
+  "privacy": {
+    "updated": "2026-09-09",
+    "summary": [
+      {
+        "what": "Your play history and streak",
+        "why": "So the board can show your streak and your stats",
+        "whoSees": "Only you - it never leaves your device",
+        "howToDelete": "Delete the app and it goes with it"
+      },
+      {
+        "what": "Game Center scores",
+        "why": "Leaderboards for longest streak and puzzles solved",
+        "whoSees": "Apple, and other players see your Game Center nickname",
+        "howToDelete": "Play signed out and nothing is submitted at all"
+      },
+      {
+        "what": "Purchase receipt",
+        "why": "To unlock the full game and restore it later",
+        "whoSees": "Apple processes it; the studio sees only a valid-or-not signal",
+        "howToDelete": "Managed by Apple with your Apple account"
+      },
+      {
+        "what": "Daily reminder",
+        "why": "One notification when a new puzzle is up, if you allow it",
+        "whoSees": "Nobody - it is scheduled on your device",
+        "howToDelete": "Turn it off in the app, or in iOS Settings"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What this game collects",
+        "body": "Nothing. Hunch has no accounts, no analytics, no advertising, and no third-party tracking of any kind. Everything the game knows about you stays on your device, and the studio never sees any of it."
+      },
+      {
+        "heading": "What stays on your device",
+        "body": "The game saves four things locally and nowhere else: which puzzles you have played and how many guesses each took, your current and longest streak, your settings - board, colour-blind mode, sound, haptics, reminders - and whether you have bought the full game. Deleting the app deletes all of it."
+      },
+      {
+        "heading": "Game Center",
+        "body": "If you are signed in to Game Center, Hunch submits two numbers to Apple's leaderboards: your longest streak and how many puzzles you have solved. Your Game Center nickname is shown beside them to other players. Apple handles all of it under Apple's privacy policy, and your Apple account details never reach the studio. The whole game plays without signing in; only the leaderboards need it."
+      },
+      {
+        "heading": "Purchases",
+        "body": "The full game is a one-time purchase handled by Apple. Payment details are never sent to the studio and the studio never sees them - only a signal from Apple that the purchase is valid."
+      },
+      {
+        "heading": "Notifications",
+        "body": "If you allow it, Hunch sends one reminder a day when a new puzzle is available. The notification is scheduled on your device and nothing is sent from a server. You can turn it off in the app, or in the Settings app."
+      },
+      {
+        "heading": "Children",
+        "body": "Hunch is rated 4+ and is safe for children. Since it collects nothing, there is nothing to collect from a child either."
+      },
+      {
+        "heading": "If this ever changes",
+        "body": "If a future version collects anything at all, this page will be updated before that version ships, and the change will be described here rather than buried. Questions go to hunch@pacificfrontdesk.com."
+      }
+    ]
+  },
+  "press": {
+    "blurb": "Hunch is a daily deduction puzzle for iPhone with no words in it. One hidden pattern of five pieces a day, the same one for every player, with six guesses and a single attempt. Each piece is a shape and a colour, and the board reports only what was right, never where. The daily puzzle is free; one purchase unlocks the archive and all six boards. No ads, no subscription. Made by one person in Los Angeles.",
+    "facts": [
+      { "label": "Developer", "value": "Nattskift Games, Los Angeles" },
+      { "label": "Release", "value": "Coming soon" },
+      { "label": "Platform", "value": "iPhone" },
+      { "label": "Price", "value": "Free, one-time full-game unlock" },
+      { "label": "Daily puzzle", "value": "New at 10:00 UTC, the same for everyone" },
+      { "label": "Support", "value": "hunch@pacificfrontdesk.com" }
+    ]
+  }
+}

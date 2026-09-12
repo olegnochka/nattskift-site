@@ -58,9 +58,10 @@ const games = defineCollection({
         }),
       )
       .length(3),
+    /** Real device captures only - as many as the game actually has public. */
     screenshots: z
       .array(z.object({ src: image(), alt: z.string() }))
-      .min(6)
+      .min(3)
       .max(8),
     /** The explicit monetization statement. Rendered on royal fill. */
     deal: z.object({
@@ -79,11 +80,14 @@ const games = defineCollection({
       engine: z.string(),
       developer: z.string(),
     }),
-    latestUpdate: z.object({
-      version: z.string(),
-      date: z.string(),
-      changes: z.array(z.string()).length(3),
-    }),
+    /** Omitted for a game with no published changelog yet. */
+    latestUpdate: z
+      .object({
+        version: z.string(),
+        date: z.string(),
+        changes: z.array(z.string()).length(3),
+      })
+      .optional(),
     support: z.object({
       /** Honest response time, stated on the support page. */
       responseTime: z.string(),
