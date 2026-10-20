@@ -15,3 +15,9 @@ https://nattskift.netlify.app/* https://nattskiftgames.com/:splat 301!
 # Hunch is hidden from this site; old links go to the games list.
 /games/hunch /games 301
 /games/hunch/* /games 301
+
+# Last Light and Trash Games Factory are hidden; old links go to the games list.
+/games/last-light /games 301
+/games/last-light/* /games 301
+/games/trash-games-factory /games 301
+/games/trash-games-factory/* /games 301
