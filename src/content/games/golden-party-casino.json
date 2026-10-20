@@ -45,12 +45,30 @@
     }
   ],
   "screenshots": [
-    { "src": "./art/gpc-shot-1.jpg", "alt": "The lobby: six machine cards under the Golden Party Casino title, with Party Slots unlocked and framed in gold." },
-    { "src": "./art/gpc-shot-2.jpg", "alt": "Party Slots mid-session: an ornate golden frame around five reels, a WILD symbol on the center reel." },
-    { "src": "./art/gpc-shot-3.jpg", "alt": "The Daily Wheel stage: a jeweled prize wheel under golden letters, ready for its free spin." },
-    { "src": "./art/gpc-shot-4.jpg", "alt": "Daily missions: three tasks with progress bars, one ready to claim, and a bonus for completing all three." },
-    { "src": "./art/gpc-shot-5.jpg", "alt": "A NEW CARD popup: a golden star card dropped mid-spin, ready to be added to the Party Slots album." },
-    { "src": "./art/gpc-shot-6.jpg", "alt": "My Albums: all six machines listed with card-collection progress bars, one card already found." }
+    {
+      "src": "./art/gpc-shot-1.jpg",
+      "alt": "The lobby: six machine cards under the Golden Party Casino title, with Party Slots unlocked and framed in gold."
+    },
+    {
+      "src": "./art/gpc-shot-2.jpg",
+      "alt": "Party Slots mid-session: an ornate golden frame around five reels, a WILD symbol on the center reel."
+    },
+    {
+      "src": "./art/gpc-shot-3.jpg",
+      "alt": "The Daily Wheel stage: a jeweled prize wheel under golden letters, ready for its free spin."
+    },
+    {
+      "src": "./art/gpc-shot-4.jpg",
+      "alt": "Daily missions: three tasks with progress bars, one ready to claim, and a bonus for completing all three."
+    },
+    {
+      "src": "./art/gpc-shot-5.jpg",
+      "alt": "A NEW CARD popup: a golden star card dropped mid-spin, ready to be added to the Party Slots album."
+    },
+    {
+      "src": "./art/gpc-shot-6.jpg",
+      "alt": "My Albums: all six machines listed with card-collection progress bars, one card already found."
+    }
   ],
   "deal": {
     "free": "Everything. All six machines, the wheel, missions, albums, and a 2,000,000-coin welcome balance. Nothing is level-locked behind a purchase.",
@@ -146,17 +164,6 @@
         "heading": "Deleting everything, and reaching a human",
         "body": "Settings, Delete Account permanently erases your server data in one step, no email required. For anything else, write to goldenpartycasino@pacificfrontdesk.com and the person who built the game will answer."
       }
-    ]
-  },
-  "press": {
-    "blurb": "Golden Party Casino: Slots is a free-to-play social casino for iPhone: six themed slot machines with individually tuned math, a daily bonus wheel with streak multipliers, daily missions, and collectible card albums. Coins are virtual only - no real-money gambling, no ads, rated 18+. Built in Swift and SpriteKit by Nattskift Games, published by Pacific Front Desk.",
-    "facts": [
-      { "label": "Developer", "value": "Nattskift Games, Los Angeles" },
-      { "label": "Publisher", "value": "Pacific Front Desk" },
-      { "label": "Release", "value": "Coming 2026" },
-      { "label": "Platform", "value": "iPhone, iOS 17+" },
-      { "label": "Price", "value": "Free, optional coin packs" },
-      { "label": "Engine", "value": "Swift + SpriteKit" }
     ]
   }
 }

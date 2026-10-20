@@ -48,12 +48,30 @@
     }
   ],
   "screenshots": [
-    { "src": "./art/ll-shot-1.svg", "alt": "Night seven. The HUD shows a warmth meter while a campfire holds back the dark below a mountain ridge." },
-    { "src": "./art/ll-shot-2.svg", "alt": "The crafting screen: an eight-slot inventory and a fire kit recipe asking for birch bark, flint, and dry grass." },
-    { "src": "./art/ll-shot-3.svg", "alt": "A hand-drawn contour map with a river, a camp marker, and unexplored fog at the south edge." },
-    { "src": "./art/ll-shot-4.svg", "alt": "Dawn stats card: you made it to day 8, warmth held six hours, three wolves heard but not seen." },
-    { "src": "./art/ll-shot-5.svg", "alt": "The shelter screen: a built lean-to with the next wall upgrade sketched as a dashed outline." },
-    { "src": "./art/ll-shot-6.svg", "alt": "Pairs of eyes at the treeline beyond the firelight, and a choice: feed the fire, or save the wood." }
+    {
+      "src": "./art/ll-shot-1.svg",
+      "alt": "Night seven. The HUD shows a warmth meter while a campfire holds back the dark below a mountain ridge."
+    },
+    {
+      "src": "./art/ll-shot-2.svg",
+      "alt": "The crafting screen: an eight-slot inventory and a fire kit recipe asking for birch bark, flint, and dry grass."
+    },
+    {
+      "src": "./art/ll-shot-3.svg",
+      "alt": "A hand-drawn contour map with a river, a camp marker, and unexplored fog at the south edge."
+    },
+    {
+      "src": "./art/ll-shot-4.svg",
+      "alt": "Dawn stats card: you made it to day 8, warmth held six hours, three wolves heard but not seen."
+    },
+    {
+      "src": "./art/ll-shot-5.svg",
+      "alt": "The shelter screen: a built lean-to with the next wall upgrade sketched as a dashed outline."
+    },
+    {
+      "src": "./art/ll-shot-6.svg",
+      "alt": "Pairs of eyes at the treeline beyond the firelight, and a choice: feed the fire, or save the wood."
+    }
   ],
   "deal": {
     "free": "The first seven nights. Full mechanics, full difficulty, no feature cut down to sell it back to you.",
@@ -149,16 +167,6 @@
         "heading": "Your rights and how to reach a human",
         "body": "There is very little data to request or delete, but you can always ask what exists. Email info@nattskiftgames.com with the subject 'Data request' and you will hear back from the person who wrote both the game and this policy."
       }
-    ]
-  },
-  "press": {
-    "blurb": "Last Light is a wilderness survival game for iPhone about the hours between dusk and dawn. Gather and build by daylight, hold the fire through the dark, and pay once if you want more than seven nights. No ads, no timers, made by one person in Los Angeles.",
-    "facts": [
-      { "label": "Developer", "value": "Nattskift Games, Los Angeles" },
-      { "label": "Release", "value": "November 6, 2025" },
-      { "label": "Platform", "value": "iPhone, iOS 17+" },
-      { "label": "Price", "value": "Free to start, $6.99 full unlock" },
-      { "label": "Engine", "value": "Swift + SpriteKit" }
     ]
   }
 }

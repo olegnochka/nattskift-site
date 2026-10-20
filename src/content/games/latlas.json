@@ -87,34 +87,5 @@
     "developer": "Oleg Nochka (Nattskift Games)"
   },
   "supportUrl": "https://pacificfrontdesk.github.io/latlas/support.html",
-  "privacyUrl": "https://pacificfrontdesk.github.io/latlas/privacy.html",
-  "press": {
-    "blurb": "Latlas is a daily geography game for iPhone. It drops you on a real street somewhere on Earth and asks you to work out where you are: read the signs, check the driving side, then drop a pin on the map. Every day brings the same five places for every player, and a turnable globe fills in as you visit new countries. Latlas uses only official Google Street View imagery, runs in six languages, and is free with no ads and no account. Made by one person in Los Angeles.",
-    "facts": [
-      {
-        "label": "Developer",
-        "value": "Oleg Nochka (Nattskift Games), Los Angeles"
-      },
-      {
-        "label": "Release",
-        "value": "Coming soon"
-      },
-      {
-        "label": "Platform",
-        "value": "iPhone"
-      },
-      {
-        "label": "Price",
-        "value": "Free"
-      },
-      {
-        "label": "Daily challenge",
-        "value": "New at 00:00 UTC, the same for everyone"
-      },
-      {
-        "label": "Support",
-        "value": "support@pacificfrontdesk.com"
-      }
-    ]
-  }
+  "privacyUrl": "https://pacificfrontdesk.github.io/latlas/privacy.html"
 }

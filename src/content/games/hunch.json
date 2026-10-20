@@ -169,16 +169,5 @@
         "body": "If a future version collects anything at all, this page will be updated before that version ships, and the change will be described here rather than buried. Questions go to hunch@pacificfrontdesk.com."
       }
     ]
-  },
-  "press": {
-    "blurb": "Hunch is a daily deduction puzzle for iPhone with no words in it. One hidden pattern of five pieces a day, the same one for every player, with six guesses and a single attempt. Each piece is a shape and a colour, and the board reports only what was right, never where. The daily puzzle is free; one purchase unlocks the archive and all six boards. No ads, no subscription. Made by one person in Los Angeles.",
-    "facts": [
-      { "label": "Developer", "value": "Nattskift Games, Los Angeles" },
-      { "label": "Release", "value": "Coming soon" },
-      { "label": "Platform", "value": "iPhone" },
-      { "label": "Price", "value": "Free, one-time full-game unlock" },
-      { "label": "Daily puzzle", "value": "New at 10:00 UTC, the same for everyone" },
-      { "label": "Support", "value": "hunch@pacificfrontdesk.com" }
-    ]
   }
 }

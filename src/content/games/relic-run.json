@@ -92,15 +92,5 @@
     "developer": "Nattskift Games (tiny team ;)"
   },
   "supportUrl": "https://pacificfrontdesk.github.io/relic-run/support.html",
-  "privacyUrl": "https://pacificfrontdesk.github.io/relic-run/privacy.html",
-  "press": {
-    "blurb": "Relic Run is a logic puzzle adventure for iPhone. Players slide carved arrow tiles out of sealed temple vaults, choose safe or risky routes through four-vault expeditions, and recover 30 hand-painted relics to restore a museum. Free to play with no ads.",
-    "facts": [
-      { "label": "Platform", "value": "iPhone" },
-      { "label": "Release", "value": "October 19, 2026" },
-      { "label": "Price", "value": "Free, optional in-app purchases" },
-      { "label": "Developer", "value": "Nattskift Games, Los Angeles" },
-      { "label": "App Store", "value": "apps.apple.com/app/id6811707026" }
-    ]
-  }
+  "privacyUrl": "https://pacificfrontdesk.github.io/relic-run/privacy.html"
 }

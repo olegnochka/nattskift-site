@@ -7,3 +7,7 @@ https://www.nattskiftgames.store/* https://nattskiftgames.com/:splat 301!
 https://nattskiftgames.studio/* https://nattskiftgames.com/:splat 301!
 https://www.nattskiftgames.studio/* https://nattskiftgames.com/:splat 301!
 https://nattskift.netlify.app/* https://nattskiftgames.com/:splat 301!
+
+# The press page was removed.
+/press /games 301
+/press/* /games 301

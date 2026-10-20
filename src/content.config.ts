@@ -4,7 +4,7 @@ import { glob } from 'astro/loaders';
 /**
  * One JSON file in src/content/games/ = one game = four routes
  * (/games/[id], /games/[id]/support, /games/[id]/privacy, plus its
- * footer links, homepage card, press section, and OG image).
+ * footer links, homepage card, and OG image).
  * Drop in a new file and the whole site picks it up.
  */
 const games = defineCollection({
@@ -109,10 +109,6 @@ const games = defineCollection({
       ),
       sections: z.array(z.object({ heading: z.string(), body: z.string() })),
     }).optional(),
-    press: z.object({
-      blurb: z.string(),
-      facts: z.array(z.object({ label: z.string(), value: z.string() })),
-    }),
   }).superRefine((g, ctx) => {
     if (!g.supportUrl && !g.support) ctx.addIssue({ code: 'custom', path: ['support'], message: 'support is required unless supportUrl is set' });
     if (!g.privacyUrl && !g.privacy) ctx.addIssue({ code: 'custom', path: ['privacy'], message: 'privacy is required unless privacyUrl is set' });
