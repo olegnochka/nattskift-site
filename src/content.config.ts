@@ -14,6 +14,9 @@ const games = defineCollection({
     title: z.string(),
     /** Sort order on /games and the homepage slate. */
     order: z.number(),
+    /** Hides the game everywhere on the site: lists, footer, its pages and the sitemap. The JSON stays, so
+     *  un-hiding is one word. */
+    hidden: z.boolean().default(false),
     /** Page metadata: title under 60 chars, description 150–160 chars. */
     seo: z.object({
       title: z.string().max(60),

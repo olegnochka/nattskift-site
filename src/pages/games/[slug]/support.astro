@@ -4,7 +4,7 @@ import Base from '../../../layouts/Base.astro';
 import FaqAccordion from '../../../components/FaqAccordion.astro';
 
 export async function getStaticPaths() {
-  const games = await getCollection('games');
+  const games = await getCollection('games', (g) => !g.data.hidden);
   return games
     .filter((game) => !game.data.supportUrl)
     .map((game) => ({ params: { slug: game.id }, props: { game } }));

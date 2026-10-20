@@ -7,7 +7,7 @@ import AppStoreBadge from '../../../components/AppStoreBadge.astro';
 import Trailer from '../../../components/Trailer.astro';
 
 export async function getStaticPaths() {
-  const games = await getCollection('games');
+  const games = await getCollection('games', (g) => !g.data.hidden);
   return games.map((game) => ({ params: { slug: game.id }, props: { game } }));
 }
 

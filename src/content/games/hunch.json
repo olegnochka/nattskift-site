@@ -169,5 +169,6 @@
         "body": "If a future version collects anything at all, this page will be updated before that version ships, and the change will be described here rather than buried. Questions go to hunch@pacificfrontdesk.com."
       }
     ]
-  }
+  },
+  "hidden": true
 }

@@ -11,3 +11,7 @@ https://nattskift.netlify.app/* https://nattskiftgames.com/:splat 301!
 # The press page was removed.
 /press /games 301
 /press/* /games 301
+
+# Hunch is hidden from this site; old links go to the games list.
+/games/hunch /games 301
+/games/hunch/* /games 301

@@ -4,21 +4,21 @@ import Base from '../../layouts/Base.astro';
 import GameCard from '../../components/GameCard.astro';
 import InProgressCard from '../../components/InProgressCard.astro';
 
-const games = (await getCollection('games')).sort(
+const games = (await getCollection('games', (g) => !g.data.hidden)).sort(
   (a, b) => a.data.order - b.data.order,
 );
 ---
 
 <Base
   title="Games - Nattskift Games"
-  description="Six iOS games from a one-person studio in Los Angeles: Relic Run, Golden Party Casino, Hunch, Last Light, Trash Games Factory and Latlas. No ads, ever."
+  description="Five iOS games from a one-person studio in Los Angeles: Relic Run, Golden Party Casino, Last Light, Trash Games Factory and Latlas. No ads, ever."
   ogImage="/og/games.png"
 >
   <section class="section-pad">
     <div class="mx-auto max-w-6xl px-6">
       <h1 class="type-page-title" data-reveal>The games</h1>
       <p class="type-lead measure mt-6 text-muted" data-reveal style="--reveal-index: 1">
-        Six titles, all iOS, all built by one person. Free to try, priced in
+        Five titles, all iOS, all built by one person. Free to try, priced in
         real money, finished before they ship.
       </p>
       <div class="mt-16 grid gap-8 md:grid-cols-2">

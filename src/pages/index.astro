@@ -5,7 +5,7 @@ import LogoLockup from '../components/LogoLockup.astro';
 import GameCard from '../components/GameCard.astro';
 import InProgressCard from '../components/InProgressCard.astro';
 
-const games = (await getCollection('games')).sort(
+const games = (await getCollection('games', (g) => !g.data.hidden)).sort(
   (a, b) => a.data.order - b.data.order,
 );
 const notes = (await getCollection('notes')).sort(

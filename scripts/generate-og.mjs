@@ -106,6 +106,7 @@ for (const entry of await readdir(gamesDir)) {
   if (!entry.endsWith('.json')) continue;
   const id = entry.replace(/\.json$/, '');
   const game = JSON.parse(await readFile(path.join(gamesDir, entry), 'utf8'));
+  if (game.hidden) continue;
   await makeCard(`${id}.png`, game.title, game.hook);
   if (!game.supportUrl) await makeCard(`${id}-support.png`, `${game.title} support`, 'Email a human. Replies usually within two days.');
   if (!game.privacyUrl) await makeCard(`${id}-privacy.png`, `${game.title} privacy`, 'No accounts, no analytics, no ad SDK. The short version is the whole version.');

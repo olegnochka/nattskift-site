@@ -3,7 +3,7 @@ import { supportHref, privacyHref } from '../lib/gameLinks';
 import { getCollection } from 'astro:content';
 import LogoMonogram from './LogoMonogram.astro';
 
-const games = (await getCollection('games')).sort(
+const games = (await getCollection('games', (g) => !g.data.hidden)).sort(
   (a, b) => a.data.order - b.data.order,
 );
 const year = new Date().getFullYear();
