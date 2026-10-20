@@ -11,7 +11,9 @@ const games = (await getCollection('games', (g) => !g.data.hidden)).sort(
 const notes = (await getCollection('notes')).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
-const latestNote = notes[0];
+// Notes are hidden: the pages live in src/pages/_notes (not routed). Restore them by renaming that
+// folder back to `notes`, and re-add the header and footer links.
+const latestNote = undefined as (typeof notes)[number] | undefined;
 const site = Astro.site!.origin;
 
 const promises = [

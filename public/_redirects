@@ -21,3 +21,7 @@ https://nattskift.netlify.app/* https://nattskiftgames.com/:splat 301!
 /games/last-light/* /games 301
 /games/trash-games-factory /games 301
 /games/trash-games-factory/* /games 301
+
+# Notes are hidden; old links go home.
+/notes / 301
+/notes/* / 301
