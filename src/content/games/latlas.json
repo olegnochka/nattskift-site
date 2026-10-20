@@ -19,8 +19,8 @@
   "appStoreId": "6812973799",
   "comingSoon": true,
   "keyArt": {
-    "src": "./art/latlas-key.jpg",
-    "alt": "The Latlas icon: a glowing glass globe with meridian lines and an orange map pin, on a deep navy background."
+    "src": "./art/latlas-hero.jpg",
+    "alt": "A glowing glass globe showing the Americas with one orange map pin, ringed by six floating windows of roads around the world: a desert highway, a narrow European lane, a tropical coast road, a city boulevard, an alpine pass and a snowy mountain road."
   },
   "trailer": null,
   "pillars": [
