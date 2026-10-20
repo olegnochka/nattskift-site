@@ -88,11 +88,15 @@ const games = defineCollection({
         changes: z.array(z.string()).length(3),
       })
       .optional(),
+    /** Support page hosted elsewhere (and linked from the app). Skips /games/<id>/support. */
+    supportUrl: z.string().url().optional(),
+    /** Privacy policy hosted elsewhere. Skips /games/<id>/privacy. */
+    privacyUrl: z.string().url().optional(),
     support: z.object({
       /** Honest response time, stated on the support page. */
       responseTime: z.string(),
       faq: z.array(z.object({ q: z.string(), a: z.string() })),
-    }),
+    }).optional(),
     privacy: z.object({
       updated: z.string(),
       summary: z.array(
@@ -104,11 +108,14 @@ const games = defineCollection({
         }),
       ),
       sections: z.array(z.object({ heading: z.string(), body: z.string() })),
-    }),
+    }).optional(),
     press: z.object({
       blurb: z.string(),
       facts: z.array(z.object({ label: z.string(), value: z.string() })),
     }),
+  }).superRefine((g, ctx) => {
+    if (!g.supportUrl && !g.support) ctx.addIssue({ code: 'custom', path: ['support'], message: 'support is required unless supportUrl is set' });
+    if (!g.privacyUrl && !g.privacy) ctx.addIssue({ code: 'custom', path: ['privacy'], message: 'privacy is required unless privacyUrl is set' });
   }),
 });
 

@@ -1,0 +1,106 @@
+{
+  "title": "Relic Run",
+  "order": 0,
+  "seo": {
+    "title": "Relic Run - puzzle expedition for iOS - Nattskift Games",
+    "description": "Relic Run is a logic puzzle adventure for iPhone. Slide arrow tiles out of temple vaults, pick safe or risky routes, and fill a museum with 30 relics. No ads.",
+    "supportTitle": "Relic Run Support - Nattskift Games",
+    "supportDescription": "Support for Relic Run on iOS: restoring purchases, iCloud progress, energy and gems, notifications, and how to report a bug.",
+    "privacyTitle": "Relic Run Privacy Policy - Nattskift Games",
+    "privacyDescription": "The Relic Run privacy policy: the game collects no data. No analytics, no ads, no tracking. Progress stays on your device and in your own iCloud."
+  },
+  "hook": "Slide the tiles. Open the vault.",
+  "pitch": "Every tile in a sealed temple vault bears a carved arrow, and a tile only leaves the board when the path in front of it is clear. Read the board, find the order, and the doors grind open. Go four vaults deep, take the safe route or the risky one, and bring the relics home to a museum that slowly comes back to life.",
+  "tags": {
+    "genre": "Puzzle adventure",
+    "platform": "iOS",
+    "price": "Free to play"
+  },
+  "appStoreId": "6811707026",
+  "comingSoon": false,
+  "keyArt": {
+    "src": "./art/relic-run-key.jpg",
+    "alt": "An explorer raises a lantern before a temple vault door of carved arrow tiles glowing jade, with a golden mask relic on a stone plinth beside it."
+  },
+  "pageBackground": "./art/relic-run-bg.jpg",
+  "trailer": null,
+  "pillars": [
+    {
+      "title": "Every tile points one way",
+      "body": "A tile slides out along its arrow, but only if nothing is in the way. No luck and no hidden rules - every board is checked to be solvable before you see it.",
+      "image": "./art/rr-pillar-tiles.jpg",
+      "alt": "Carved stone tiles with arrows; the ones that can move glow jade, a stone block sits in the way, and a cracked tile counts down from five."
+    },
+    {
+      "title": "Safe route or risky route",
+      "body": "Each expedition is four vaults, each deeper and richer than the last. The risky route pays more, with timed vaults, crumbling tiles and stone in the way. Finish all four for a 75% bonus on the bag.",
+      "image": "./art/rr-pillar-routes.jpg",
+      "alt": "Two route cards: a jade Safe Route puzzle and an orange Risky Route timed vault, each with its coin reward and an Enter button."
+    },
+    {
+      "title": "A museum to fill",
+      "body": "Thirty hand-painted relics in five collections, from the Egyptian Treasury to the Frost Hoard. Restore five galleries, put every relic on display, and grow your camp from a bivouac into a full expedition base.",
+      "image": "./art/rr-pillar-relics.jpg",
+      "alt": "The golden Pharaoh Mask floating above a stone plinth in a violet glow."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./art/rr-shot-1.jpg",
+      "alt": "A vault board of carved arrow tiles in the Jungle Temple; the tiles that can move glow jade, and a cracked tile counts down from five."
+    },
+    {
+      "src": "./art/rr-shot-2.jpg",
+      "alt": "The expedition camp: a tent, a campfire and the museum ruin, above a safe route card and a risky route card."
+    },
+    {
+      "src": "./art/rr-shot-3.jpg",
+      "alt": "The golden Pharaoh Mask on a stone plinth, an Epic relic from the Egyptian Treasury."
+    },
+    {
+      "src": "./art/rr-shot-4.jpg",
+      "alt": "The painted world map with five regions, from the Jungle Temple to the Lost Sanctuary."
+    },
+    {
+      "src": "./art/rr-shot-5.jpg",
+      "alt": "The relic collections: the Egyptian Treasury, Jade Court and Frost Hoard, six relics each."
+    },
+    {
+      "src": "./art/rr-shot-6.jpg",
+      "alt": "The museum's Entrance Hall, abandoned and waiting to be cleaned up and filled."
+    }
+  ],
+  "deal": {
+    "free": "The whole game. Every region, puzzle and relic can be earned by playing. Tools are bought with the coins you win in vaults, every puzzle has a free hint, and there is a daily chest by the campfire.",
+    "paid": "Energy paces play: a vault costs 2 or 4, the bar holds 30 and refills one point every ten minutes, and Rest gives 8 more for free once an hour. Gems refill the bar at once - that is all they buy. A one-time Starter Pack adds gems, tools, a relic and a tent.",
+    "costs": "Gem packs are $1.99 for 20, $4.99 for 60 and $9.99 for 140, and the Starter Pack is $4.99, once. Each shows its real-money price on the button before you tap. A full energy refill costs 10 gems.",
+    "never": [
+      "No adverts, anywhere, ever - not even rewarded video.",
+      "No subscription.",
+      "Nothing random is sold. The daily chest is free.",
+      "No account, no analytics, and no connection needed to play."
+    ]
+  },
+  "facts": {
+    "platform": "iPhone",
+    "minimumOS": "iOS 17.0",
+    "size": "231 MB",
+    "languages": "English",
+    "releaseDate": "October 19, 2026",
+    "price": "Free / optional in-app purchases",
+    "engine": "Swift (SwiftUI)",
+    "developer": "Nattskift Games (one person)"
+  },
+  "supportUrl": "https://pacificfrontdesk.github.io/relic-run/support.html",
+  "privacyUrl": "https://pacificfrontdesk.github.io/relic-run/privacy.html",
+  "press": {
+    "blurb": "Relic Run is a logic puzzle adventure for iPhone. Players slide carved arrow tiles out of sealed temple vaults, choose safe or risky routes through four-vault expeditions, and recover 30 hand-painted relics to restore a museum. Free to play with no ads.",
+    "facts": [
+      { "label": "Platform", "value": "iPhone" },
+      { "label": "Release", "value": "October 19, 2026" },
+      { "label": "Price", "value": "Free, optional in-app purchases" },
+      { "label": "Developer", "value": "Nattskift Games, Los Angeles" },
+      { "label": "App Store", "value": "apps.apple.com/app/id6811707026" }
+    ]
+  }
+}

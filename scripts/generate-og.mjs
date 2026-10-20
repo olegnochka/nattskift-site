@@ -91,7 +91,7 @@ async function makeCard(file, title, subtitle) {
 await mkdir(outDir, { recursive: true });
 
 const staticCards = [
-  ['default.png', 'Made on the night shift.', 'iOS games by one person in Los Angeles. No ads, no timers.'],
+  ['default.png', 'Made on the night shift.', 'iOS games by one person in Los Angeles. No ads, no dark patterns.'],
   ['games.png', 'The games', 'Free to try, priced in real money, finished before they shipped.'],
   ['about.png', 'About the studio', 'Nattskift means night shift. The studio is one person in Los Angeles.'],
   ['press.png', 'Press', 'Fact sheet and assets. No form, no gate, no "request access."'],
@@ -108,6 +108,6 @@ for (const entry of await readdir(gamesDir)) {
   const id = entry.replace(/\.json$/, '');
   const game = JSON.parse(await readFile(path.join(gamesDir, entry), 'utf8'));
   await makeCard(`${id}.png`, game.title, game.hook);
-  await makeCard(`${id}-support.png`, `${game.title} support`, 'Email a human. Replies usually within two days.');
-  await makeCard(`${id}-privacy.png`, `${game.title} privacy`, 'No accounts, no analytics, no ad SDK. The short version is the whole version.');
+  if (!game.supportUrl) await makeCard(`${id}-support.png`, `${game.title} support`, 'Email a human. Replies usually within two days.');
+  if (!game.privacyUrl) await makeCard(`${id}-privacy.png`, `${game.title} privacy`, 'No accounts, no analytics, no ad SDK. The short version is the whole version.');
 }

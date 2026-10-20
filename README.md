@@ -1,7 +1,7 @@
 # nattskift.games
 
 Static marketing site for Nattskift Games — one person, Los Angeles, iOS
-games with no ads, no energy timers, no dark patterns. Astro 7 + Tailwind 4,
+games with no ads and no dark patterns. Astro 7 + Tailwind 4,
 static HTML only, no client-side JavaScript required to read anything.
 
 ## Local development

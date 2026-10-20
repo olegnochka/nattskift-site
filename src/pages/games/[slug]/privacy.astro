@@ -4,14 +4,16 @@ import Base from '../../../layouts/Base.astro';
 
 export async function getStaticPaths() {
   const games = await getCollection('games');
-  return games.map((game) => ({ params: { slug: game.id }, props: { game } }));
+  return games
+    .filter((game) => !game.data.privacyUrl)
+    .map((game) => ({ params: { slug: game.id }, props: { game } }));
 }
 
 interface Props {
   game: CollectionEntry<'games'>;
 }
 const { game } = Astro.props;
-const g = game.data;
+const g = game.data as typeof game.data & { privacy: NonNullable<typeof game.data.privacy> };
 ---
 
 <Base
