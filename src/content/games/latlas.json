@@ -1,0 +1,120 @@
+{
+  "title": "Latlas",
+  "order": 5,
+  "seo": {
+    "title": "Latlas - daily geography game for iOS - Nattskift Games",
+    "description": "Latlas drops you on a real street somewhere on Earth. Look around, drop a pin, see how close you got. A new five-place daily, free, no ads, no account.",
+    "supportTitle": "Latlas Support - Nattskift Games",
+    "supportDescription": "Support for Latlas on iOS: the daily challenge, streaks, the Atlas globe, Game Center leaderboards, reminders, and how to reach the developer.",
+    "privacyTitle": "Latlas Privacy Policy - Nattskift Games",
+    "privacyDescription": "The Latlas privacy policy in plain language: the game collects nothing itself. No accounts, no analytics, no advertising. Street View imagery comes from Google."
+  },
+  "hook": "Dropped somewhere on Earth. Work out where.",
+  "pitch": "Latlas puts you on a real street somewhere in the world. Look around, read the signs, notice which side the cars drive on, then drop your pin on the map. Every day brings the same five places for everyone. A globe fills in as you visit new countries. Free, no ads, no account.",
+  "tags": {
+    "genre": "Geography guessing game",
+    "platform": "iOS",
+    "price": "Free"
+  },
+  "appStoreId": "6812973799",
+  "comingSoon": true,
+  "keyArt": {
+    "src": "./art/latlas-key.jpg",
+    "alt": "The Latlas icon: a glowing glass globe with meridian lines and an orange map pin, on a deep navy background."
+  },
+  "trailer": null,
+  "pillars": [
+    {
+      "title": "Real streets, official imagery",
+      "body": "Thousands of places in more than a hundred countries, every one checked against Google's own Street View coverage. No blurry amateur photospheres: only official imagery, picked and verified before it ships.",
+      "image": "./art/lat-pillar-imagery.jpg",
+      "alt": "A straight outback road through red earth under a pale blue sky, as shown in a Latlas round."
+    },
+    {
+      "title": "Five places a day, the same for everyone",
+      "body": "The daily is five rounds and one try, identical for every player. Keep your streak, compare notes with a friend, and share a score card that never gives the places away.",
+      "image": "./art/lat-pillar-daily.jpg",
+      "alt": "The Latlas daily card: Challenge number 38, five places, same for everyone, one try, with a Play today button."
+    },
+    {
+      "title": "A world that fills in",
+      "body": "The Atlas is a globe you can turn. Every country you have stood in lights up, grouped by continent, so you can see at a glance where you have never been.",
+      "image": "./art/lat-pillar-atlas.jpg",
+      "alt": "A turnable globe in the Atlas tab, with the Americas highlighted in bright cyan as visited countries."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./art/lat-shot-1.jpg",
+      "alt": "A Street View round: a long straight road across red desert, with a Place your guess button below."
+    },
+    {
+      "src": "./art/lat-shot-2.jpg",
+      "alt": "The guess map: a dark world map with a pin placed and a button to lock in the guess."
+    },
+    {
+      "src": "./art/lat-shot-3.jpg",
+      "alt": "The result sheet: Australia, 3,079 points, 723 kilometres away, with a clue for the country."
+    },
+    {
+      "src": "./art/lat-shot-4.jpg",
+      "alt": "The game summary: five rounds scored on a map with your guesses joined to the real places."
+    },
+    {
+      "src": "./art/lat-shot-5.jpg",
+      "alt": "The Atlas tab: a globe of visited countries and a list grouped by continent."
+    }
+  ],
+  "deal": {
+    "free": "All of it. The daily challenge, free play with or without a clock, the Atlas, your stats, Game Center leaderboards and a home screen widget.",
+    "paid": "Nothing. There is nothing to buy in this version.",
+    "costs": "Nothing, and there are no ads to sit through. The imagery comes from Google over the internet, so it uses a little mobile data.",
+    "never": [
+      "No adverts, anywhere, ever.",
+      "No account, no sign-up, and no email address needed to play.",
+      "No analytics or tracking of any kind from the studio.",
+      "Nothing to buy, now or hidden behind a menu."
+    ]
+  },
+  "facts": {
+    "platform": "iPhone",
+    "minimumOS": "iOS 17",
+    "size": "About 22 MB",
+    "languages": "English, Spanish, German, French, Brazilian Portuguese, Japanese",
+    "releaseDate": "Coming soon",
+    "price": "Free",
+    "engine": "Swift and SwiftUI",
+    "developer": "Oleg Nochka (Nattskift Games)"
+  },
+  "supportUrl": "https://pacificfrontdesk.github.io/latlas/support.html",
+  "privacyUrl": "https://pacificfrontdesk.github.io/latlas/privacy.html",
+  "press": {
+    "blurb": "Latlas is a daily geography game for iPhone. It drops you on a real street somewhere on Earth and asks you to work out where you are: read the signs, check the driving side, then drop a pin on the map. Every day brings the same five places for every player, and a turnable globe fills in as you visit new countries. Latlas uses only official Google Street View imagery, runs in six languages, and is free with no ads and no account. Made by one person in Los Angeles.",
+    "facts": [
+      {
+        "label": "Developer",
+        "value": "Oleg Nochka (Nattskift Games), Los Angeles"
+      },
+      {
+        "label": "Release",
+        "value": "Coming soon"
+      },
+      {
+        "label": "Platform",
+        "value": "iPhone"
+      },
+      {
+        "label": "Price",
+        "value": "Free"
+      },
+      {
+        "label": "Daily challenge",
+        "value": "New at 00:00 UTC, the same for everyone"
+      },
+      {
+        "label": "Support",
+        "value": "support@pacificfrontdesk.com"
+      }
+    ]
+  }
+}
