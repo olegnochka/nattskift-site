@@ -63,6 +63,10 @@
     {
       "src": "./art/lat-shot-5.jpg",
       "alt": "The Atlas tab: a globe of visited countries and a list grouped by continent."
+    },
+    {
+      "src": "./art/lat-shot-6.jpg",
+      "alt": "The Stats tab: games played, best game and average score, then career figures such as rounds played, best single round, closest guess and countries seen."
     }
   ],
   "deal": {
