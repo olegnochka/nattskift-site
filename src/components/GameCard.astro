@@ -1,15 +1,26 @@
 ---
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
+import badgeLive from '../assets/badges/badge-live.png';
+import badgeSoon from '../assets/badges/badge-soon.png';
 
 interface Props {
   game: CollectionEntry<'games'>;
 }
 const { game } = Astro.props;
-const { title, hook, tags, keyArt, appIcon } = game.data;
+const { title, hook, tags, keyArt, appIcon, comingSoon } = game.data;
+// Neon status sign in the corner: live on the App Store, or coming soon.
+const badge = comingSoon ? { src: badgeSoon, alt: 'Coming soon' } : { src: badgeLive, alt: 'Live now on the App Store' };
 ---
 
-<a href={`/games/${game.id}`} class="card group block overflow-hidden">
+<a href={`/games/${game.id}`} class="card group relative block overflow-hidden">
+  <Image
+    src={badge.src}
+    alt={badge.alt}
+    widths={[160, 320, 480]}
+    sizes="(min-width: 768px) 176px, 136px"
+    class="pointer-events-none absolute left-3 top-3 z-10 h-auto w-34 drop-shadow-lg md:left-4 md:top-4 md:w-44"
+  />
   <Image
     src={keyArt.src}
     alt={keyArt.alt}
