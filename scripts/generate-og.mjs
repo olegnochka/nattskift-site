@@ -94,7 +94,7 @@ const staticCards = [
   ['default.png', 'Made on the night shift.', 'iOS games by a tiny team in Los Angeles. No ads, no dark patterns.'],
   ['games.png', 'The games', 'Free to try, priced in real money, finished before they shipped.'],
   ['about.png', 'About the studio', 'Nattskift means night shift. The studio is a tiny team in Los Angeles.'],
-  ['privacy.png', 'Site privacy', 'No cookies, no analytics, no forms. The whole policy fits on one page.'],
+  ['privacy.png', 'Site privacy', 'Visit statistics by Google Analytics, nothing else unless you type it in. The whole policy fits on one page.'],
 ];
 
 for (const [file, title, subtitle] of staticCards) {

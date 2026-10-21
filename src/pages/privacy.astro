@@ -3,10 +3,10 @@ import Base from '../layouts/Base.astro';
 
 const summary = [
   {
-    what: 'Nothing, as you browse',
-    why: 'There is no analytics script, no cookie, no tracker',
-    whoSees: 'Nobody',
-    howToDelete: 'Nothing to delete',
+    what: 'Visit statistics, as you browse',
+    why: 'Google Analytics counts visits, pages viewed and how people found the site',
+    whoSees: 'Google, and the studio as totals in Google Analytics',
+    howToDelete: 'Block it in your browser or with Google\'s opt-out add-on; Google deletes it after its retention period',
   },
   {
     what: 'Standard server logs',
@@ -31,14 +31,14 @@ const summary = [
 
 <Base
   title="Site Privacy - Nattskift Games"
-  description="The site privacy policy in plain language: no cookies, no analytics, no trackers, self-hosted fonts. One optional launch-notify email field, explained honestly."
+  description="The site privacy policy in plain language: Google Analytics for visit statistics (with its cookies), no advertising trackers, self-hosted fonts. One optional launch-notify email field, explained honestly."
   ogImage="/og/privacy.png"
 >
   <section class="section-pad page-head">
     <div class="mx-auto max-w-6xl px-6">
       <h1 class="type-page-title">Site privacy</h1>
       <p class="type-micro mt-4 text-muted">
-        Last updated <time datetime="2026-08-31">2026-08-31</time>
+        Last updated <time datetime="2026-10-20">2026-10-20</time>
       </p>
 
       <h2 class="type-section mt-16">The short version</h2>
@@ -74,11 +74,25 @@ const summary = [
       <h2 class="type-section">The full policy</h2>
       <div class="measure mt-8 space-y-4 text-muted">
         <p>
-          This site is static files. It sets no cookies, runs no analytics,
-          loads no third-party scripts, and hosts its own fonts. There is no
-          account system, and browsing collects nothing. The one thing the
-          site can collect is described below, and it only happens if you
-          type it in yourself.
+          This site is static files with no account system, and it hosts its
+          own fonts. It does use one third-party script: Google Analytics,
+          which tells the studio how many people visit, which pages they read
+          and how they found the site (a search, a link, the App Store).
+        </p>
+        <p>
+          Google Analytics sets its own cookies and sends Google your browser
+          and device type, your approximate location (city level) and the
+          pages you view. Its advertising features are switched off, and
+          nothing you type into the site is sent to it. The studio only sees
+          totals, not who you are. To opt out, block it in your browser's
+          privacy settings or install
+          <a class="link-quiet" href="https://tools.google.com/dlpage/gaoptout">Google's opt-out add-on</a>.
+          Google's own handling is covered by
+          <a class="link-quiet" href="https://policies.google.com/privacy">Google's privacy policy</a>.
+        </p>
+        <p>
+          Apart from that, the site collects only what you type in yourself,
+          described below.
         </p>
         <p>
           Unreleased games have a notify-me field. If you enter your email
@@ -101,9 +115,9 @@ const summary = [
           person you were talking to.
         </p>
         <p>
-          Each game has its own policy, linked in the footer, and they are
-          just as short for the same reason: the games don't collect data
-          either.
+          Each game has its own policy, linked in the footer. Those cover the
+          apps themselves; this page covers the website, including the game
+          pages on it.
         </p>
       </div>
       <p class="measure mt-12 border-t border-hairline pt-8 text-muted">
