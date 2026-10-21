@@ -1,5 +1,5 @@
 ---
-import { supportHref, privacyHref } from '../../../lib/gameLinks';
+import { supportHref, privacyHref, termsHref } from '../../../lib/gameLinks';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { Image } from 'astro:assets';
 import Base from '../../../layouts/Base.astro';
@@ -289,6 +289,7 @@ const factRows: Array<[string, string]> = [
     <div class="mx-auto flex max-w-6xl flex-wrap gap-x-8 gap-y-3 px-6 py-10">
       <a class="link-quiet" href={supportHref(game)}>{g.title} support</a>
       <a class="link-quiet" href={privacyHref(game)}>{g.title} privacy</a>
+      {termsHref(game) && <a class="link-quiet" href={termsHref(game)}>{g.title} terms</a>}
     </div>
   </section>
 </Base>

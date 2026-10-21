@@ -114,6 +114,11 @@ const games = defineCollection({
       ),
       sections: z.array(z.object({ heading: z.string(), body: z.string() })),
     }).optional(),
+    /** Optional terms of use. Adds /games/<id>/terms and a Terms link. */
+    terms: z.object({
+      updated: z.string(),
+      sections: z.array(z.object({ heading: z.string(), body: z.string() })),
+    }).optional(),
   }).superRefine((g, ctx) => {
     if (!g.supportUrl && !g.support) ctx.addIssue({ code: 'custom', path: ['support'], message: 'support is required unless supportUrl is set' });
     if (!g.privacyUrl && !g.privacy) ctx.addIssue({ code: 'custom', path: ['privacy'], message: 'privacy is required unless privacyUrl is set' });

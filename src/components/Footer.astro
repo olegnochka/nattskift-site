@@ -1,5 +1,5 @@
 ---
-import { supportHref, privacyHref } from '../lib/gameLinks';
+import { supportHref, privacyHref, termsHref } from '../lib/gameLinks';
 import { getCollection } from 'astro:content';
 import LogoMonogram from './LogoMonogram.astro';
 
@@ -39,6 +39,13 @@ const year = new Date().getFullYear();
                   Privacy
                 </a>
               </li>
+              {termsHref(game) && (
+                <li>
+                  <a class="type-caption text-muted hover:text-text" href={termsHref(game)}>
+                    Terms
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
         ))

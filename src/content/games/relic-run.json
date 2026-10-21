@@ -95,6 +95,139 @@
     "engine": "Swift (SwiftUI)",
     "developer": "Nattskift Games (tiny team ;)"
   },
-  "supportUrl": "https://pacificfrontdesk.github.io/relic-run/support.html",
-  "privacyUrl": "https://pacificfrontdesk.github.io/relic-run/privacy.html"
+  "support": {
+    "responseTime": "Replies usually within two days. Include your iPhone model, iOS version and the level number shown at the top right of the screen.",
+    "faq": [
+      {
+        "q": "I am stuck on a board.",
+        "a": "Every board can be solved from what you can see, and every board is checked to be solvable before you see it. Tap Hint and it lights a tile whose path is clear right now. The first hint on each board is free; after that it uses a compass, which you can buy with coins in Supplies."
+      },
+      {
+        "q": "A cracked tile keeps crumbling.",
+        "a": "The number on a cracked tile counts down by one every time any tile leaves the board, not just when you touch that one. Clear the tiles blocking its path first, and save the rest of the board for afterwards."
+      },
+      {
+        "q": "I lost my coins in a vault.",
+        "a": "A timed vault collapses when the clock runs out, and the coins in your bag are lost with it. Relic fragments always survive, so collection progress is never at risk. A rope, bought with coins in Supplies, saves the coins once."
+      },
+      {
+        "q": "I am out of energy.",
+        "a": "A safe vault costs 2 energy and a risky one 4. The bar holds 30 and refills one point every ten minutes. In Supplies, Rest gives 8 energy for free once an hour, and 10 gems refill the whole bar at once."
+      },
+      {
+        "q": "What do gems buy?",
+        "a": "Energy refills - that is all. Tools (compass, pickaxe, rope) and the trader's relic fragments are bought with coins you win in vaults. Gem packs and the one-time Starter Pack are in Supplies, each showing the App Store's own price before you tap."
+      },
+      {
+        "q": "I bought something and did not get it.",
+        "a": "Purchases are delivered when the App Store confirms them, and an interrupted purchase is delivered the next time you open the game. For the Starter Pack, tap Restore purchases in the game's Settings. Gem packs are used up on delivery and cannot be restored, so if gems you paid for never arrived, email us with the date of the purchase."
+      },
+      {
+        "q": "How do I get a refund?",
+        "a": "Payments are taken by Apple, so refunds are too: request one at reportaproblem.apple.com, signed in with the Apple Account you paid with. We never see your payment details and cannot issue refunds ourselves."
+      },
+      {
+        "q": "The game got easier or harder on its own.",
+        "a": "That is deliberate. Boards adapt to how you are doing, on your iPhone, giving more room when you are struggling and less when you are not. See or override it under Settings, Difficulty: Relaxed, Normal or Expert. Levels and rewards never change."
+      },
+      {
+        "q": "I lost my progress, or got a new iPhone.",
+        "a": "If you are signed in to iCloud, your progress is copied to your own iCloud account. Open Settings in the game and tap Restore from iCloud. The save with more completed puzzles always wins, so syncing never costs progress. Without iCloud the save lived only on that iPhone and cannot be recovered - there is no account and no server of ours. Coins still in your bag from an unfinished expedition are not synced until the expedition ends."
+      },
+      {
+        "q": "The game is silent, or too loud.",
+        "a": "The game respects the silent switch. In the game's Settings, Sound effects, Ambience and Music can each be turned off separately."
+      },
+      {
+        "q": "Does it need a connection?",
+        "a": "No. Every level is generated and verified on your iPhone, and the game works offline. Only purchases and iCloud syncing need a connection. Optional notifications (energy full, trader restocked, streak reminder) are scheduled on the phone, not sent from a server."
+      }
+    ]
+  },
+  "privacy": {
+    "updated": "2026-10-20",
+    "summary": [
+      {
+        "what": "Game progress and settings",
+        "why": "So your levels, relics, museum and settings are there next time",
+        "whoSees": "Only you: stored on your iPhone, and in your own iCloud account if you use iCloud",
+        "howToDelete": "Delete the app; turn iCloud off for Relic Run in iPhone Settings"
+      },
+      {
+        "what": "Purchases",
+        "why": "To deliver gems and the Starter Pack",
+        "whoSees": "Apple takes the payment and tells the game only that it succeeded; we get sales totals, never your details",
+        "howToDelete": "Managed by Apple with your Apple Account"
+      },
+      {
+        "what": "Analytics, ads, tracking",
+        "why": "-",
+        "whoSees": "None: the app contains no analytics or advertising software",
+        "howToDelete": "Nothing to delete"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What the game collects",
+        "body": "Nothing. There are no accounts, no analytics, no advertising and no tracking, and the game sends nothing to us. This matches the app's App Store privacy label: Data Not Collected."
+      },
+      {
+        "heading": "Your progress and iCloud",
+        "body": "The game saves your level, coins, gems, energy, tools, relics, museum progress, daily streak, settings and a short record of recent puzzles (used on the iPhone to adjust how forgiving boards are). It lives on your iPhone and, if you are signed in to iCloud, in a small file of a few kilobytes in your own Apple Account, so it survives a new phone. We cannot read it and are never told it exists. To stop syncing, sign out of iCloud or turn iCloud off for Relic Run in the Settings app."
+      },
+      {
+        "heading": "Purchases",
+        "body": "In-app purchases are made through Apple. Apple takes the payment and tells the game only that a purchase succeeded, so the gems or the Starter Pack can be delivered. We never receive your name, email, card or Apple Account details. Apple sends us sales reports - how many of each item sold, where, and the proceeds - which are totals, not records about you."
+      },
+      {
+        "heading": "Statistics from Apple",
+        "body": "Like every App Store developer, we can see figures Apple compiles: downloads, App Store page views, sales and, only from people who chose in iOS settings to share analytics with app developers, crash reports and anonymous usage totals. They arrive as aggregate numbers and identify no one."
+      },
+      {
+        "heading": "Notifications and advertising",
+        "body": "If you allow notifications, the game schedules reminders on your iPhone (energy full, trader restocked, streak about to lapse); nothing is sent from a server. There is no advertising in the game. We may advertise Relic Run itself on the App Store through Apple Ads, and Apple reports only aggregate results to us."
+      },
+      {
+        "heading": "Children",
+        "body": "Relic Run is suitable for children. It collects nothing personal, has no chat or social features, and offers no way for players to contact each other. Purchases follow Apple's rules, including Ask to Buy for family accounts."
+      },
+      {
+        "heading": "Changes",
+        "body": "If we ever add anything that collects data, this page and the App Store privacy label will be updated before that version ships, and the change will be described here. Relic Run is published by Oleg Nochka."
+      }
+    ]
+  },
+  "terms": {
+    "updated": "2026-10-20",
+    "sections": [
+      {
+        "heading": "Who we are",
+        "body": "Relic Run is published by Oleg Nochka, an independent developer (\"we\", \"us\"), who is responsible for the app and for these terms."
+      },
+      {
+        "heading": "Using the app",
+        "body": "Relic Run is licensed to you, not sold, under Apple's standard Licensed Application End User License Agreement together with these terms. You may use it on devices linked to your Apple Account, for personal, non-commercial purposes. You may not copy, resell, reverse-engineer or redistribute it."
+      },
+      {
+        "heading": "Your progress",
+        "body": "Progress is recorded on your iPhone and copied to your own iCloud account when you are signed in to iCloud. We hold no copy and run no server, so lost progress cannot be restored by us. iCloud syncing depends on Apple's service, and we do not guarantee it against data loss, device changes or reinstalling the app."
+      },
+      {
+        "heading": "In-game currencies and energy",
+        "body": "Coins, gems, energy and tools exist only inside the game. They have no monetary value, cannot be exchanged for money or anything outside the app, and may be adjusted if a fault awards them incorrectly. Expedition risk choices are a gameplay mechanic with no wagering of real money. Gems refill energy; no puzzle can be skipped or solved with money, and nothing random is sold."
+      },
+      {
+        "heading": "Purchases",
+        "body": "The game offers optional in-app purchases: gem packs, which are consumed when delivered, and a one-time Starter Pack, which can be restored to the Apple Account that bought it with Restore purchases in the game's Settings. Prices are set in the App Store and shown before you buy. Payment is taken by Apple under the Apple Media Services Terms and Conditions, and refunds are handled by Apple at reportaproblem.apple.com, not by us."
+      },
+      {
+        "heading": "Availability and changes",
+        "body": "The game is provided as it is. We do not promise it will be free of faults, available without interruption, or supported forever. Levels are generated and checked on your iPhone, so it keeps working offline. We may change game balance (coin prices, energy, rewards) in updates."
+      },
+      {
+        "heading": "Liability",
+        "body": "To the fullest extent permitted by law, Oleg Nochka is not liable for any indirect or consequential loss arising from use of the app. Nothing here limits rights you have under consumer law in your own country."
+      }
+    ]
+  }
 }

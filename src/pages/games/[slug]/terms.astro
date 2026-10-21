@@ -1,0 +1,47 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const games = await getCollection('games', (g) => !g.data.hidden);
+  return games
+    .filter((game) => game.data.terms)
+    .map((game) => ({ params: { slug: game.id }, props: { game } }));
+}
+
+interface Props {
+  game: CollectionEntry<'games'>;
+}
+const { game } = Astro.props;
+const g = game.data as typeof game.data & { terms: NonNullable<typeof game.data.terms> };
+---
+
+<Base
+  title={`${g.title} Terms of Use - Nattskift Games`}
+  description={`Terms of use for ${g.title}: the licence, in-game currencies, in-app purchases and refunds through Apple.`}
+  ogImage={`/og/${game.id}.png`}
+>
+  <section class="section-pad">
+    <div class="mx-auto max-w-6xl px-6">
+      <h1 class="type-page-title">{g.title} terms of use</h1>
+      <p class="type-micro mt-4 text-muted">
+        Last updated <time datetime={g.terms.updated}>{g.terms.updated}</time>
+      </p>
+      <div class="mt-12 space-y-12">
+        {
+          g.terms.sections.map((section) => (
+            <div>
+              <h2 class="type-subsection">{section.heading}</h2>
+              <p class="measure mt-4 text-muted">{section.body}</p>
+            </div>
+          ))
+        }
+      </div>
+      <p class="measure mt-16 border-t border-hairline pt-8 text-muted">
+        Questions about these terms:
+        <a class="link-quiet" href={`mailto:info@nattskiftgames.com?subject=${encodeURIComponent('Terms - ' + g.title)}`}>
+          info@nattskiftgames.com</a>.
+      </p>
+    </div>
+  </section>
+</Base>

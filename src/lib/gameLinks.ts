@@ -10,4 +10,6 @@ type Game = CollectionEntry<'games'>;
 
 export const supportHref = (game: Game) => game.data.supportUrl ?? `/games/${game.id}/support`;
 export const privacyHref = (game: Game) => game.data.privacyUrl ?? `/games/${game.id}/privacy`;
+/** The terms page, for a game that has one. */
+export const termsHref = (game: Game) => (game.data.terms ? `/games/${game.id}/terms` : undefined);
 export const isExternal = (href: string) => /^https?:\/\//.test(href);
