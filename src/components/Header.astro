@@ -1,5 +1,5 @@
 ---
-import LogoLockup from './LogoLockup.astro';
+import LogoMonogram from './LogoMonogram.astro';
 
 const nav = [
   { href: '/games', label: 'Games' },
@@ -13,7 +13,10 @@ const isActive = (href: string) =>
 <header class="sticky top-0 z-40 border-b border-hairline bg-ink/70 backdrop-blur-md backdrop-saturate-150">
   <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
     <a href="/" aria-label="Nattskift Games — home" class="flex items-center gap-3">
-      <LogoLockup size={44} />
+      {/* Under 48px the full lockup's sliced word is unreadable, so the header
+          uses the monogram plus the name in text. */}
+      <LogoMonogram size={36} topFill="#201B2E" class="rounded-[6px] ring-1 ring-white/10" />
+      <span class="font-display text-[17px] font-semibold tracking-tight text-text">Nattskift Games</span>
     </a>
     <nav aria-label="Main">
       <ul class="flex items-center gap-6 md:gap-8">

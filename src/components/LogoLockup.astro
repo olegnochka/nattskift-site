@@ -18,7 +18,7 @@ const { size = 44, class: className } = Astro.props;
 
 // Geometry in a 512-unit frame.
 const SEAM = 256;
-const WORD_SIZE = 62; // font-size for NATTSKIFT
+const WORD_SIZE = 82; // font-size for NATTSKIFT - fills ~88% of the width so the cut reads at small sizes
 const CAP = WORD_SIZE * 0.72; // Archivo cap height ≈ 0.72em
 const NUDGE = CAP * 0.015; // 1.5% of cap height, avoids K/F junction collision
 // Baseline so the cap-height midpoint lands on the seam, then nudged down.
@@ -37,7 +37,9 @@ const uid = 'nsk' + Math.floor(Math.random() * 1e6).toString(36);
   <clipPath id={`${uid}-top`}><rect x="0" y="0" width="512" height={SEAM}></rect></clipPath>
   <clipPath id={`${uid}-bottom`}><rect x="0" y={SEAM} width="512" height={512 - SEAM}></rect></clipPath>
 
-  <rect x="0" y="0" width="512" height={SEAM} fill="var(--color-ink, #0B0E12)"></rect>
+  {/* The top half is the raised surface, not page ink, so the square stays
+      visible on the dark page instead of melting into it. */}
+  <rect x="0" y="0" width="512" height={SEAM} fill="var(--color-raised, #201B2E)"></rect>
   <rect x="0" y={SEAM} width="512" height={512 - SEAM} fill="#6B3FA0"></rect>
 
   {/* Two registered copies of the word, clipped at the seam. */}
@@ -61,10 +63,13 @@ const uid = 'nsk' + Math.floor(Math.random() * 1e6).toString(36);
   {/* Trailing letter-spacing on the last glyph shifts the optical center;
       x compensates by half a tracking unit. */}
   <text
-    x={256 + (0.4 * 22) / 2}
+    x={256 + (0.4 * 26) / 2}
     y="400"
     text-anchor="middle"
     fill="#FFFFFF"
-    style="font-family: var(--font-display, Archivo, sans-serif); font-weight: 500; font-size: 22px; letter-spacing: 0.4em;"
+    style="font-family: var(--font-display, Archivo, sans-serif); font-weight: 500; font-size: 26px; letter-spacing: 0.4em;"
   >GAMES</text>
+
+  {/* Hairline frame, same weight as the site's card borders. */}
+  <rect x="2" y="2" width="508" height="508" fill="none" stroke="rgb(255 255 255 / 0.10)" stroke-width="4"></rect>
 </svg>
