@@ -80,17 +80,23 @@ const factRows: Array<[string, string]> = [
     </div>
   )}
 
-  {/* 1 — Hero: full-bleed key art, then the essentials. */}
+  {/* 1 — Hero: full-bleed key art, then the essentials. A light sweep in the
+      game's own colors passes across the art. */}
   <section>
-    <Image
-      src={g.keyArt.src}
-      alt={g.keyArt.alt}
-      widths={[768, 1280, 1920]}
-      sizes="100vw"
-      loading="eager"
-      fetchpriority="high"
-      class="max-h-[70vh] w-full object-cover"
-    />
+    <div
+      class="hero-scene hero-scene--over"
+      style={g.wave ? `--wave-edge: ${g.wave.edge}; --wave-core: ${g.wave.core};` : undefined}
+    >
+      <Image
+        src={g.keyArt.src}
+        alt={g.keyArt.alt}
+        widths={[768, 1280, 1920]}
+        sizes="100vw"
+        loading="eager"
+        fetchpriority="high"
+        class="block max-h-[70vh] w-full object-cover"
+      />
+    </div>
     <div class="mx-auto max-w-6xl px-6 py-12 md:py-16">
       {g.appIcon ? (
         <div class="flex items-center gap-5" data-reveal>

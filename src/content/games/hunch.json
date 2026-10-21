@@ -26,6 +26,10 @@
     "src": "./art/hunch-icon.png",
     "alt": "Hunch app icon: four faceted gems, red, yellow, blue and green, on brushed steel."
   },
+  "wave": {
+    "edge": "#9e82d4",
+    "core": "#ffd696"
+  },
   "trailer": null,
   "pillars": [
     {

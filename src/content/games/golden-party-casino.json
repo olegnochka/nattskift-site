@@ -26,6 +26,10 @@
     "src": "./art/golden-party-casino-icon.png",
     "alt": "Golden Party Casino app icon: a golden slot machine showing 777."
   },
+  "wave": {
+    "edge": "#d94bb0",
+    "core": "#ffd36b"
+  },
   "pageBackground": "./art/gpc-bg.jpg",
   "trailer": null,
   "pillars": [

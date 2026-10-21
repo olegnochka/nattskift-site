@@ -44,6 +44,10 @@ const games = defineCollection({
     appIcon: z.object({ src: image(), alt: z.string() }).optional(),
     /** Optional full-page ambient background (decorative, heavily darkened). */
     pageBackground: image().optional(),
+    /** Light sweep across the game page hero: edge and core colors, picked from the game's art. */
+    wave: z
+      .object({ edge: z.string().regex(/^#[0-9a-fA-F]{6}$/), core: z.string().regex(/^#[0-9a-fA-F]{6}$/) })
+      .optional(),
     trailer: z
       .object({
         /** Poster shown until click; nothing third-party loads before that. */

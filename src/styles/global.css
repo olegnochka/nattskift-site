@@ -387,6 +387,16 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
+    /* Sweep colors: studio violet and sodium by default; game pages set their own. */
+    --wave-edge: #9e82d4;
+    --wave-core: #ffd696;
+    --wave-edge-a: 10%;
+    --wave-core-a: 15%;
+  }
+  /* Over key art the band passes in front of the picture and adds light to it. */
+  .hero-scene--over {
+    --wave-edge-a: 24%;
+    --wave-core-a: 36%;
   }
   .hero-glow {
     position: absolute;
@@ -566,10 +576,22 @@
     pointer-events: none;
     /* Ends fade to the band's own color at zero alpha, and a mask softens
        them further, so the band never shows an edge. */
-    background: linear-gradient(100deg, rgb(158 130 212 / 0) 0%, rgb(158 130 212 / 0.10) 38%, rgb(255 214 150 / 0.15) 50%, rgb(158 130 212 / 0.10) 62%, rgb(158 130 212 / 0) 100%);
+    background: linear-gradient(
+      100deg,
+      color-mix(in srgb, var(--wave-edge) 0%, transparent) 0%,
+      color-mix(in srgb, var(--wave-edge) var(--wave-edge-a), transparent) 38%,
+      color-mix(in srgb, var(--wave-core) var(--wave-core-a), transparent) 50%,
+      color-mix(in srgb, var(--wave-edge) var(--wave-edge-a), transparent) 62%,
+      color-mix(in srgb, var(--wave-edge) 0%, transparent) 100%
+    );
     mask-image: linear-gradient(90deg, transparent, black 30%, black 70%, transparent);
     transform: translateX(-130%) skewX(-12deg);
     animation: nsk-sweep 11s var(--ease-out) 1.2s infinite;
+  }
+  /* Over key art the band passes in front of the picture as a tinted sheen
+     (a screen blend vanishes on bright art). */
+  .hero-scene--over::after {
+    z-index: 1;
   }
   .hero-glow {
     animation: nsk-breathe 8s ease-in-out infinite;

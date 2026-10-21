@@ -26,6 +26,10 @@
     "src": "./art/relic-run-icon.png",
     "alt": "Relic Run app icon: a cracked gold and jade temple mask overgrown by the jungle."
   },
+  "wave": {
+    "edge": "#2fd6a0",
+    "core": "#ffc46b"
+  },
   "pageBackground": "./art/relic-run-bg.jpg",
   "trailer": null,
   "pillars": [

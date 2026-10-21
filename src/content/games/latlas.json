@@ -26,6 +26,11 @@
     "src": "./art/latlas-icon.png",
     "alt": "Latlas app icon: a glowing glass globe with an orange map pin."
   },
+  "pageBackground": "./art/latlas-bg.jpg",
+  "wave": {
+    "edge": "#3cc8f0",
+    "core": "#ff9a4d"
+  },
   "trailer": null,
   "pillars": [
     {
