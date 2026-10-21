@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
+import { supportEmail } from '../../../lib/gameLinks';
 
 export async function getStaticPaths() {
   const games = await getCollection('games', (g) => !g.data.hidden);
@@ -72,8 +73,8 @@ const g = game.data as typeof game.data & { privacy: NonNullable<typeof game.dat
       </div>
       <p class="measure mt-16 border-t border-hairline pt-8 text-muted">
         Data requests:
-        <a class="link-quiet" href={`mailto:info@nattskiftgames.com?subject=${encodeURIComponent('Data request - ' + g.title)}`}>
-          info@nattskiftgames.com</a>. You will hear back from the developer, not a form letter.
+        <a class="link-quiet" href={`mailto:${supportEmail(game)}?subject=${encodeURIComponent('Data request - ' + g.title)}`}>
+          {supportEmail(game)}</a>. You will hear back from the developer, not a form letter.
       </p>
     </div>
   </section>

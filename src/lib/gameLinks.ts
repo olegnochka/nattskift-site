@@ -10,6 +10,9 @@ type Game = CollectionEntry<'games'>;
 
 export const supportHref = (game: Game) => game.data.supportUrl ?? `/games/${game.id}/support`;
 export const privacyHref = (game: Game) => game.data.privacyUrl ?? `/games/${game.id}/privacy`;
+/** The one support address for a game: the same one its app and its pages use. */
+export const supportEmail = (game: Game) => game.data.support?.email ?? 'info@nattskiftgames.com';
+
 /** The terms page, for a game that has one. */
 export const termsHref = (game: Game) => (game.data.terms ? `/games/${game.id}/terms` : undefined);
 export const isExternal = (href: string) => /^https?:\/\//.test(href);

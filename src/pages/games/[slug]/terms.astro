@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
+import { supportEmail } from '../../../lib/gameLinks';
 
 export async function getStaticPaths() {
   const games = await getCollection('games', (g) => !g.data.hidden);
@@ -39,8 +40,8 @@ const g = game.data as typeof game.data & { terms: NonNullable<typeof game.data.
       </div>
       <p class="measure mt-16 border-t border-hairline pt-8 text-muted">
         Questions about these terms:
-        <a class="link-quiet" href={`mailto:info@nattskiftgames.com?subject=${encodeURIComponent('Terms - ' + g.title)}`}>
-          info@nattskiftgames.com</a>.
+        <a class="link-quiet" href={`mailto:${supportEmail(game)}?subject=${encodeURIComponent('Terms - ' + g.title)}`}>
+          {supportEmail(game)}</a>.
       </p>
     </div>
   </section>

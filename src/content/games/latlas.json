@@ -94,6 +94,150 @@
     "engine": "Swift and SwiftUI",
     "developer": "Oleg Nochka (Nattskift Games)"
   },
-  "supportUrl": "https://pacificfrontdesk.github.io/latlas/support.html",
-  "privacyUrl": "https://pacificfrontdesk.github.io/latlas/privacy.html"
+  "support": {
+    "responseTime": "Replies usually within a day or two. Include your iPhone model, iOS version and what the screen showed when it went wrong. The Contact us row in Settings fills in the details for you.",
+    "email": "support@pacificfrontdesk.com",
+    "faq": [
+      {
+        "q": "A round will not load.",
+        "a": "Latlas needs an internet connection, because the imagery comes from Google rather than from inside the app. If a round sits on a dark screen, check your connection first. If it keeps happening on a good connection, tell us roughly when it happened."
+      },
+      {
+        "q": "Can I play offline?",
+        "a": "No. The locations are built into the app, but the pictures are not - every panorama is fetched from Google when the round starts."
+      },
+      {
+        "q": "How does the daily challenge work?",
+        "a": "Every day there is one numbered challenge, the same five places for everyone. Missed days can be caught up from the archive. Your streak counts days played in a row; giving up a daily part-way breaks it."
+      },
+      {
+        "q": "The clock ran out before I guessed.",
+        "a": "Whatever pin is on the map when time runs out is submitted. With no pin, the round scores nothing. The clock does not start until the panorama has appeared, so a slow connection does not eat your thinking time, and it keeps running while the map is open."
+      },
+      {
+        "q": "I lost my stats, or got a new iPhone.",
+        "a": "Game history is kept on your iPhone. Your daily-challenge progress and streak also sync through your own iCloud account if you are signed in, and Game Center keeps your leaderboard scores and achievements under your Game Center name. Without iCloud, history lost with a phone cannot be restored - there is no account and no server of ours holding a copy."
+      },
+      {
+        "q": "Why is my best score split up?",
+        "a": "Bests are kept separately for each time limit. A score set with no clock is not the same achievement as one set under thirty seconds, so they are not compared."
+      },
+      {
+        "q": "The place name showed for a moment.",
+        "a": "It should not. If you ever see the name of the place while a round is still being played, that is a bug worth reporting - tell us what you saw and roughly where the round turned out to be."
+      },
+      {
+        "q": "Can I turn the sound off?",
+        "a": "Yes, in Settings. The game also respects the silent switch, and it never interrupts music or a podcast you already have playing."
+      },
+      {
+        "q": "Why are some places so remote?",
+        "a": "Locations come from places with official Street View coverage, which means plenty of empty road. That is the game: a stretch of nothing still tells you which part of the world you are in, if you read it carefully."
+      },
+      {
+        "q": "Does Latlas cost anything?",
+        "a": "No. Latlas is free, with no ads and no purchases in this version. The daily challenge and free play will never be put behind a paywall."
+      },
+      {
+        "q": "Can it remind me about the daily challenge?",
+        "a": "Yes: turn on New challenge alerts in Settings. The reminder is scheduled on your iPhone, not sent from a server, and can be turned off there or in the iPhone Settings app."
+      }
+    ]
+  },
+  "privacy": {
+    "updated": "2026-10-20",
+    "summary": [
+      {
+        "what": "Games, stats and settings",
+        "why": "So your history and bests are there next time",
+        "whoSees": "Only you: stored on your iPhone",
+        "howToDelete": "Stats, Erase history; or delete the app"
+      },
+      {
+        "what": "Daily progress and streak",
+        "why": "So your other devices show the same streak",
+        "whoSees": "Synced through your own iCloud account; Apple holds it, we never see it",
+        "howToDelete": "Turn iCloud off for Latlas, or manage iCloud data in your Apple Account"
+      },
+      {
+        "what": "Leaderboard scores and achievements",
+        "why": "Game Center boards",
+        "whoSees": "Apple Game Center, under your Game Center name",
+        "howToDelete": "Game Center settings in your Apple Account"
+      },
+      {
+        "what": "Imagery requests",
+        "why": "To show the panoramas and the world map",
+        "whoSees": "Google receives the request (including your IP address) directly from your iPhone",
+        "howToDelete": "Google Privacy Policy controls"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "The short version",
+        "body": "We collect nothing ourselves. There are no accounts, no analytics, no advertising and no tracking, and nothing about you is ever sent to us. Latlas does need the internet, because the imagery comes from Google, so Google sees those requests - explained below rather than buried."
+      },
+      {
+        "heading": "What stays on your iPhone",
+        "body": "The game saves your finished games (score, date, time limit and each round's result), the stats worked out from them, and your settings. Two Apple services can carry a little of it: if you are signed in to iCloud, your daily-challenge progress and streak sync through your own iCloud account, and if you use Game Center, your scores go to Apple's Game Center under your Game Center name. Apple holds that data under Apple's own privacy policy; we never receive it."
+      },
+      {
+        "heading": "Google Maps and Street View",
+        "body": "The panoramas and the world map come from Google. When a round loads, your iPhone asks Google for the imagery directly, and Google receives what it needs to answer, including your IP address. We send Google nothing about you, and nothing in that exchange passes through us. That use is governed by the Google Maps/Google Earth Additional Terms of Service and the Google Privacy Policy."
+      },
+      {
+        "heading": "What Google's software collects",
+        "body": "Latlas includes Google's Maps software, which collects some data for Google, not for us. Google's disclosure for it lists a device identifier and other technical data, linked to the device and used for analytics and to make the maps work, and crash, performance and basic interaction data, not linked to you. Google states none of it is used for tracking. We do not receive it."
+      },
+      {
+        "heading": "Notifications",
+        "body": "If you turn on New challenge alerts, the reminder is scheduled on your iPhone itself; nothing is sent from a server. Turn it off in the game's Settings or the iPhone Settings app."
+      },
+      {
+        "heading": "Where you are",
+        "body": "Latlas never asks for your location and does not use it. The game is about guessing where the picture is, not where you are."
+      },
+      {
+        "heading": "Children",
+        "body": "Latlas is suitable for children. It collects nothing, so there is nothing to collect from a child. Street View imagery is real photography of public places, shown as Google provides it."
+      },
+      {
+        "heading": "Changes",
+        "body": "If a future version collects anything at all, adds purchases or adds advertising, this page and the App Store privacy label will be updated before that version ships. Latlas is published by Oleg Nochka."
+      }
+    ]
+  },
+  "terms": {
+    "updated": "2026-10-20",
+    "sections": [
+      {
+        "heading": "Who we are",
+        "body": "Latlas is published by Oleg Nochka, an independent developer (\"we\", \"us\"), who is responsible for the app and for these terms."
+      },
+      {
+        "heading": "Using the app",
+        "body": "Latlas is licensed to you, not sold, under Apple's standard Licensed Application End User License Agreement together with these terms. You may use it on devices linked to your Apple Account, for personal, non-commercial purposes. You may not copy, resell, reverse-engineer or redistribute it."
+      },
+      {
+        "heading": "Imagery from Google",
+        "body": "The panoramas and maps are Google Maps content, shown through Google's own services, and your use of them is also subject to the Google Maps/Google Earth Additional Terms of Service and the Google Privacy Policy. The app does not store or copy the imagery; you may not extract, save or redistribute it from Latlas, and Google's attribution must not be obscured."
+      },
+      {
+        "heading": "Scores, stats and Game Center",
+        "body": "Game history is kept on your iPhone, daily progress may sync through your iCloud account, and leaderboard scores go to Apple Game Center. None of it is guaranteed against data loss, device changes or reinstalling the app, and we hold no copy to restore."
+      },
+      {
+        "heading": "Purchases",
+        "body": "This version of Latlas has no in-app purchases. If optional purchases are added later, they will be processed by Apple under the Apple Media Services Terms and Conditions, shown with their price before you buy, and refunded by Apple at reportaproblem.apple.com."
+      },
+      {
+        "heading": "Availability",
+        "body": "The game is provided as it is. We do not promise it will be free of faults, available without interruption, or supported forever. Latlas needs an internet connection and depends on Google's services, so rounds may fail to load for reasons outside our hands."
+      },
+      {
+        "heading": "Liability",
+        "body": "To the fullest extent permitted by law, Oleg Nochka is not liable for any indirect or consequential loss arising from use of the app. Nothing here limits rights you have under consumer law in your own country."
+      }
+    ]
+  }
 }

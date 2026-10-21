@@ -106,6 +106,7 @@
   },
   "support": {
     "responseTime": "Replies usually within two days at goldenpartycasino@pacificfrontdesk.com. Include the player ID from Settings - the in-app Contact Us button fills it in for you.",
+    "email": "goldenpartycasino@pacificfrontdesk.com",
     "faq": [
       {
         "q": "I bought coins and they didn't arrive.",
@@ -126,11 +127,19 @@
       {
         "q": "How do I delete my account?",
         "a": "Settings, Delete Account. It permanently erases your server data - balance, level, albums, everything. There is no grace period and nothing for you to email us about afterward, because nothing is left."
+      },
+      {
+        "q": "\"Connection lost\", or spins stop working.",
+        "a": "The game needs an internet connection - every spin is decided on the game server. Check your connection, then reopen the game. Very fast auto-spin sessions can briefly hit the rate limit; the game asks you to rest a minute and then resumes on its own."
+      },
+      {
+        "q": "How do I get a refund?",
+        "a": "Coin packs are bought through Apple, so refunds are handled by Apple: request one at reportaproblem.apple.com, signed in with the Apple Account you paid with."
       }
     ]
   },
   "privacy": {
-    "updated": "2026-08-26",
+    "updated": "2026-10-20",
     "summary": [
       {
         "what": "Game progress",
@@ -167,6 +176,63 @@
       {
         "heading": "Deleting everything, and reaching a human",
         "body": "Settings, Delete Account permanently erases your server data in one step, no email required. For anything else, write to goldenpartycasino@pacificfrontdesk.com and the person who built the game will answer."
+      },
+      {
+        "heading": "Technical data and display name",
+        "body": "If you set a display name, it is stored with your account. The server also keeps basic technical data such as device type and approximate region, used to run the service and prevent fraud. We do not sell personal information and do not use it for third-party advertising."
+      },
+      {
+        "heading": "Your rights",
+        "body": "You can play as a guest without giving any personal details, change your display name in Settings, and delete your account and all its data with Delete Account in Settings. Depending on where you live you may have further rights, such as access or portability; email us and we will honor applicable requests."
+      },
+      {
+        "heading": "Adults only",
+        "body": "The game features simulated gambling and is intended for adults, in line with its App Store age rating. It is not directed at children, and we do not knowingly collect information from anyone under that age. If you believe a minor has used the game, email us and we will delete the data."
+      },
+      {
+        "heading": "Changes",
+        "body": "If this policy changes, this page and its date will be updated, and material changes will be highlighted in the game where practical. Golden Party Casino: Slots is published by Oleg Nochka."
+      }
+    ]
+  },
+  "terms": {
+    "updated": "2026-10-20",
+    "sections": [
+      {
+        "heading": "Entertainment only - no gambling",
+        "body": "Golden Party Casino: Slots is a social casino game for entertainment. All coins, spins and prizes are virtual. Coins have no monetary value, cannot be exchanged for cash, goods or services, cannot be transferred between players, and cannot be won as real money. Success in the game does not imply future success at real-money gambling."
+      },
+      {
+        "heading": "Eligibility",
+        "body": "The game features simulated gambling and is intended for adults, in line with its App Store age rating. By playing you confirm you meet the age requirement in your region."
+      },
+      {
+        "heading": "Your account",
+        "body": "An account is created automatically for your device; you may link it with Sign in with Apple or Google to keep it across devices. You are responsible for activity on your account. Accounts involved in cheating, exploiting bugs, abusing other players or breaking these terms may be suspended or closed. You can delete your account at any time in Settings; deletion is permanent."
+      },
+      {
+        "heading": "Virtual coins and purchases",
+        "body": "Coin packs are optional in-app purchases processed by Apple under the Apple Media Services Terms and Conditions. Prices are shown before purchase, and coins are delivered after Apple confirms the transaction. Except where the law requires otherwise, purchases of virtual coins are final; refund requests are handled by Apple at reportaproblem.apple.com. Coin amounts, prices, features, odds presentation and bonuses may change."
+      },
+      {
+        "heading": "Fair play",
+        "body": "You agree not to use bots, automation, exploits or unauthorized tools, not to interfere with the game servers, and not to reverse-engineer the app except where that restriction is prohibited by law. Outcomes are generated on the server by a random process, and game math may be adjusted between versions."
+      },
+      {
+        "heading": "Licence and ownership",
+        "body": "The game, its art, names and software belong to us or our licensors. It is licensed to you, not sold, under Apple's standard Licensed Application End User License Agreement together with these terms, for personal entertainment only."
+      },
+      {
+        "heading": "Disclaimers and liability",
+        "body": "The game is provided as it is, without warranties. To the fullest extent permitted by law, we are not liable for indirect, incidental or consequential damages, or for loss of virtual items, and our total liability for any claim is limited to what you paid in the twelve months before it. Nothing here limits rights you have under consumer law in your own country."
+      },
+      {
+        "heading": "Responsible play",
+        "body": "The game is meant to be fun. If your play is becoming a problem, take a break or use Screen Time on your iPhone. If gambling in general is a concern, help is available from the National Council on Problem Gambling at ncpgambling.org or 1-800-GAMBLER."
+      },
+      {
+        "heading": "Changes",
+        "body": "These terms may be updated; the date above changes when they do, and continued play means you accept them. The game or any feature may be discontinued. Golden Party Casino: Slots is published by Oleg Nochka."
       }
     ]
   }

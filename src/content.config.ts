@@ -100,6 +100,8 @@ const games = defineCollection({
     support: z.object({
       /** Honest response time, stated on the support page. */
       responseTime: z.string(),
+      /** The address this game's app uses for support. Defaults to info@nattskiftgames.com. */
+      email: z.string().email().optional(),
       faq: z.array(z.object({ q: z.string(), a: z.string() })),
     }).optional(),
     privacy: z.object({
@@ -122,6 +124,8 @@ const games = defineCollection({
   }).superRefine((g, ctx) => {
     if (!g.supportUrl && !g.support) ctx.addIssue({ code: 'custom', path: ['support'], message: 'support is required unless supportUrl is set' });
     if (!g.privacyUrl && !g.privacy) ctx.addIssue({ code: 'custom', path: ['privacy'], message: 'privacy is required unless privacyUrl is set' });
+    // A game shown on the site carries a full set of documents here: support, privacy and terms.
+    if (!g.hidden && !g.terms) ctx.addIssue({ code: 'custom', path: ['terms'], message: 'terms are required for a game shown on the site' });
   }),
 });
 
