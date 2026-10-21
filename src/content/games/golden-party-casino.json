@@ -22,6 +22,10 @@
     "src": "./art/gpc-key.png",
     "alt": "A golden slot machine hitting the jackpot: three crowns on the reels and a burst of coins, cards, chips and confetti."
   },
+  "appIcon": {
+    "src": "./art/golden-party-casino-icon.png",
+    "alt": "Golden Party Casino app icon: a golden slot machine showing 777."
+  },
   "pageBackground": "./art/gpc-bg.jpg",
   "trailer": null,
   "pillars": [
