@@ -10,7 +10,7 @@ math in `scripts/contrast.mjs`).
 | --- | --- |
 | Backend / database / API routes | None. Static output only; `dist/` is plain HTML, CSS, images, fonts. |
 | Forms | Zero `<form>` elements anywhere in `dist/`. Contact is mailto. |
-| Cookie banner / analytics / chat / newsletter | None. No third-party script exists in the build. |
+| Cookie banner / analytics / chat / newsletter | Google Analytics 4 only (G-KVD2ZHFL07, added 2026-10-20 in Base.astro, ad features off), disclosed on /privacy. No cookie banner, chat or newsletter. |
 | Third-party requests on page load | Zero. Only external URLs in the HTML are plain navigation anchors (App Store, Bluesky, the trailer's no-JS fallback link). Fonts self-hosted. The trailer iframe is created only on click. |
 | Readable with JavaScript disabled | Yes. Reveal animations are gated on an `html.js` class set by script; without JS every section is visible. The FAQ accordion is server-rendered expanded and only collapses when JS wires the buttons. The trailer poster is a plain link. |
 | Apple-required routes | `/games/<id>/support` and `/games/<id>/privacy` for both titles build as static HTML, no redirect, no JS gate. |
