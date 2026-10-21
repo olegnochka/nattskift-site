@@ -13,7 +13,7 @@
   --color-raised: #201b2e;
   --color-royal: #6b3fa0; /* FILL ONLY — never text, never border */
   --color-royal-light: #9e82d4;
-  --color-sodium: #ffb74a; /* light source, <3% of any screen */
+  --color-sodium: #ffb74a; /* light source, <3% of any screen as a fill; glows of it stay faint */
   --color-danger: #e5484d; /* destructive fills only */
   --color-danger-text: #ff7b7e;
   --color-text: #eceff3;
@@ -111,12 +111,25 @@
   }
 
   body {
-    background-color: var(--color-ink);
+    background-color: transparent; /* html carries the ink, so the light pools below show through */
     color: var(--color-text);
     font-family: var(--font-sans);
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+  }
+
+  /* Night light: a violet pool high on the right and a faint streetlamp pool low on
+     the left. Fixed and static, so it costs nothing on scroll. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(60rem 40rem at 88% -12%, rgb(158 130 212 / 0.11), transparent 62%),
+      radial-gradient(48rem 36rem at -12% 108%, rgb(255 183 74 / 0.05), transparent 60%);
   }
 
   /* Static film grain, 4% — pointer-events none, never animated. */
@@ -243,6 +256,7 @@
 --------------------------------------------------------------------------- */
 @layer components {
   .btn-primary {
+    position: relative;
     display: inline-block;
     background-color: var(--color-royal);
     color: var(--color-button-label);
@@ -255,6 +269,19 @@
   .btn-primary:hover {
     background-color: color-mix(in oklab, var(--color-royal), white 10%);
   }
+  .btn-primary::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: 0 0 0 1px rgb(158 130 212 / 0.6), 0 10px 36px -6px rgb(158 130 212 / 0.55);
+  }
+  .btn-primary:hover::after,
+  .btn-primary:focus-visible::after {
+    opacity: 1;
+  }
 
   .link-quiet {
     color: var(--color-royal-light);
@@ -266,11 +293,110 @@
     text-decoration-color: var(--color-royal-light);
   }
 
-  /* Depth = hairline border + surface step. No shadows, ever. */
+  /* Depth = hairline border + surface step + light. Glows are colored light from
+     the night palette; dark drop shadows, never. */
   .card {
+    position: relative;
     background-color: var(--color-surface);
     border: 1px solid var(--color-hairline);
     border-radius: var(--radius-card);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
+  }
+  /* The hover light lives on a pseudo-element: fading its opacity is far cheaper
+     than animating a shadow. */
+  a.card::after,
+  .card-hover::after {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow:
+      0 0 0 1px rgb(158 130 212 / 0.45),
+      0 22px 60px -24px rgb(158 130 212 / 0.55);
+  }
+  a.card:hover::after,
+  a.card:focus-visible::after,
+  .card-hover:hover::after {
+    opacity: 1;
+  }
+
+  /* Section labels: a short lit line before the words. */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background-color: var(--color-royal-light);
+    box-shadow: 0 0 10px rgb(158 130 212 / 0.7);
+  }
+
+  /* Inner page heads: a soft violet light top right, a lit edge along the bottom. */
+  .page-head {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+  .page-head::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -12%;
+    top: -55%;
+    width: 60rem;
+    height: 40rem;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(closest-side, rgb(158 130 212 / 0.14), transparent);
+  }
+  .page-head::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    pointer-events: none;
+    opacity: 0.5;
+    background: linear-gradient(90deg, transparent, var(--color-royal-light), transparent);
+  }
+
+  /* App icons glow faintly violet instead of casting a shadow. */
+  .icon-glow {
+    box-shadow:
+      0 0 0 1px rgb(255 255 255 / 0.06),
+      0 10px 32px -10px rgb(158 130 212 / 0.5);
+  }
+
+  /* Hero headline: soft white fading toward the muted tone. */
+  .hero-ink {
+    background: linear-gradient(180deg, var(--color-text) 35%, color-mix(in oklab, var(--color-text), var(--color-muted) 70%) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* The royal tower with one lit window - somebody's still working. */
+  .night-tower {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    box-shadow: 0 40px 120px -40px rgb(107 63 160 / 0.6);
+  }
+  .night-window {
+    box-shadow: 0 0 18px 4px rgb(255 183 74 / 0.45), 0 0 60px 12px rgb(255 183 74 / 0.12);
+  }
+  .night-halo {
+    position: absolute;
+    inset: -18%;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(closest-side, rgb(158 130 212 / 0.22), rgb(158 130 212 / 0.06) 55%, transparent);
   }
   a.card:hover,
   .card-hover:hover {
@@ -333,9 +459,42 @@
   .card,
   .card-hover,
   .skip-link {
-    transition-property: background-color, border-color, color, text-decoration-color, transform;
+    transition-property: background-color, border-color, color, text-decoration-color, transform, translate;
     transition-duration: 240ms;
     transition-timing-function: var(--ease-out);
+  }
+  a.card::after,
+  .card-hover::after,
+  .btn-primary::after {
+    transition: opacity 320ms var(--ease-out);
+  }
+  a.card:hover,
+  .card-hover:hover {
+    translate: 0 -3px;
+  }
+  .btn-primary:hover {
+    translate: 0 -2px;
+  }
+
+  /* Hero: the window breathes like a lamp, the halo with it, and now and then
+     a car's headlights pass across the tower. */
+  .night-window {
+    animation: nsk-lamp 6s ease-in-out infinite;
+  }
+  .night-halo {
+    animation: nsk-breathe 7s ease-in-out infinite;
+  }
+  .night-tower::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    bottom: -20%;
+    left: 0;
+    width: 55%;
+    pointer-events: none;
+    background: linear-gradient(100deg, transparent 0%, rgb(255 183 74 / 0.06) 44%, rgb(255 214 150 / 0.10) 50%, rgb(255 183 74 / 0.06) 56%, transparent 100%);
+    transform: translateX(-130%) skewX(-12deg);
+    animation: nsk-headlights 12s var(--ease-out) 1.6s infinite;
   }
 
   /* Cross-document page transitions: fade out through black, fade in. */
@@ -348,6 +507,19 @@
   ::view-transition-new(root) {
     animation: nsk-fade-in 260ms var(--ease-out) 180ms both;
   }
+}
+
+@keyframes nsk-lamp {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+@keyframes nsk-breathe {
+  0%, 100% { opacity: 0.75; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.06); }
+}
+@keyframes nsk-headlights {
+  0% { transform: translateX(-130%) skewX(-12deg); }
+  45%, 100% { transform: translateX(260%) skewX(-12deg); }
 }
 
 @keyframes nsk-fade-out {

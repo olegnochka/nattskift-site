@@ -13,13 +13,13 @@ const { title, hook, tags, keyArt, appIcon, comingSoon } = game.data;
 const badge = comingSoon ? { src: badgeSoon, alt: 'Coming soon' } : { src: badgeLive, alt: 'Live now on the App Store' };
 ---
 
-<a href={`/games/${game.id}`} class="card group relative block overflow-hidden">
+<a href={`/games/${game.id}`} class="card group relative block">
   <Image
     src={badge.src}
     alt={badge.alt}
     widths={[160, 320, 480]}
     sizes="(min-width: 768px) 176px, 136px"
-    class="pointer-events-none absolute left-3 top-3 z-10 h-auto w-34 drop-shadow-lg md:left-4 md:top-4 md:w-44"
+    class="pointer-events-none absolute left-3 top-3 z-10 h-auto w-34 md:left-4 md:top-4 md:w-44"
   />
   <Image
     src={keyArt.src}
@@ -47,7 +47,7 @@ const badge = comingSoon ? { src: badgeSoon, alt: 'Coming soon' } : { src: badge
         sizes="(min-width: 768px) 72px, 56px"
         width={72}
         height={72}
-        class="size-14 shrink-0 rounded-[22%] shadow-lg md:size-18"
+        class="icon-glow size-14 shrink-0 rounded-[22%] md:size-18"
       />
     )}
   </div>

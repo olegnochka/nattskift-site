@@ -101,7 +101,7 @@ const factRows: Array<[string, string]> = [
             sizes="96px"
             width={96}
             height={96}
-            class="size-20 shrink-0 rounded-[22%] shadow-lg md:size-24"
+            class="icon-glow size-20 shrink-0 rounded-[22%] md:size-24"
           />
           <h1 class="type-page-title">{g.title}</h1>
         </div>
@@ -152,7 +152,7 @@ const factRows: Array<[string, string]> = [
   {/* 2 — Pitch. */}
   <section class="border-t border-hairline section-pad">
     <div class="mx-auto max-w-6xl px-6" data-reveal>
-      <h2 class="type-label text-muted">The pitch</h2>
+      <h2 class="eyebrow type-label text-muted">The pitch</h2>
       <p class="type-lead measure mt-6">{g.pitch}</p>
     </div>
   </section>
@@ -162,7 +162,7 @@ const factRows: Array<[string, string]> = [
     g.trailer && (
       <section class="border-t border-hairline section-pad">
         <div class="mx-auto max-w-6xl px-6" data-reveal>
-          <h2 class="type-label text-muted">Trailer</h2>
+          <h2 class="eyebrow type-label text-muted">Trailer</h2>
           <div class="mt-8">
             <Trailer
               poster={g.trailer.poster}
@@ -179,7 +179,7 @@ const factRows: Array<[string, string]> = [
   {/* 4 — Three pillars. */}
   <section class="border-t border-hairline section-pad">
     <div class="mx-auto max-w-6xl px-6">
-      <h2 class="type-label text-muted" data-reveal>How it plays</h2>
+      <h2 class="eyebrow type-label text-muted" data-reveal>How it plays</h2>
       <div class="mt-10 grid gap-12 md:grid-cols-3 md:gap-8">
         {
           g.pillars.map((pillar, i) => (
@@ -203,7 +203,7 @@ const factRows: Array<[string, string]> = [
   {/* 5 — Screenshots: raw device captures, no frames, no tilt. */}
   <section class="border-t border-hairline section-pad">
     <div class="mx-auto max-w-6xl px-6">
-      <h2 class="type-label text-muted" data-reveal>Screens</h2>
+      <h2 class="eyebrow type-label text-muted" data-reveal>Screens</h2>
       <div class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
         {
           g.screenshots.map((shot, i) => (
@@ -249,7 +249,7 @@ const factRows: Array<[string, string]> = [
   {/* 7 — Facts. */}
   <section class="border-t border-hairline section-pad">
     <div class="mx-auto max-w-6xl px-6" data-reveal>
-      <h2 class="type-label text-muted">Facts</h2>
+      <h2 class="eyebrow type-label text-muted">Facts</h2>
       <table class="mt-8 w-full max-w-2xl font-mono text-[13px] leading-relaxed">
         <tbody>
           {
@@ -271,7 +271,7 @@ const factRows: Array<[string, string]> = [
   {g.latestUpdate && (
     <section class="border-t border-hairline section-pad">
       <div class="mx-auto max-w-6xl px-6" data-reveal>
-        <h2 class="type-label text-muted">Latest update</h2>
+        <h2 class="eyebrow type-label text-muted">Latest update</h2>
         <p class="type-micro mt-6 text-muted">
           v{g.latestUpdate.version} — <time datetime={g.latestUpdate.date}>{g.latestUpdate.date}</time>
         </p>
