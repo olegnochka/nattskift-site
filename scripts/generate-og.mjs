@@ -91,9 +91,9 @@ async function makeCard(file, title, subtitle) {
 await mkdir(outDir, { recursive: true });
 
 const staticCards = [
-  ['default.png', 'Made on the night shift.', 'iOS games by one person in Los Angeles. No ads, no dark patterns.'],
+  ['default.png', 'Made on the night shift.', 'iOS games by a tiny team in Los Angeles. No ads, no dark patterns.'],
   ['games.png', 'The games', 'Free to try, priced in real money, finished before they shipped.'],
-  ['about.png', 'About the studio', 'Nattskift means night shift. The studio is one person in Los Angeles.'],
+  ['about.png', 'About the studio', 'Nattskift means night shift. The studio is a tiny team in Los Angeles.'],
   ['privacy.png', 'Site privacy', 'No cookies, no analytics, no forms. The whole policy fits on one page.'],
 ];
 

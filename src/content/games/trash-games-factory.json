@@ -91,7 +91,7 @@
     "releaseDate": "2025-03-15",
     "price": "Free / $2.99 optional desk toy",
     "engine": "Swift + SpriteKit",
-    "developer": "Nattskift Games (one person)"
+    "developer": "Nattskift Games (tiny team ;)"
   },
   "latestUpdate": {
     "version": "2.1.0",
@@ -103,7 +103,7 @@
     ]
   },
   "support": {
-    "responseTime": "Replies usually within two days. One person answers these, and that person also ships the updates.",
+    "responseTime": "Replies usually within two days. A tiny team answers these, and the same team ships the updates.",
     "faq": [
       {
         "q": "I bought the Executive Desk Toy and my stapler is still gray.",
@@ -160,7 +160,7 @@
       },
       {
         "heading": "Crash data",
-        "body": "If you share analytics with developers in iOS settings, Apple forwards anonymized crash logs — stack traces, not personal data. They are read by the one person who can fix them."
+        "body": "If you share analytics with developers in iOS settings, Apple forwards anonymized crash logs — stack traces, not personal data. They are read by the people who can fix them."
       },
       {
         "heading": "Your rights and how to reach a human",
