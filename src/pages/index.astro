@@ -55,9 +55,12 @@ const promises = [
   }}
 >
   {/* 1 — Hero. One flat royal block as the only mass of color. */}
-  <section class="section-pad">
+  <section class="hero-scene section-pad">
+    {/* Faint stars and a breathing violet light behind the words. */}
+    <div class="hero-stars" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
     <div class="mx-auto grid max-w-6xl items-center gap-16 px-6 lg:grid-cols-[1fr_300px]">
-      <div data-reveal>
+      <div class="hero-copy">
         <LogoLockup size={96} />
         <h1 class="type-hero hero-ink mt-10">Made on the night shift.</h1>
         <p class="type-lead measure mt-6 text-muted">

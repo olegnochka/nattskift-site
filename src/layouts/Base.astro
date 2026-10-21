@@ -88,6 +88,17 @@ const { title, description, ogImage, ogType, jsonLd } = Astro.props;
           });
         }
 
+        // Card light follows the pointer (mouse and trackpad only).
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+          document.querySelectorAll('a.card').forEach(function (card) {
+            card.addEventListener('pointermove', function (e) {
+              var r = card.getBoundingClientRect();
+              card.style.setProperty('--mx', e.clientX - r.left + 'px');
+              card.style.setProperty('--my', e.clientY - r.top + 'px');
+            });
+          });
+        }
+
         document.querySelectorAll('[data-faq-trigger]').forEach(function (btn) {
           var panel = document.getElementById(btn.getAttribute('aria-controls'));
           if (!panel) return;
