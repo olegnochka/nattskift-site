@@ -40,6 +40,8 @@ const games = defineCollection({
     /** Pre-release: replaces the App Store badge with a notify-me email form. */
     comingSoon: z.boolean().default(false),
     keyArt: z.object({ src: image(), alt: z.string() }),
+    /** Optional App Store icon (square, 1024 px), shown next to the title on the game page. */
+    appIcon: z.object({ src: image(), alt: z.string() }).optional(),
     /** Optional full-page ambient background (decorative, heavily darkened). */
     pageBackground: image().optional(),
     trailer: z
