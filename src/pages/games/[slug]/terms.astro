@@ -43,6 +43,10 @@ const g = game.data as typeof game.data & { terms: NonNullable<typeof game.data.
         <a class="link-quiet" href={`mailto:${supportEmail(game)}?subject=${encodeURIComponent('Terms - ' + g.title)}`}>
           {supportEmail(game)}</a>.
       </p>
+      <p class="type-caption measure mt-4 text-muted">
+        {g.title} is published by Pacific Front Desk LLC, doing business as
+        Nattskift Games, in Los Angeles, California.
+      </p>
     </div>
   </section>
 </Base>

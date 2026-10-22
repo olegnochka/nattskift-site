@@ -76,6 +76,10 @@ const g = game.data as typeof game.data & { privacy: NonNullable<typeof game.dat
         <a class="link-quiet" href={`mailto:${supportEmail(game)}?subject=${encodeURIComponent('Data request - ' + g.title)}`}>
           {supportEmail(game)}</a>. You will hear back from the developer, not a form letter.
       </p>
+      <p class="type-caption measure mt-4 text-muted">
+        {g.title} is published by Pacific Front Desk LLC, doing business as
+        Nattskift Games, in Los Angeles, California.
+      </p>
     </div>
   </section>
 </Base>
