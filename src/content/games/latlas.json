@@ -150,7 +150,7 @@
     ]
   },
   "privacy": {
-    "updated": "2026-10-20",
+    "updated": "2026-10-23",
     "summary": [
       {
         "what": "Games, stats and settings",
@@ -175,12 +175,18 @@
         "why": "To show the panoramas and the world map",
         "whoSees": "Google receives the request (including your IP address) directly from your iPhone",
         "howToDelete": "Google Privacy Policy controls"
+      },
+      {
+        "what": "Theme updates (version 1.1 and later)",
+        "why": "So a new weekly theme can be added without an app update",
+        "whoSees": "GitHub, which hosts the file, receives the request (including your IP address) directly from your iPhone; nothing about you is sent",
+        "howToDelete": "Nothing is stored about you; delete the app to remove the saved copy of the file"
       }
     ],
     "sections": [
       {
         "heading": "The short version",
-        "body": "We collect nothing ourselves. There are no accounts, no analytics, no advertising and no tracking, and nothing about you is ever sent to us. Latlas does need the internet, because the imagery comes from Google, so Google sees those requests - explained below rather than buried."
+        "body": "We collect nothing ourselves. There are no accounts, no analytics, no advertising and no tracking, and nothing about you is ever sent to us. Latlas does need the internet, because the imagery comes from Google, so Google sees those requests, and from version 1.1 GitHub sees a request for the theme file - explained below rather than buried."
       },
       {
         "heading": "What stays on your iPhone",
@@ -193,6 +199,10 @@
       {
         "heading": "What Google's software collects",
         "body": "Latlas includes Google's Maps software, which collects some data for Google, not for us. Google's disclosure for it lists a device identifier and other technical data, linked to the device and used for analytics and to make the maps work, and crash, performance and basic interaction data, not linked to you. Google states none of it is used for tracking. We do not receive it."
+      },
+      {
+        "heading": "Theme updates",
+        "body": "From version 1.1, Latlas occasionally downloads a small public text file from this game's page on GitHub Pages (pacificfrontdesk.github.io/latlas). It lists extra weekly themes: a title, an icon name and a list of countries. Your iPhone asks for the file directly, so GitHub receives the request, including your IP address, under GitHub's own privacy statement. The request carries nothing about you or your games, and the file is only read, never run. The app keeps the last copy on your iPhone so it keeps working offline."
       },
       {
         "heading": "Notifications",
