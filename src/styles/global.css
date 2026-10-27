@@ -8,10 +8,10 @@
 --------------------------------------------------------------------------- */
 @theme {
   --color-*: initial;
-  --color-ink: #0b0e12;
+  --color-ink: #090b0f;
   --color-surface: #16131f;
   --color-raised: #201b2e;
-  --color-royal: #6b3fa0; /* FILL ONLY — never text, never border */
+  --color-royal: #7133aa; /* FILL ONLY — never text, never border */
   --color-royal-light: #9e82d4;
   --color-sodium: #ffb74a; /* light source, <3% of any screen as a fill; glows of it stay faint */
   --color-danger: #e5484d; /* destructive fills only */
@@ -19,7 +19,7 @@
   --color-text: #eceff3;
   --color-muted: #9aa4b2;
   --color-white: #ffffff;
-  --color-button-label: #f7f5f0; /* 6.8:1 on royal */
+  --color-button-label: #f7f5f0; /* 7.0:1 on royal */
   --color-hairline: rgb(255 255 255 / 0.06);
 
   --font-*: initial;

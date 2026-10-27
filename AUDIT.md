@@ -17,31 +17,32 @@ math in `scripts/contrast.mjs`).
 
 ## Contrast (computed, WCAG 2.1 AA)
 
-All pairings pass. Notably, the two ratios stated in the brief reproduce
-almost exactly: royal on ink computes to **2.62:1** (brief said 2.6 — fill
-only, never text) and button label on royal computes to **6.78:1** (brief
-said 6.8).
+All pairings pass. Recomputed after the palette moved to the brand kit's
+ink `#090B0F` and violet `#7133AA`: every ratio either held or improved —
+the primary button label went from 6.78:1 to **6.99:1** — and the violet
+still fails as text at **2.58:1**, which is why it stays fill-only.
 
 | Pairing | Ratio | Requirement | Verdict |
 | --- | --- | --- | --- |
-| text `#ECEFF3` on ink | 16.77:1 | 4.5:1 | pass |
+| text `#ECEFF3` on ink | 17.07:1 | 4.5:1 | pass |
 | text on surface | 15.87:1 | 4.5:1 | pass |
 | text on raised | 14.48:1 | 4.5:1 | pass |
-| muted `#9AA4B2` on ink | 7.67:1 | 4.5:1 | pass |
+| muted `#9AA4B2` on ink | 7.81:1 | 4.5:1 | pass |
 | muted on surface | 7.26:1 | 4.5:1 | pass |
 | muted on raised | 6.62:1 | 4.5:1 | pass |
-| royal-light `#9E82D4` on ink | 6.08:1 | 4.5:1 | pass |
+| royal-light `#9E82D4` on ink | 6.19:1 | 4.5:1 | pass |
 | royal-light on surface | 5.75:1 | 4.5:1 | pass |
-| button label `#F7F5F0` on royal | 6.78:1 | 4.5:1 | pass |
-| deal-section label (80% opacity) on royal | 5.00:1 | 4.5:1 | pass |
-| white on royal (logo GAMES line) | 7.38:1 | 3:1 (large) | pass |
-| sodium `#FFB74A` on ink | 11.17:1 | 4.5:1 | pass |
-| danger-text `#FF7B7E` on ink | 7.72:1 | 4.5:1 | pass |
+| button label `#F7F5F0` on royal | 6.99:1 | 4.5:1 | pass |
+| deal-section label (80% opacity) on royal | 5.07:1 | 3:1 | pass |
+| white on royal (logo GAMES line) | 7.62:1 | 3:1 (large) | pass |
+| sodium `#FFB74A` on ink | 11.37:1 | 4.5:1 | pass |
+| danger-text `#FF7B7E` on ink | 7.86:1 | 4.5:1 | pass |
 | danger-text on surface | 7.31:1 | 4.5:1 | pass |
-| focus ring royal-light vs ink | 6.08:1 | 3:1 (component) | pass |
-| royal as text on ink | 2.62:1 | — | forbidden by design, enforced fill-only |
+| focus ring royal-light vs ink | 6.19:1 | 3:1 (component) | pass |
+| hairline-equivalent border vs surface | 1.12:1 | — | decorative, not a control boundary |
+| royal as text on ink | 2.58:1 | — | forbidden by design, enforced fill-only |
 
-No pairing specified in the brief fails.
+No pairing fails.
 
 ## Keyboard and focus
 
@@ -49,7 +50,7 @@ No pairing specified in the brief fails.
   targets `#main`.
 - All interactive elements are native `<a>`/`<button>`; zero negative
   tabindex; no `outline: none` anywhere.
-- Global `:focus-visible` ring: 2px `--royal-light`, offset 2px (6.08:1
+- Global `:focus-visible` ring: 2px `--royal-light`, offset 2px (6.19:1
   against ink). FAQ accordion uses real buttons with `aria-expanded` /
   `aria-controls` and is fully keyboard operable.
 

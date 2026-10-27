@@ -3,10 +3,10 @@
 // Exit code 1 if any pairing fails its required ratio.
 
 const colors = {
-  ink: '#0B0E12',
+  ink: '#090B0F',
   surface: '#16131F',
   raised: '#201B2E',
-  royal: '#6B3FA0',
+  royal: '#7133AA',
   royalLight: '#9E82D4',
   sodium: '#FFB74A',
   danger: '#E5484D',

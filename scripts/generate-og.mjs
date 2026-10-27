@@ -14,8 +14,8 @@ const archivo = path.join(root, 'scripts', 'fonts', 'Archivo.ttf');
 
 const W = 1200;
 const H = 630;
-const INK = '#0B0E12';
-const ROYAL = '#6B3FA0';
+const INK = '#090B0F';
+const ROYAL = '#7133AA';
 const TEXT = '#ECEFF3';
 const MUTED = '#9AA4B2';
 
@@ -32,14 +32,15 @@ async function textLayer(markup, font, width) {
   return { buf, width: meta.width, height: meta.height };
 }
 
-// The split-square monogram N, drawn at badge size on the royal band.
+// The brand emblem, drawn at badge size on the royal band. Read from the
+// brand asset so the OG cards, the favicons and the site all stay in step.
+const brandMonogram = await readFile(
+  path.join(root, 'src', 'assets', 'brand', 'monogram.svg'),
+  'utf8',
+);
 const monogramSvg = (size) =>
   Buffer.from(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 512 512">
-      <rect width="512" height="256" fill="${INK}"/>
-      <rect y="256" width="512" height="256" fill="${ROYAL}"/>
-      <path fill="#FFFFFF" d="M186 58 L232 58 L292 166 L292 58 L326 58 L326 198 L280 198 L220 90 L220 198 L186 198 Z"/>
-    </svg>`,
+    brandMonogram.replace('<svg ', `<svg width="${size}" height="${size}" `),
   );
 
 async function makeCard(file, title, subtitle) {
