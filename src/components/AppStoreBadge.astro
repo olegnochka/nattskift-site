@@ -7,9 +7,16 @@
 interface Props {
   appStoreId: string;
   title: string;
+  /** App Store campaign name (ct=), so App Analytics -> Campaigns shows which link a download came from. */
+  campaign?: string;
 }
-const { appStoreId, title } = Astro.props;
-const href = `https://apps.apple.com/app/id${appStoreId}`;
+const { appStoreId, title, campaign } = Astro.props;
+// pt = the provider token of the Nattskift developer account (App Store Connect -> App Analytics ->
+// Campaigns -> Generate a Campaign Link); the same for every app on the account.
+const PROVIDER_TOKEN = '129294312';
+const href = campaign
+  ? `https://apps.apple.com/app/apple-store/id${appStoreId}?pt=${PROVIDER_TOKEN}&ct=${encodeURIComponent(campaign)}&mt=8`
+  : `https://apps.apple.com/app/id${appStoreId}`;
 ---
 
 <a href={href} class="inline-block" aria-label={`Download ${title} on the App Store`}>

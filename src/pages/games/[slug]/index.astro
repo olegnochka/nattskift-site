@@ -120,7 +120,7 @@ const factRows: Array<[string, string]> = [
         {g.comingSoon ? (
           <span class="tag">Coming soon to the App Store</span>
         ) : (
-          <AppStoreBadge appStoreId={g.appStoreId} title={g.title} />
+          <AppStoreBadge appStoreId={g.appStoreId} title={g.title} campaign={`site-${game.id}`} />
         )}
         <span class="tag">{g.tags.price}</span>
       </div>
