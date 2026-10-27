@@ -25,3 +25,12 @@ https://nattskift.netlify.app/* https://nattskiftgames.com/:splat 301!
 # Notes are hidden; old links go home.
 /notes / 301
 /notes/* / 301
+
+# Short tracking links: nattskiftgames.com/go/<app>/<source> -> the App Store with a campaign token,
+# so App Analytics > Acquisition > Campaigns shows downloads per source (ct). pt = provider token of
+# the Nattskift account (same as in src/components/AppStoreBadge.astro). Any ending works, e.g.
+# /go/latlas/reddit-geoguessr. Keep ct under 40 chars, lowercase, hyphens.
+/go/latlas/:ct https://apps.apple.com/app/apple-store/id6812973799?pt=129294312&ct=:ct&mt=8 302
+/go/latlas https://apps.apple.com/app/apple-store/id6812973799?pt=129294312&ct=go&mt=8 302
+/go/relic-run/:ct https://apps.apple.com/app/apple-store/id6811707026?pt=129294312&ct=:ct&mt=8 302
+/go/relic-run https://apps.apple.com/app/apple-store/id6811707026?pt=129294312&ct=go&mt=8 302
