@@ -10,7 +10,7 @@
     "privacyDescription": "The Latlas privacy policy in plain language: the game collects nothing itself. No accounts, no analytics, no advertising. Street View imagery comes from Google."
   },
   "hook": "Dropped somewhere on Earth. Work out where.",
-  "pitch": "Latlas puts you on a real street somewhere in the world. Look around, read the signs, notice which side the cars drive on, then drop your pin on the map. Every day brings the same five places for everyone. A globe fills in as you visit new countries. Free, no ads, no account.",
+  "pitch": "Latlas puts you on a real street somewhere in the world. Look around, read the signs, notice which side the cars drive on, then drop your pin on the map. Every day brings the same five places for everyone, plus a neighborhood to guess in one of 11 cities. A globe fills in as you visit new countries. Free, no ads, no account.",
   "tags": {
     "genre": "Geography guessing game",
     "platform": "iOS",
@@ -79,21 +79,21 @@
     }
   ],
   "deal": {
-    "free": "All of it. The daily challenge, free play with or without a clock, the Atlas, your stats, Game Center leaderboards and a home screen widget.",
-    "paid": "Nothing. There is nothing to buy in this version.",
-    "costs": "Nothing, and there are no ads to sit through. The imagery comes from Google over the internet, so it uses a little mobile data.",
+    "free": "All of it: the daily challenge, free play with or without a clock, the theme of the week, Guess the neighborhood in 11 cities, the Atlas, your stats, Game Center leaderboards and a home screen widget.",
+    "paid": "Latlas Plus, a one-time unlock for people who play every day: the full archive of past dailies (the last week is free for everyone), trends in your stats, two more share-card styles, alternate icons and a supporter badge. There is also a tip jar; tips unlock nothing.",
+    "costs": "Nothing to play, and there are no ads to sit through. The imagery comes from Google over the internet, so it uses a little mobile data.",
     "never": [
       "No adverts, anywhere, ever.",
       "No account, no sign-up, and no email address needed to play.",
       "No analytics or tracking of any kind from the studio.",
-      "Nothing to buy, now or hidden behind a menu."
+      "No paywall on the daily or on free play, ever."
     ]
   },
   "facts": {
     "platform": "iPhone",
     "minimumOS": "iOS 17",
     "size": "About 24 MB",
-    "languages": "English, Spanish, German, French, Brazilian Portuguese, Japanese",
+    "languages": "English, Spanish, German, French, Brazilian Portuguese, Japanese, Simplified Chinese, Ukrainian",
     "releaseDate": "October 22, 2026",
     "price": "Free",
     "engine": "Swift and SwiftUI",
@@ -141,7 +141,7 @@
       },
       {
         "q": "Does Latlas cost anything?",
-        "a": "No. Latlas is free, with no ads and no purchases in this version. The daily challenge and free play will never be put behind a paywall."
+        "a": "Latlas is free, with no ads. Version 1.1 added optional extras: Latlas Plus, a one-time purchase that unlocks the full archive of past dailies, trends in your stats, two more share-card styles, alternate icons and a supporter badge, and a tip jar for anyone who just wants to say thanks. The daily challenge, free play, the theme of the week and the neighborhood game are free for everyone and will never be put behind a paywall."
       },
       {
         "q": "Can it remind me about the daily challenge?",
@@ -218,7 +218,7 @@
       },
       {
         "heading": "Changes",
-        "body": "If a future version collects anything at all, adds purchases or adds advertising, this page and the App Store privacy label will be updated before that version ships. Latlas is published by Pacific Front Desk LLC, doing business as Nattskift Games."
+        "body": "Version 1.1 added optional purchases (Latlas Plus and tips). Apple processes them; we never see your payment details, and the app keeps only whether Plus is unlocked, on your device. If a future version collects anything else or adds advertising, this page and the App Store privacy label will be updated before that version ships. Latlas is published by Pacific Front Desk LLC, doing business as Nattskift Games."
       }
     ]
   },
@@ -243,7 +243,7 @@
       },
       {
         "heading": "Purchases",
-        "body": "This version of Latlas has no in-app purchases. If optional purchases are added later, they will be processed by Apple under the Apple Media Services Terms and Conditions, shown with their price before you buy, and refunded by Apple at reportaproblem.apple.com."
+        "body": "Latlas is free to download and play. Since version 1.1 it offers optional in-app purchases: Latlas Plus, a one-time unlock, and tips. They are processed by Apple under the Apple Media Services Terms and Conditions, shown with their price before you buy, and refunded by Apple at reportaproblem.apple.com. A tip unlocks nothing; Plus adds extras and never gates the daily challenge or free play."
       },
       {
         "heading": "Availability",
