@@ -3,14 +3,14 @@
   "order": 2,
   "seo": {
     "title": "Golden Party Casino - social slots for iOS",
-    "description": "Golden Party Casino: Slots is a free-to-play social casino for iPhone. Six themed slot machines, a daily wheel, missions and card albums. Virtual coins only, 18+.",
+    "description": "Golden Party Casino: Slots is a free-to-play social casino for iPhone. Twelve themed slot machines, a daily wheel, missions and card albums. Virtual coins only, 18+.",
     "supportTitle": "Golden Party Casino Support - Nattskift Games",
     "supportDescription": "Support for Golden Party Casino: Slots on iOS: restoring coin purchases, recovering your account with Apple or Google sign-in, finding your player ID, and reporting bugs.",
     "privacyTitle": "Golden Party Casino Privacy - Nattskift Games",
     "privacyDescription": "The Golden Party Casino privacy policy in plain language: what the game stores on its server, what sign-in shares, what purchases reveal, and how to delete all of it in-app."
   },
-  "hook": "Six machines. One golden party.",
-  "pitch": "You walk into a casino that never closes and never takes a dime you didn't choose to spend. Six machines with their own math and moods, a wheel that pays daily, missions that reset at midnight, and card albums worth chasing. Coins are the whole economy - and they are never real money.",
+  "hook": "Twelve machines. One golden party.",
+  "pitch": "You walk into a casino that never closes and never takes a dime you didn't choose to spend. Twelve machines with their own math and moods, a wheel that pays daily, missions that reset at midnight, and card albums worth chasing. Coins are the whole economy - and they are never real money.",
   "tags": {
     "genre": "Social casino",
     "platform": "iOS",
@@ -34,8 +34,8 @@
   "trailer": null,
   "pillars": [
     {
-      "title": "Six machines, six moods",
-      "body": "A confetti classic, an Egyptian high-roller, cascading dragons, candy wilds, a vintage one-armed bandit with pickable paylines, and a cyberpunk heist where wilds go viral. Each has its own verified math.",
+      "title": "Twelve machines, twelve moods",
+      "body": "A confetti classic, an Egyptian high-roller, cascading dragons, candy wilds, a vintage one-armed bandit with pickable paylines, a cyberpunk heist where wilds go viral, a canyon where the herd turns everything wild, a hold-and-win rainbow, an Olympus that pays both ways, a tide that floods the reels, a pirate wreck where gold freezes in place, and a sun temple guarding its prize behind three idols. Each has its own verified math.",
       "image": "./art/gpc-pillar-machines.jpg",
       "alt": "Two miniature golden slot machines side by side with colorful reels."
     },
@@ -55,7 +55,7 @@
   "screenshots": [
     {
       "src": "./art/gpc-shot-1.jpg",
-      "alt": "The lobby: six machine cards under the Golden Party Casino title, with Party Slots unlocked and framed in gold."
+      "alt": "The lobby: machine cards under the Golden Party Casino title, with Party Slots and Pharaoh's Fortune framed in gold for completed card albums."
     },
     {
       "src": "./art/gpc-shot-2.jpg",
@@ -75,11 +75,11 @@
     },
     {
       "src": "./art/gpc-shot-6.jpg",
-      "alt": "My Albums: all six machines listed with card-collection progress bars, one card already found."
+      "alt": "My Albums: all twelve machines listed with card-collection progress bars, two albums already complete."
     }
   ],
   "deal": {
-    "free": "Everything. All six machines, the wheel, missions, albums, and a 2,000,000-coin welcome balance. Nothing is level-locked behind a purchase.",
+    "free": "Everything. All twelve machines, the wheel, missions, albums, and a 2,000,000-coin welcome balance. Nothing is level-locked behind a purchase.",
     "paid": "Optional coin packs, for players who run dry and don't want to wait for the free wheel, gift, and mission coins to refill them.",
     "costs": "Coin packs from $1.99 to $99.99, always shown in real money before you tap.",
     "never": [
