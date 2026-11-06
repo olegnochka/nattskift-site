@@ -1,0 +1,228 @@
+{
+  "title": "DeckPop",
+  "order": 3,
+  "seo": {
+    "title": "DeckPop - AI charades party game for iOS - Nattskift Games",
+    "description": "DeckPop is a party game for iPhone: charades and Imposter with decks on any topic, made on your iPhone by Apple Intelligence. No ads, no account, no subscription.",
+    "supportTitle": "DeckPop Support - Nattskift Games",
+    "supportDescription": "Support for DeckPop on iOS: AI decks and Apple Intelligence, tilting, sharing decks with a link, Party Pass, and how to reach the developer.",
+    "privacyTitle": "DeckPop Privacy Policy - Nattskift Games",
+    "privacyDescription": "The DeckPop privacy policy in plain language: the game collects nothing. AI decks are made on your iPhone, and shared decks travel inside the link itself."
+  },
+  "hook": "Phone on your forehead. A deck on any topic.",
+  "pitch": "DeckPop is charades for any crowd. Type a topic - 90s cartoons, things at a wedding, your office - and a fresh deck appears in seconds, made right on your iPhone. Hold the phone to your forehead, let your friends shout clues, and tilt to answer. Then pass it around for Imposter and find the liar.",
+  "tags": {
+    "genre": "Party game",
+    "platform": "iOS",
+    "price": "Free"
+  },
+  "appStoreId": "6825908650",
+  "comingSoon": false,
+  "keyArt": {
+    "src": "./art/dp-key.jpg",
+    "alt": "Three DeckPop screens on cream dotted paper - the home screen with Make a deck on any topic, an AI deck called Movie villains, and the purple Imposter card - surrounded by hand-drawn stickers: a clapperboard, a puppy, a burger, the Statue of Liberty, a party popper and theatre masks."
+  },
+  "appIcon": {
+    "src": "./art/deckpop-icon.png",
+    "alt": "DeckPop app icon: a fanned stack of bright party cards."
+  },
+  "pageBackground": "./art/dp-bg.jpg",
+  "wave": {
+    "edge": "#6c5ce7",
+    "core": "#ff4d6d"
+  },
+  "trailer": null,
+  "pillars": [
+    {
+      "title": "A deck on any topic, in seconds",
+      "body": "Type anything and Apple's on-device model writes a playable deck while you wait. It runs on your iPhone, so it works offline and nothing you type leaves the phone. Ask for ten more whenever a deck runs dry.",
+      "image": "./art/dp-pillar-ai.jpg",
+      "alt": "Two DeckPop screens: Making Movie villains with a timer, then the finished AI deck with 24 cards and a Play button."
+    },
+    {
+      "title": "Two games in one",
+      "body": "Charades: phone on your forehead, tilt down for correct, tilt up to pass, sixty seconds on the clock. Imposter: pass the phone round, everyone sees the secret word except one player, who has to bluff their way out.",
+      "image": "./art/dp-pillar-play.jpg",
+      "alt": "A charades round held sideways showing the word Skiing with a 39-second timer, next to the purple Imposter card."
+    },
+    {
+      "title": "Your jokes, your decks",
+      "body": "Six ready-made decks of thirty cards, plus decks you write yourself about your own people and places. Share any deck as a link: the cards travel inside the link, so a friend can play it even without Apple Intelligence.",
+      "image": "./art/dp-pillar-share.jpg",
+      "alt": "The deck list with ready-made decks such as Animals, Movies and Act It Out, next to a screen saying a friend shared a deck called Our office."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./art/dp-shot-1.jpg",
+      "alt": "The home screen: a yellow card saying Make a deck on any topic, with suggestions such as 90s cartoons and Disney movies, then Your own deck, Imposter and your saved decks."
+    },
+    {
+      "src": "./art/dp-shot-2.jpg",
+      "alt": "A deck being made: Making Movie villains, with a running timer."
+    },
+    {
+      "src": "./art/dp-shot-3.jpg",
+      "alt": "A finished AI deck, Movie villains, 24 cards hidden face down, with Play and 10 more with AI buttons."
+    },
+    {
+      "src": "./art/dp-shot-4.jpg",
+      "alt": "Your decks and the six ready-made decks: Animals, Movies, Act It Out, Foods, Famous Places and Jobs."
+    },
+    {
+      "src": "./art/dp-shot-5.jpg",
+      "alt": "Imposter: a purple screen with the category Animals and Blend in. Don't get caught."
+    },
+    {
+      "src": "./art/dp-shot-6.jpg",
+      "alt": "A deck shared by a friend, Our office, ready to save with one tap."
+    }
+  ],
+  "deal": {
+    "free": "Everything except unlimited AI decks: three AI decks of your own, all six ready-made decks, decks you write yourself, any deck a friend shares with you, and Imposter.",
+    "paid": "Party Pass, a one-time purchase that unlocks unlimited AI decks. No subscription.",
+    "costs": "Nothing beyond Party Pass, if you want it. AI decks are made on your iPhone, so they use no data and work offline.",
+    "never": [
+      "No adverts, anywhere, ever.",
+      "No subscription, ever.",
+      "No account and no sign-up.",
+      "No analytics or tracking of any kind."
+    ]
+  },
+  "facts": {
+    "platform": "iPhone",
+    "minimumOS": "iOS 26 (AI decks need an iPhone with Apple Intelligence: iPhone 15 Pro or newer)",
+    "size": "About 4 MB",
+    "languages": "English",
+    "releaseDate": "November 5, 2026",
+    "price": "Free, with an optional one-time Party Pass",
+    "engine": "Swift and SwiftUI",
+    "developer": "Nattskift Games (Pacific Front Desk LLC)"
+  },
+  "support": {
+    "responseTime": "Replies usually within a day or two. Include your iPhone model, iOS version and what the screen showed.",
+    "email": "support@pacificfrontdesk.com",
+    "faq": [
+      {
+        "q": "AI decks say they are unavailable.",
+        "a": "AI decks use Apple Intelligence, which runs on iPhone 15 Pro, iPhone 15 Pro Max and every iPhone 16 and 17 model, with iOS 26 or later. Turn it on in Settings > Apple Intelligence & Siri and give it time to finish downloading. On other iPhones you can still play the ready-made decks, write your own, and play any deck a friend shares with you."
+      },
+      {
+        "q": "A topic did not work.",
+        "a": "Apple's on-device model declines some topics, mostly anything adult or violent, and it can be cautious with harmless ones too. Try wording the topic differently. It knows well-known things best; very new or very niche topics can come out thin."
+      },
+      {
+        "q": "Tilting does not register.",
+        "a": "Hold the phone sideways against your forehead, screen facing your friends. Tilt it clearly forward (screen to the floor) for a correct answer and back (screen to the ceiling) to pass, then return to upright before the next card. Rotation lock does not matter."
+      },
+      {
+        "q": "How do I share a deck?",
+        "a": "Open one of your decks and tap the share button. Your friend taps the link to add the deck to DeckPop. The cards are packed inside the link, so anyone you send it to can read them - share personal decks only with the people in them."
+      },
+      {
+        "q": "A card in an AI deck is wrong.",
+        "a": "Remove it from the results screen after a round, or edit the deck. AI decks are written by a model and can contain mistakes."
+      },
+      {
+        "q": "I bought Party Pass on another iPhone.",
+        "a": "Open Party Pass and tap Restore Purchases while signed in to the same Apple Account. Refunds are handled by Apple at reportaproblem.apple.com."
+      },
+      {
+        "q": "I lost my decks.",
+        "a": "Decks are kept on your iPhone only. Deleting the app or moving to a new phone without a backup clears them, and we cannot restore them - there is no account and no server copy. Sharing a deck to yourself is a handy way to keep a copy."
+      }
+    ]
+  },
+  "privacy": {
+    "updated": "2026-11-05",
+    "summary": [
+      {
+        "what": "Decks and settings",
+        "why": "So your decks are there next time",
+        "whoSees": "Only you: stored on your iPhone",
+        "howToDelete": "Delete a deck in the app, or delete the app"
+      },
+      {
+        "what": "AI deck topics",
+        "why": "To write the deck",
+        "whoSees": "Nobody: Apple's model runs on your iPhone",
+        "howToDelete": "Delete the deck"
+      },
+      {
+        "what": "Shared deck links",
+        "why": "So a friend can play your deck",
+        "whoSees": "Whoever you send the link to; the cards never reach a server",
+        "howToDelete": "Stop sharing the link"
+      },
+      {
+        "what": "Party Pass purchase",
+        "why": "To unlock unlimited AI decks",
+        "whoSees": "Apple handles the payment; we never see it",
+        "howToDelete": "Managed in your Apple Account"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "The short version",
+        "body": "We collect nothing. There are no accounts, no analytics, no advertising and no tracking of any kind, and nothing about you is ever sent to us."
+      },
+      {
+        "heading": "What stays on your iPhone",
+        "body": "The decks you make, write, edit or receive from friends, and your settings. Deleting the app deletes all of it. We never see any of it."
+      },
+      {
+        "heading": "AI decks",
+        "body": "AI decks are made by Apple's on-device model. The topic you type and the cards it makes stay on your iPhone; they are not sent to us or to anyone else."
+      },
+      {
+        "heading": "Shared deck links",
+        "body": "When you share a deck, its title and cards are packed into the part of the link after the \"#\" sign. Browsers never send that part to a web server, so even when a link opens a web page, the page reads the deck inside your browser and the cards never reach us. Anyone who has the link can read the deck, so share it only with people you mean to."
+      },
+      {
+        "heading": "Purchases",
+        "body": "Party Pass is sold by Apple through the App Store. Apple handles the payment; we never see your payment details or your Apple Account. The app keeps only whether Party Pass is unlocked."
+      },
+      {
+        "heading": "Children",
+        "body": "DeckPop collects nothing, so there is nothing to collect from a child either."
+      },
+      {
+        "heading": "Changes",
+        "body": "If a future version ever collects anything, this page and the App Store privacy label will be updated before that version ships. DeckPop is published by Pacific Front Desk LLC, doing business as Nattskift Games."
+      }
+    ]
+  },
+  "terms": {
+    "updated": "2026-11-05",
+    "sections": [
+      {
+        "heading": "Who we are",
+        "body": "DeckPop is published by Pacific Front Desk LLC, a California limited liability company doing business as Nattskift Games (\"Nattskift Games\", \"we\", \"us\"), which is responsible for the app and for these terms."
+      },
+      {
+        "heading": "Using the app",
+        "body": "DeckPop is licensed to you, not sold, under Apple's standard Licensed Application End User License Agreement together with these terms. You may not copy, resell, reverse-engineer or redistribute it."
+      },
+      {
+        "heading": "Play safely",
+        "body": "Charades means moving around with a phone held to your head. Play in a clear space and mind the people and things around you."
+      },
+      {
+        "heading": "AI decks and shared decks",
+        "body": "AI decks are written by Apple's on-device model and can contain mistakes or cards you do not like; you can remove any card. Decks shared by other people are their content, not ours. Only share decks you have the right to share, and do not use decks to harass or embarrass anyone."
+      },
+      {
+        "heading": "Purchases",
+        "body": "Party Pass is a one-time, non-consumable purchase made through the App Store under the Apple Media Services Terms and Conditions. Restore it on another device with Restore Purchases. Refunds are handled by Apple at reportaproblem.apple.com."
+      },
+      {
+        "heading": "Availability",
+        "body": "The app is provided as it is. We do not promise it will be free of faults or supported forever. AI decks depend on Apple Intelligence, which we do not control."
+      },
+      {
+        "heading": "Liability",
+        "body": "To the fullest extent permitted by law, Pacific Front Desk LLC is not liable for any indirect or consequential loss arising from use of the app. Nothing here limits rights you have under consumer law in your own country."
+      }
+    ]
+  }
+}
