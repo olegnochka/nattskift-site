@@ -16,8 +16,8 @@ import Base from '../../../../layouts/Base.astro';
 >
   <meta slot="head" name="robots" content="noindex" />
   <section class="mx-auto max-w-3xl px-6 py-24 text-center md:py-32">
-    <h1 class="type-page-title" data-reveal>A friend hid five traps for you.</h1>
-    <p class="type-lead mt-4 text-muted" data-reveal style="--reveal-index: 1">
+    <h1 id="play-title" class="type-page-title" data-reveal>A friend hid five traps for you.</h1>
+    <p id="play-lead" class="type-lead mt-4 text-muted" data-reveal style="--reveal-index: 1">
       This link holds a Trap Architect board. Open it in the app to walk from START to the golden flag - the
       numbers tell you how many traps touch each tile.
     </p>
@@ -35,7 +35,21 @@ import Base from '../../../../layouts/Base.astro';
   <script is:inline>
     // Hand the same board to the app's own link scheme.
     // Without a board (or without JavaScript) the button just goes to the game page.
-    var b = new URLSearchParams(location.search).get('b');
+    var q = new URLSearchParams(location.search);
+    var b = q.get('b');
     if (b) document.getElementById('open-board').href = 'traparchitect://play?b=' + encodeURIComponent(b);
+    // Daily Trap challenge: ?daily=26&w=1&m=11&p=360 (the friend's result; everyone gets the same board).
+    var d = q.get('daily');
+    if (!b && d && /^[0-9]{1,6}$/.test(d)) {
+      var won = q.get('w') === '1', m = parseInt(q.get('m') || '0', 10), pts = parseInt(q.get('p') || '0', 10);
+      var moves = m === 1 ? '1 move' : m + ' moves';
+      document.getElementById('play-title').textContent = 'Can you beat a friend on Daily Trap #' + d + '?';
+      document.getElementById('play-lead').textContent = (won
+        ? 'They made it in ' + moves + ' for ' + pts + ' points.'
+        : 'They got caught after ' + moves + '.') +
+        ' Everyone gets the same board today - open it in the app and try to do better.';
+      document.getElementById('open-board').textContent = 'Open today\'s board';
+      document.getElementById('open-board').href = 'traparchitect://daily?' + q.toString();
+    }
   </script>
 </Base>
