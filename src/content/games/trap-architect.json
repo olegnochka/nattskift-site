@@ -47,7 +47,7 @@
     },
     {
       "title": "Play any way you like",
-      "body": "Take turns through Game Center, send a board as a link in any chat, or pass the phone around the table. A solo campaign of 66 boards across seven expeditions is there when no one is around.",
+      "body": "Take turns through Game Center, send a board as a link in any chat, or pass the phone around the table. When no one is around there is a solo campaign of 66 boards across seven expeditions, and a new Daily Trap every day: the same board for everyone, one try, with a streak to keep.",
       "image": "./art/ta-pillar-modes.jpg",
       "alt": "The home screen with four ways to play: Play a friend, Send a link, Pass and play, and Solo campaign."
     }
@@ -190,7 +190,7 @@
       },
       {
         "heading": "Game Center",
-        "body": "Play a friend uses Apple's Game Center. Apple stores your matches and the boards in them and shows your Game Center name to the players you match with; the solo leaderboard shows your best total score. Game Center is run by Apple under Apple's privacy policy, and we receive no personal information from it. You can play without Game Center by sending links or passing the phone."
+        "body": "Play a friend uses Apple's Game Center. Apple stores your matches and the boards in them and shows your Game Center name to the players you match with; the solo and Daily Trap leaderboards show your scores. Game Center is run by Apple under Apple's privacy policy, and we receive no personal information from it. You can play without Game Center by sending links or passing the phone."
       },
       {
         "heading": "Share links",
