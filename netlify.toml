@@ -7,3 +7,9 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Apple fetches this to let Trap Architect open its share links (universal links). It must be JSON.
+[[headers]]
+  for = "/.well-known/apple-app-site-association"
+  [headers.values]
+    Content-Type = "application/json"

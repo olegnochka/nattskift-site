@@ -10,12 +10,15 @@ interface Props {
   ogImage?: string;
   ogType?: 'website' | 'article';
   jsonLd?: Record<string, unknown>;
+  /** Report only the path to analytics, never the query string (used where the URL carries data, e.g.
+   *  Trap Architect share links). */
+  stripQuery?: boolean;
 }
-const { title, description, ogImage, ogType, jsonLd } = Astro.props;
+const { title, description, ogImage, ogType, jsonLd, stripQuery = false } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-strip-query={stripQuery ? 'true' : undefined}>
   <head>
     <meta charset="utf-8" />
     {/* Google Analytics 4 (property nattskiftgames.com). Disclosed on /privacy. */}
@@ -24,7 +27,9 @@ const { title, description, ogImage, ogType, jsonLd } = Astro.props;
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
-      gtag('config', 'G-KVD2ZHFL07');
+      gtag('config', 'G-KVD2ZHFL07', document.documentElement.dataset.stripQuery
+        ? { page_location: location.origin + location.pathname }
+        : {});
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {/* Progressive enhancement flag: all motion CSS is gated on html.js. */}

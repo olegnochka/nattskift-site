@@ -1,0 +1,250 @@
+{
+  "title": "Trap Architect",
+  "order": 6,
+  "seo": {
+    "title": "Trap Architect - trap puzzle duel for iOS - Nattskift Games",
+    "description": "Trap Architect is a logic puzzle duel for iPhone and iPad. Hide five traps on a temple floor, send it to a friend and see if they survive. No ads, ever.",
+    "supportTitle": "Trap Architect Support - Nattskift Games",
+    "supportDescription": "Support for Trap Architect on iPhone and iPad: Game Center matches, share links that do not open, restoring purchases, refunds and the Style Pack.",
+    "privacyTitle": "Trap Architect Privacy Policy - Nattskift Games",
+    "privacyDescription": "The Trap Architect privacy policy: the game collects no data. Game Center matches run through Apple, share links carry only the board. No ads or tracking."
+  },
+  "hook": "Hide five traps. Can your friend survive?",
+  "pitch": "You build the floor, they walk it. Hide five spike traps on a 5x5 temple board and send it to a friend. Every tile they step on shows how many traps touch it, and two hearts is all they get. Then it is their turn to build one for you - and your result rides along with it.",
+  "tags": {
+    "genre": "Puzzle duel",
+    "platform": "iOS",
+    "price": "Free to play"
+  },
+  "appStoreId": "0000000000",
+  "comingSoon": true,
+  "keyArt": {
+    "src": "./art/ta-key.jpg",
+    "alt": "One explorer slyly hides a spike trap under a temple floor tile while another, in a green ranger outfit, tiptoes across the board past glowing number clues toward a golden flag."
+  },
+  "appIcon": {
+    "src": "./art/ta-icon.png",
+    "alt": "Trap Architect app icon: an amazed explorer in a yellow pith helmet before a glowing temple vault door, with number clues and a spike trap on the floor tiles."
+  },
+  "wave": {
+    "edge": "#33d9f2",
+    "core": "#ffc433"
+  },
+  "pageBackground": "./art/ta-bg.jpg",
+  "trailer": null,
+  "pillars": [
+    {
+      "title": "Hide five traps",
+      "body": "Build a temple floor for a friend. Every tile shows its clue while you build, so you see what they will see, and a solver rates your board Fair, Tricky or Mean - whether it can be beaten with logic alone or needs luck.",
+      "image": "./art/ta-pillar-build.jpg",
+      "alt": "The build screen: five spike traps hidden on a 5x5 board, faint clue numbers on the other tiles, and the rating Fair: solvable with logic."
+    },
+    {
+      "title": "Read the numbers",
+      "body": "Each safe tile tells how many traps touch it, diagonals included. Step tile by tile from START to the golden flag. Hit a trap and you lose a heart and stay where you were; lose both and the board wins.",
+      "image": "./art/ta-pillar-clues.jpg",
+      "alt": "A run in progress: the explorer has just hit a spike trap, one heart is cracked and the banner says TRAP! You stay where you are."
+    },
+    {
+      "title": "Play any way you like",
+      "body": "Take turns through Game Center, send a board as a link in any chat, or pass the phone around the table. A solo campaign of 22 handmade boards is there when no one is around.",
+      "image": "./art/ta-pillar-modes.jpg",
+      "alt": "The home screen with four ways to play: Play a friend, Send a link, Pass and play, and Solo campaign."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./art/ta-shot-1.jpg",
+      "alt": "The home screen: Play a friend, Send a link, Pass and play and Solo campaign."
+    },
+    {
+      "src": "./art/ta-shot-2.jpg",
+      "alt": "Building a board: five traps hidden, clue numbers showing, rated Fair: solvable with logic."
+    },
+    {
+      "src": "./art/ta-shot-3.jpg",
+      "alt": "A trap springs: one heart lost, the explorer stays put, TRAP! You stay where you are."
+    },
+    {
+      "src": "./art/ta-shot-4.jpg",
+      "alt": "MADE IT! A golden trophy and confetti as the explorer reaches the flag."
+    },
+    {
+      "src": "./art/ta-shot-5.jpg",
+      "alt": "The result card: Made it! 13 moves, 1 life left, and a button to build a board back."
+    },
+    {
+      "src": "./art/ta-shot-6.jpg",
+      "alt": "The Style Pack: the Royal Explorer outfit on the Lava Forge board."
+    }
+  ],
+  "deal": {
+    "free": "Playing friends is free: Game Center matches (three at a time), share links and pass-and-play, as often as you like. The first solo expedition, six boards, is free too.",
+    "paid": "Four one-time purchases. Solo Campaign opens the other two expeditions (16 boards). Unlimited Matches lifts the three-match limit. The Style Pack adds three explorer outfits and two board themes. The Pro Bundle includes all three.",
+    "costs": "Planned US prices: Solo Campaign $2.99, Unlimited Matches $1.99, Style Pack $1.99, Pro Bundle $4.99. The App Store shows the price in your currency on the button before you buy.",
+    "never": [
+      "No adverts, anywhere.",
+      "No subscription.",
+      "Nothing random is sold.",
+      "No account, no analytics, no tracking."
+    ]
+  },
+  "facts": {
+    "platform": "iPhone and iPad",
+    "minimumOS": "iOS 17.0",
+    "size": "To be announced",
+    "languages": "English",
+    "releaseDate": "Coming soon",
+    "price": "Free / optional in-app purchases",
+    "engine": "Swift (SwiftUI)",
+    "developer": "Nattskift Games (Pacific Front Desk LLC)"
+  },
+  "support": {
+    "responseTime": "Replies usually within two days. Include your iPhone or iPad model, iOS version, and whether you were playing a Game Center match, a link or pass-and-play.",
+    "email": "support+traparchitect@pacificfrontdesk.com",
+    "faq": [
+      {
+        "q": "How do I play a friend?",
+        "a": "Three ways. Play a friend uses Game Center: start a New match, invite a friend or get matched with anyone, and the game tells each of you when it is your turn. Send a link packs your board into a link you can send in any chat. Pass and play hands the phone across the table."
+      },
+      {
+        "q": "Play a friend says to sign in to Game Center.",
+        "a": "Game Center matches need a Game Center account. Open the Settings app, tap Game Center and sign in, then come back to the game. Until then, Send a link and Pass and play work without it."
+      },
+      {
+        "q": "A share link does not open the game.",
+        "a": "The link opens Trap Architect when the app is installed. If it opens a web page instead, tap Open in Trap Architect on that page. If your chat app does not make the link tappable, copy it into Safari."
+      },
+      {
+        "q": "What do Fair, Tricky and Mean mean?",
+        "a": "While you build, the game plays your board as a perfect-logic runner. Fair means it can be cleared without a single guess, Tricky needs one lucky step, and Mean needs two or more. You can send any rating - it is there so nobody sends a pure-luck board by accident."
+      },
+      {
+        "q": "Why can I only have three matches?",
+        "a": "Free players can have three Game Center matches going at once; finish or leave one to start another. Unlimited Matches, or the Pro Bundle, removes the limit. Links and pass-and-play have no limit."
+      },
+      {
+        "q": "How do I leave a Game Center match?",
+        "a": "In Play a friend, touch and hold the match and choose Leave match. A finished match can be removed the same way."
+      },
+      {
+        "q": "I bought something and do not see it.",
+        "a": "Open Shop on the home screen and tap Restore Purchases. Everything is a one-time purchase tied to your Apple Account, so it restores on any iPhone or iPad signed in to the same account. The Pro Bundle counts as owning Solo Campaign, Unlimited Matches and the Style Pack."
+      },
+      {
+        "q": "How do I change my explorer or board?",
+        "a": "Tap Style on the home screen. Classic and Temple are free; Jungle Ranger, Desert Nomad, Royal Explorer, Ice Cavern and Lava Forge come with the Style Pack or the Pro Bundle."
+      },
+      {
+        "q": "How do I get a refund?",
+        "a": "Payments are taken by Apple, so refunds are too: request one at reportaproblem.apple.com, signed in with the Apple Account you paid with. We never see your payment details and cannot issue refunds ourselves."
+      },
+      {
+        "q": "Does it need a connection?",
+        "a": "Pass and play and the solo campaign work offline. Game Center matches and opening the App Store need a connection; a share link needs one only to be sent."
+      }
+    ]
+  },
+  "privacy": {
+    "updated": "2026-11-25",
+    "summary": [
+      {
+        "what": "Game progress, settings and style",
+        "why": "So your solo stars, sound setting and chosen outfit are there next time",
+        "whoSees": "Only you: stored on your iPhone or iPad",
+        "howToDelete": "Delete the app"
+      },
+      {
+        "what": "Game Center matches",
+        "why": "To pass boards between you and the friends you play",
+        "whoSees": "Apple runs Game Center; your Game Center name and boards are shown to the players in your matches. We receive nothing",
+        "howToDelete": "Leave the match in the game; manage Game Center in iPhone Settings"
+      },
+      {
+        "what": "Share links",
+        "why": "To send a board to a friend in any chat",
+        "whoSees": "Whoever you send the link to, and the chat app you use. The link holds only the board and the last result, nothing about you",
+        "howToDelete": "Delete the message"
+      },
+      {
+        "what": "Purchases",
+        "why": "To unlock what you bought",
+        "whoSees": "Apple takes the payment and tells the game only that it succeeded; we get sales totals, never your details",
+        "howToDelete": "Managed by Apple with your Apple Account"
+      },
+      {
+        "what": "Analytics, ads, tracking",
+        "why": "-",
+        "whoSees": "None: the app contains no analytics or advertising software",
+        "howToDelete": "Nothing to delete"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "What the game collects",
+        "body": "Nothing. There are no accounts, no analytics, no advertising and no tracking, and the game sends nothing to us. This matches the app's App Store privacy label: Data Not Collected."
+      },
+      {
+        "heading": "What stays on your device",
+        "body": "Your solo stars and scores, the sound setting, whether you have seen How to play, your chosen outfit and board theme, and a note of what you have bought (so menus show it straight away) are saved on your iPhone or iPad. We cannot read them. Deleting the app deletes them."
+      },
+      {
+        "heading": "Game Center",
+        "body": "Play a friend uses Apple's Game Center. Apple stores your matches and the boards in them and shows your Game Center name to the players you match with; the solo leaderboard shows your best total score. Game Center is run by Apple under Apple's privacy policy, and we receive no personal information from it. You can play without Game Center by sending links or passing the phone."
+      },
+      {
+        "heading": "Share links",
+        "body": "A share link contains the board - where the five traps are, lightly scrambled so it is not readable at a glance - the round number and how the sender did on the previous board. It contains nothing about you or your device. Anyone you send it to, and the chat app you send it with, can see the link. If the link is opened in a web browser it shows a page on nattskiftgames.com; the site's analytics records that visit without the board."
+      },
+      {
+        "heading": "Purchases",
+        "body": "In-app purchases are made through Apple. Apple takes the payment and tells the game only that a purchase succeeded, so the right items can be unlocked. We never receive your name, email, card or Apple Account details. Apple sends us sales reports - how many of each item sold, where, and the proceeds - which are totals, not records about you."
+      },
+      {
+        "heading": "Statistics from Apple",
+        "body": "Like every App Store developer, we can see figures Apple compiles: downloads, App Store page views, sales and, only from people who chose in iOS settings to share analytics with app developers, crash reports and anonymous usage totals. They arrive as aggregate numbers and identify no one."
+      },
+      {
+        "heading": "Children",
+        "body": "The game is suitable for all ages and collects nothing from anyone, children included. Game Center has its own settings for children's accounts, managed through Apple's Family Sharing and Screen Time."
+      },
+      {
+        "heading": "Changes",
+        "body": "If the game ever starts collecting anything, this page will say so before the update ships, and the date above will change."
+      }
+    ]
+  },
+  "terms": {
+    "updated": "2026-11-25",
+    "sections": [
+      {
+        "heading": "Who we are",
+        "body": "Trap Architect is published by Pacific Front Desk LLC, a California limited liability company doing business as Nattskift Games (\"Nattskift Games\", \"we\", \"us\"), which is responsible for the app and for these terms."
+      },
+      {
+        "heading": "Using the app",
+        "body": "Trap Architect is licensed to you, not sold, under Apple's standard Licensed Application End User License Agreement together with these terms. You may use it on devices linked to your Apple Account, for personal, non-commercial purposes. You may not copy, resell, reverse-engineer or redistribute it."
+      },
+      {
+        "heading": "Playing with others",
+        "body": "Boards you build are seen by the people you send them to. Game Center matches are provided by Apple under Apple's terms. Be kind to the people you play; we cannot moderate matches or links, but you can leave any match at any time."
+      },
+      {
+        "heading": "Your progress",
+        "body": "Progress and settings are saved on your device. We hold no copy and run no server, so lost progress cannot be restored by us. Game Center matches are stored by Apple."
+      },
+      {
+        "heading": "Purchases",
+        "body": "The game offers four optional one-time in-app purchases - Solo Campaign, Unlimited Matches, the Style Pack and the Pro Bundle, which includes the other three - restorable to the Apple Account that bought them with Restore Purchases in the Shop. Prices are set in the App Store and shown before you buy. Payment is taken by Apple under the Apple Media Services Terms and Conditions, and refunds are handled by Apple at reportaproblem.apple.com, not by us."
+      },
+      {
+        "heading": "Availability and changes",
+        "body": "The game is provided as it is. We do not promise it will be free of faults, available without interruption, or supported forever. Game Center features depend on Apple's service. We may add or change boards, looks and features in updates."
+      },
+      {
+        "heading": "Liability",
+        "body": "To the fullest extent permitted by law, Pacific Front Desk LLC is not liable for any indirect or consequential loss arising from use of the app. Nothing here limits rights you have under consumer law in your own country."
+      }
+    ]
+  }
+}

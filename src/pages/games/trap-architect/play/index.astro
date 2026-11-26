@@ -1,0 +1,38 @@
+---
+/**
+ * Where Trap Architect share links land in a browser (https://nattskiftgames.com/games/trap-architect/play/?b=...).
+ * With the app installed, iOS opens the app directly (universal link, see public/.well-known/
+ * apple-app-site-association) and this page is never shown. Otherwise it offers to open the app via its
+ * traparchitect:// scheme with the same board, or to get the game. The board (?b=) never leaves the browser:
+ * analytics sees the path only (stripQuery).
+ */
+import Base from '../../../../layouts/Base.astro';
+---
+
+<Base
+  title="A Trap Architect board for you - Nattskift Games"
+  description="A friend hid five traps on a Trap Architect board for you. Open it in the app to run it."
+  stripQuery
+>
+  <meta slot="head" name="robots" content="noindex" />
+  <section class="mx-auto max-w-3xl px-6 py-24 text-center md:py-32">
+    <h1 class="type-page-title" data-reveal>A friend hid five traps for you.</h1>
+    <p class="type-lead mt-4 text-muted" data-reveal style="--reveal-index: 1">
+      This link holds a Trap Architect board. Open it in the app to walk from START to the golden flag - the
+      numbers tell you how many traps touch each tile.
+    </p>
+    <p class="mt-10" data-reveal style="--reveal-index: 2">
+      <a id="open-board" href="/games/trap-architect/" class="btn-primary">Open in Trap Architect</a>
+    </p>
+    <p class="mt-6 text-muted" data-reveal style="--reveal-index: 3">
+      Don't have it yet? <a href="/games/trap-architect/" class="link-quiet">Trap Architect</a> is coming soon to
+      iPhone and iPad.
+    </p>
+  </section>
+  <script is:inline>
+    // Hand the same board to the app's own link scheme.
+    // Without a board (or without JavaScript) the button just goes to the game page.
+    var b = new URLSearchParams(location.search).get('b');
+    if (b) document.getElementById('open-board').href = 'traparchitect://play?b=' + encodeURIComponent(b);
+  </script>
+</Base>

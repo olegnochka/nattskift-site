@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["93NF8SSXQ6.com.olegnochka.traparchitect"],
+        "components": [
+          { "/": "/games/trap-architect/play/*", "comment": "Trap Architect share links carry a board in ?b=" }
+        ]
+      }
+    ]
+  }
+}
